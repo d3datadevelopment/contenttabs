@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+### oxid template
+### Git repository Ignore Files/Folders
+
+# IntelliJ project files
+.idea
+*.iml
+
+# Oxid
+.phpstorm-oxid.meta.php
+log
+tmp
