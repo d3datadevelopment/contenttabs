@@ -1,42 +1,82 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @link          http://www.oxidmodule.com
+ */
+
+/**
+ * Metadata version
+ */
+$sMetadataVersion = '1.1';
+
+$sD3Logo = (class_exists(d3\modcfg\Application\Model\d3utils::class) ? d3\modcfg\Application\Model\d3utils::getInstance()->getD3Logo() : 'D&sup3;');
+
+/**
+ * Module information
+ */
+$aModule = array(
+    'id'             => 'd3contenttabs',
+    'title'          => $sD3Logo . ' Content Tabs',
+    'description'    => array(
+        'de' => 'Dieses Modul bietet die M&ouml;glichkeit umfangreiche Artikelinformationen, auf der ' //
+            . 'Detailseite, &uuml;bersichtlich aufzugliedern.<br>Sie sehen dieses Modul auch bei uns im Shop. ' //
+            . 'Sie k&ouml;nnen z.B. bei diesem Modul zwischen den Tabs "Beschreibung", "Features" und ' //
+            . '"Downloads" w&auml;hlen.',
+        'en' => '',
+    ),
+    'thumbnail'      => 'picture.png',
+    'version'        => '4.0.0.0',
+    'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
+    'url'            => 'http://www.shopmodule.com',
+    'email'          => 'support@shopmodule.com',
+    'extend'         => array(
+        'oxwarticledetails' => 'd3/contenttabs/modules/Application/Component/Widget/d3_oxwarticledetails_contenttabs',
+        'oxarticle'         => 'd3/contenttabs/modules/Application/Model/d3_oxarticle_longtexts',
+    ),
+    'files'          => array(
+        // Admin
+        \d3\contenttabs\Application\Controller\Admin\settings::class       => 'd3/contenttabs/Application/Controller/Admin/settings.php',
+        \d3\contenttabs\Application\Controller\Admin\support::class        => 'd3/contenttabs/Application/Controller/Admin/support.php',
+        \d3\contenttabs\Application\Controller\Admin\contentTabList::class => 'd3/contenttabs/Application/Controller/Admin/contentTabList.php',
+        \d3\contenttabs\Application\Controller\Admin\contentTabs::class    => 'd3/contenttabs/Application/Controller/Admin/contentTabs.php',
+        //
+        \d3\contenttabs\Application\Model\contentTabs::class               => 'd3/contenttabs/Application/Model/contentTabs.php',
+        \d3\contenttabs\Setup\setupWizard::class                           => 'd3/contenttabs/Setup/setupWizard.php',
+    ),
+    'templates'      => array(
+        // Admin
+        'contentTabsBase.tpl'    => 'd3/contenttabs/Application/views/admin/tpl/contentTabsBase.tpl',
+        'contentTabs.tpl'        => 'd3/contenttabs/Application/views/admin/tpl/contentTabs.tpl',
+        'contentTabList.tpl'     => 'd3/contenttabs/Application/views/admin/tpl/contentTabList.tpl',
+        // Frontend
+        'd3contenttabs_tab1.tpl' => 'd3/contenttabs/Application/views/tpl/d3contenttabs_tab1.tpl',
+    ),
+    'events'         => array(
+        'onActivate' => \d3\modcfg\Application\Model\Install\d3install::class . '::checkUpdateStart',
+    ),
+    'blocks'         => array(
+        // azure / flow blocks
+        array(
+            'template' => 'page/details/inc/tabs.tpl',
+            'block'    => 'details_tabs_longdescription',
+            'file'     => 'Application/views/blocks/details_tabs_longdescription.tpl',
+        ),
+    ),
+    'settings'       => array(),
+    'd3FileRegister' => array(
+        'd3/contenttabs/metadata.php',
+        'd3/contenttabs/Application/views/admin/de/d3_contenttabs_lang.php',
+        'd3/contenttabs/Application/translations/de/d3_contenttabs_lang.php',
+        'd3/contenttabs/Application/views/blocks/details_tabs_longdescription.tpl',
+    ),
+    'd3SetupClasses' => array(
+        \d3\contenttabs\Setup\setupWizard::class,
+    ),
+);

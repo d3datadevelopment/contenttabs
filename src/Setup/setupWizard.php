@@ -1,269 +1,791 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPt6IYMl4879CaMuSI04Z9EQT8yrfKs6yI+TzvNn8oc1rc07w0sx024KLOm7oITuLpxE11mr+
-7AOVpJPzdDsD2lfhfOOKyTQYUjZ/oy3LPetDfrB+I3N/HafeRG9Xs55O2z5+FNqQ5wn1rY1HCkAd
-HIuoXy71/VU9MAXssxZdr49hU7p9JZaez4LiiEtX2uGkPO6V90NueuIaEk5ocqDOTNUvISd/CqRA
-cQzxPkw4yjahp3gVcRhsdkbJUhmm/KwJLj+hlsPNdYn3qLCv52JtmTCeuT7PQgHN9f/+/sXxcUJ5
-osw55iBSLtvLEYsk/77HfC/BiDe/NZK7IluHwYW9lE5d5NFmsy9jM61Fz27vlM9Y94IbY169Hbcl
-8Yc/N6Br1eco5ZWGfH+uA1d3mJGwZndp454PD8dFvfn8IKvfwOTh/1YrhQ9+RmoE6UAs+tcSiMCH
-1DvcPIljN/WCZE6jAoRMlEwxBS3Jn5IjlQCqB/l2LrfCwcLjOVFJsDnll5P1epj7JWUxsAWXxPcB
-zxGiG1qQ37WBmDzZLaK88N7iadpKEFEzxqjOM9Ra1piKDSmE6ZFR/n0sXXDUmKfo08nyEfRS6Wjn
-lu2/mFp+5PAA0mHEB6lZoAnqb9sSx8j+I/EnRHm7syjc94a1yqTfEpIObgD16hM0/GVeMvumhNXp
-MdRuxu9YIPqDuOWHAVWtO6OL7XxX9VHxJjNI8WdmcjtBvaiwmRVrQkJc4E5vELxQZhl96pDlO8ps
-QICZ0bs2VxgjOYTjo/E4rZMSSSRAnK5CcvPr+RjSXw9TIazqN4LeoXhPx3HiXW1g9XPsL0bdlku2
-OhLNiCyDR6uvU5b4ZLbCn1EcjUXpyZTumJ8EEK3xKQ4VbQzH7ZPW01XBTLWj6NgPfORMdLqqIftI
-K9joZxZ969req50zJxaaCZ8Ao2WTi1pqeimfFkahHKprxK8B0ewrT3yUMgPh85XHN/M64XYMcLs9
-QUSC9tmTP2OQtOiRW13VDF/ijTGe5AEfA95bGbDdpKB525ShXjDd85AgVIjcIj0L39LICvvTZ+XQ
-FOaxPdzCXUvQZjSDe+4otjcXApq1/7tpN1RNRFdIjYvDFP6BrcKmGhkb9L+WRYPW+qHlCmjtZJDV
-yQC4zLmUGGVE91PfkLv4BAszdGJaJOYLHaK9STlC6Y/Vmm/SaLLYvfdAIo6YE4nffC7lMIGL+ojj
-js8L2H9zoyk/n7EaCXUySQ2OYoXvp703SyPtkwtjQkPKYxJVVh+IwtWoGYCX+fQzwC65TilDZQt2
-J3LWPT7lLQUu5RDc/QeYJcVxdErT6iLz1A1rgOBQ58Glm4+K+2RU8dIX/Yzn30qRq83unzg0tKdK
-Jv704/A/yvaM/TzZlSbFO2yFzWn9tl3LAXMfAN7m+qPw//49mb1Cpq59iqMAOJgo080S/piUnZMV
-4gLPAJMdTu1kW9TLCk/3JZIoBFWf48VMO+/ootxYMaZuymvY7uDIUEnb7r8HYsSKroKsYcAPsi94
-ciOzU9TPsoBv1HDkLCqFBJD9L53pUN+pf2iXfN+hLWLoAlnlf9797zwXVuslzUnJrOeZsk9UVepK
-5QnZcRml12ltugFDmrfL7UZHjHc59ben15doWSImx5Ctx//U0+Oo9sOco1ddGPKVrP81siUAKuk1
-RuhVJasTLXRXhpPEoXNoBjxQY7nWKohMs/lI24LqVAY8ocunyR2f9okXsGv6ztqfH7KoVVEjRWpL
-pFRJ+05bzfWBsdsEJW8poQLTCAPOYKsqlG4/I8eESsFQfg1LRjWErHij1JFdNqtjvLrl/MQzdRn8
-cqH+d6rudhTY0huhpQmSoNUGGMFUhcvo1JbY2p66OlK0UivgHNDO1mNfBWQcx7+/mXxxru5rXpAz
-4y3MFdcGKhoW8vKjTxeGjJ9LL9CerA28KDf8vWbzEFX9BCGc+ti02Q4UWgN7p3xtXaSeXiBGBnGP
-XFE5U66zH5ZBaxrWXKQBy1iAxnOU/uEn4LCZyc+OVr0tEEbv5ivntx3nDWOwYqAJsRzCP//6X6LQ
-LuR9qk6b+BgsE/J3TcjwVGfErtgbyYPMqPbcOSl11y9f42YJ32up9ma2Q6awPupRDXtXpHgutDqn
-U6YyPoe1UyVNLo42g80RZEUGmh77XU0I16tVw/dpcrIFSYBU1fOh0hjfmdy3VXR1TopOJM20qRbd
-g5cI5uZVH/5IMd04SZg60p/TNbrJhp4a9EG/VRnV8sqxRIe2z/cdJYGR2rIV4xWhdrXR+1cZeEPd
-iF208l6OMzCqW9WoNtSuvrcv2SFWomp418UFc08qUhDn8q9lerbgY1GTBy2zV8AA4sncrYjwRwiJ
-UIlzyCetgw/F75qxOHvmU2eVrD7Kjq8U0K+UObgyGJKI5F+BV0DxUfgoqTz92pxMqSaXk1h9PlVd
-cmO6cVze97qs+RGJFjlfhGfPR2YtqBZZ9PAle68aYy2kfcS+9Z70Vq7cx7cqPp17k+AqlUtQfYob
-x/WJPhPwgymqRLUohRqnweRuwAIrObZTH96wtAOPIcdvBD9pO+KiFZO/E/CiT8AFOKQ9JGkWiWyh
-m0pesxCNbfTcm6rroaCGFprgdzaS9WGeW0kR95MunwAyUNfs9+yeUXy1Cp5Ee9UQDrX0IE6pxP3e
-JXinu+5pVXGMG5/9PTjgINtif0chEFfTQtSD18U6n5AxgAL+xRycFTy6SDnDHFP5Cu3MZh+6Du6u
-T585QDHB5sMIdsFvW1e7Pr3whCSFSui2RWVGrLwdHVzBOI9yMT6H2cdPsgeU62mikOW2onYQZS7B
-xIe0fnGTYe2WINsq2KdwQQ2ORrYKU1vkCTszfNcSuK4AqttbZnrQFa9iQ2PniZ03UDIuyF8cRAdP
-Xz8M++KalfnXnT6IUB45n/wHwUjZT0b7WESBnV8Vt5vFUtFj4+HFxarwFHsYZHYSrC2/+2/o1Psq
-Zp1V6S+kP9PN1SHCqA/z3w6innoJh5JBswCG3QQmOKOOwIsDeYtCeJgAOag9SJFn3eXvM9dCVeSK
-40vBaTO1qwb2L7fH2LNnVBFIyC/X3zgI6Go3WmtsOlMN4FdSr+CaFnUNE/miB4lHbdv6fj0DPURK
-fa2SXy6ni/t7whmEVgzkDQuItlDN5vzXHDeKP8alnyLLxjLvjf0iIEvyFO1a8DOUG6G/Po7f0oL0
-Dn2+/k1exONi3xo2eIAByDIZQyFngpsmQEohmM0GWDlw00ZhMWwpPX+AJVN0ecStYU2M/LrXk33o
-S0/aPAy7Jue7vy2U5H0g5uxq1SyYRUvL+GbTkvUTJI/7p6nfNO7H9rpg+u3OAqghW00P8to+gded
-1pPqJoD24fdubwzzkY7BY66xTJev4du+KgVaYYJCBlvU0LwbOzHoZ1wsP2NhMR2eUcZ83oqbIwcG
-cXe5cN++tOy+/tFhyOsGjMNoXtmLC3ahtHH3j9t/PETuUOB7DLaSquzYjqjVABmSf38qMQ+2Jk4Y
-ap4sfofV5KW0MY2LIjmERxAboqwNyTDSDWBj+DSv8yS3ufVXj+ti1oOVWHRUb3Aj9yG7vhjzZ5Xk
-fc2No+sN94n7BgtV+mACqvSDmRhA5xkegrOkqjRP8V2YiqtxlbW3U4EbIXGVzgiEh/KJ/r2AOjba
-2KPZULav6DIe03KirmY+nULRyxqjneB3LDQKg6xtBPutpFSdik0Tgb+BoqsPY6DikoIvO2yqToAf
-5rQOESHyQpZqqOw11061YuyOgEcYXOsj3FCrSauzcW9T3Z03MoJ/QZ8p1D/AcIHK8SZKAhNONhSc
-rTEvbXkTIY63C58QlOhuHwoy5HxSU1BSxGtCeInEHdZPJ7a+rLf6ELiY06fSeyLS1jCRSXQ5oReZ
-qOGdvDAgcoczD1rVApN8PnKEYvypIMNiBzOaMPv01Qjw44fK5dHu1GhTkaw0CCiY+YeHmA39LcQc
-KFNRXzg86Kx3AqSuYukuH4tQvzrMxJdQ616fRSQqk6SQML4xRmW3f9pK9HkkWWGGVVWaj6d0LHWd
-6aFdDeE6XdLS9DuRp1n9GrqLQX3MvK/cegbDKBUWh0mHpo1WMF9RzevjcbwRE7P3Ews6JVUSM83V
-OmgzmJkQk55GPIjuLdzEA7FxcgErGdgFImsFUTkwBb3gU2l8tvC8xm2ajBNw3A8k+1cqxl1WXOuS
-Y9yrT6ehrqMi5/AqNWfq55G+PWKSKZ7wpuQWE8z+leLHdNLLLw0vs48YRAbf4ArWg5zLIkixsOul
-u93GeP+dRF19JJd1OoTetuDPDiu9xLeC4H398LYnOYwOUg3FjugVf3Gcpmk/O2JRMTho0U/0K8sQ
-CnGTV39qW82GqONBHNFKuxlBgJZhdRESwmv0Jh1aIWASVGBbyqEtYWixTZZAa8JSfeL1k1QB8WCr
-7XCJf0zszSlLuwTxzBwZFasmbpEQvDWwpV0E0sb/8lQkSOwYPmauOZKXzrIaNqu19RDostSSC4nX
-ZZ6afe7TSY9dD1zQ/0iKkuFyQbLdI+EeKS0I5OE1U18qFzzcTSMBvrO52moDBBSszjc9e1FX+T9y
-wVDAx+gX7uAh9yis8xZeLhHy9qp9WX+ol3Cop9B/9A1fRN+2xvRty6LR9PZvHgWbIN76jXI66wGC
-psQaX0mPykSA/HaqpmG4n3WZvy4eS/ccnU0bl5yX8XPDMIR5O1km6o4qB5DehZ7PD2BLyykImS8F
-G0JWWs0tLTzLChIH9arKMhn77vQysR6fCXuXmCvsj9Hdcmn1ljX2so3z/W3U+Qo9BePH3oQatM84
-1VMnby5mZ6/ff1dEQePTjZArfno/XBe10o1i1rN/1+NJqk9NKDRIyS24bjqY12fVzoZLDi7S2fta
-ahbjtySY+DnMq0HvKTk8MRGTmjnvsYrWyfX4k3riUDx+mthy/rrcpcatu9rJVrJzP8Qa7zdqIeBX
-nooaSKZgdL6CQGVtIqIASMQQAxlPQ7ilMX7FFVklr4YZKF+kbZIXPq9Ft7lGeuKXRgE2xUgr0faV
-l6qYO7stTlfgZY/pLGUbmdlHso2o8ZcZXYZjneIdUuxTWPOH6vGgDHw5QHLjEXRIOXcBZ9DFmtA+
-/VCEUCf5Ls4Ubwn5gWxoC+DIWgYg5DG/QdHHCwjtxVT3pE6VxA3OFuyspBQ6Trd1/eBYzpDg4Kiq
-6/zRtbLHwAf/PUNHDNuHLFMmP5EAsA3S5fxLvB0cWk5h2IVL7r6gtmrzFmfeIPnRW2RAn5556YJp
-rwaBfKky20PMXoKO8x0opWV3hzMQjQXkf9lm962wM1wAdTxJayUZN3Gh73Kn0X/tq1E1VtFgqzny
-5uac6gHa2idpCpX4UH/Q95JcI369U2zuwOccDcnATLvZ2Sxb28IXj8O8W66PiPMbpmBLtj9yjkgA
-nQD57c3K8ulbPNSpquFV16k7aH8Zz50XiFaT0IBijRE/ZWRKzM02beCEeLgxLWyhQw+KfxfootF+
-TzFBeeNAmv+ykx4da2Gp3mOkc77mzwuxRawpWCCx/xcu9bT63gY78dnJfxUgq9GH65dAdph7hYc/
-Qw3O43DpI2qngPyj3WSRgat5mRbbKovcPVvri+La11mgn6PZzJhSmqmlYxp9YLX7C4P5Ja2Zrsd0
-UibM/wnvzc/EuhO4Znx57e1ono3Ou/l7lK2T5YnRUdzkKUJ8uzJ5qm5jM5knfCPZuUMG1lPZ25eo
-OEPaS7ghKGDsfie78UNuDLvXq1K+aSFObjXn3ejjIdirDP8SREKGxZYrK4Ki6eG+zp9XGc5zfWJx
-pxBp6xVvLDZzJQyizEMX1/Jp2bpEDP7fHZCCl+gibOc3qZthgfG/6ZByScjQ0y2ke1rQbYp+ROmb
-hnJ/DO5/kFJegYdWTg2h8gLubzowW75PkirVjdXKQSVdnmBFGunkBXy3Dqv+UQcBNmtc2/ZU3wUN
-Kh8dia/fCZMfpb3dzoLekDdTvCzB6TuZMbyOcs0GbEpyKz8qypcYvXnWgJIM8bBmCSIin2RrrfdF
-4nCswfsgMOw7I0KITqbbwJtDlQ1UJmkIuLdGpbCr8HqE0uM/wd8mftFk9HofgjZXX1Lw+gxexgbF
-4+hhGOtnvOPCEirm/5pYHbpe+aUJdwq7kNf5dMNPzJuwlQ98ni9GnOiATiDjcBVu7RNtP3Dj+jvC
-Lpf2BtnW04fmtYKYaW1zbL/244mI68pCm4c3v5aIBHS+lr+ynL39rEDEKq7SgNLPb2ICLoLamOqB
-RcBYvby3TCh7ARqjTnSeMJ+BCIDuyFlmfoFDl+k+yPOMbrh3o05ryK2IQhXpmj47rohXqs/1S4Jo
-TQzmbYOMdhtT9W3fj/J8nP3jYcr084jU2CQoFmu2LGqhpPP3Q3heBEDjPOxgHeJZS11cdhp/tsiG
-cjVnZOCjeigdCsaQ9gHzGY4IohCJ2UyMClnsQkskAax7dBScrfwY3auDV3C/GZzao0+7QbzdmEj2
-r6SIf6r5jP7gkpaY24AhstoxbXPM3YTGgR6SMu3hQS6DnO5oTwI9ZicCZGz/dZE0smVm8U65J6CE
-8KVpkcRK67Tx/xXGJ9c1ZC+vK7Wcf9uFpOXF//VIJq2E4EbYXal/+HILTe93drA7j6Qjw1JmPtkB
-rYwO6OvwqditDMOls/BCx+Jv8X/cGc9SBUb6hTpMSOQKlPgg9eT6dLupTy5hfP3APTDYWXOQSoOT
-kwv+U+NpdkseiNr3EAz4rL3MreNwkExO42ruGcxwoi1RkzLc0fzG7MOvmsf+OajsoerOXJ1rFICw
-amCX9F01aBXE/g5wFtcyTjKGAx1c3TRBcDoxNsogCIySnCWtyNO5RALv1RHA7aDKU9/ZYIxcfzJH
-M1PWsPZ5cb+nowfjj5pWy2xGdT6t4KYhGDpSAj/p+r3GUMq0nseUND/d2Pujh0PXkMo7KTp96Qwv
-JJeOlztZHTFSvdbqYh86u27g5PTkM/1ew5cTaMc3CafUz79eAo+0FsaV1dmXHUPwX+WFnDNGbMGl
-++hN/3I5OJOPnphJYcgjBvZYYHPKyUm92qWXUVPtouhTgGHo068Wx47tg9zwUOUbHsC+TGOB7SZR
-rpz9RTyQIuhjZa7X00MipnPYgMFlDmkzeVwcrUOfo9UnolUvDxa+s5VpGyHIHYTNMHAfUzX1bUn1
-q56XyN/n452wnsd5COzWaVTi6Sv4eORfxmBZsqAVmjRi+tPfQGg+m5zGkyL5EmgBAnVlTz6sZTfa
-5Ot1qaUxUzS/jgnP3dmh6Y63Y7OKo90L1+8ak5r/XKeoGv6Z90XLGE/OIijpjZB7jN+lVVWZPfz7
-oJ3Z2rr08l6eqo62ck6/CHjhCeW18E21p9OE+PIvJimxGCt3a9RmDNCTjKcfV2xYGpfQVzkrbjzC
-hRv9A7rBv4tnJfcvvxEQDcOuNkdkvJKkZWDGWaUG49PqYg8LCFOgxmxlEyfewZBRhDzlfH8F/8xA
-KJDaXaL4QNEeyTxMDdlV0rwH4Lf0GvhGqFq2e7JXPorF7HzievRRI/MYovpVW5h1YHwS7ZuaGRNh
-JYijorVYiE3yhDlvS9ELlAWMV3qAG5aLH1OcbOrw0M3txFTrQST3/uzCDRmhKxgg/h+Gdjhz8rlp
-32kePr7+HBsAk3WGXcSt7ADmx78IAKDFXQbXlIj3jDkbwcagwhKosHdV2MIKDOXSz6+yFSozL975
-r9DGkS8i8re2tMO+dmKzYn5T1MpbeZkydSze34Bpm60JEa+7twS6ruZCSZ0E4rFIuJkyyYr6ManR
-DrzHcS/b9WWkPCOmdJ2zuKyHkcsHB1gKC0P+S435pMW+6uIIQ5fdE33IAWeB9MfL5R5EVh76jC+W
-9VbgLUMFWBNvaVzDTpYaItR98Nm4u1dwu8RpI6pv7ce2DlghlF16/f9vVCxWcvZhLj3VhfcsfjVR
-oqe2JXazOQOBCTXxSn+0AECiKRQJnoYcRJa1b0J/4i4ewsZokeGXWxQiFfBWJsofG9tzDJ6fbp71
-CfOWDPMMtewDMC3TDv6QO2OfT0cyV90ss9bFBROOVsuc1f7UoENfHrprxlDV/MEctybGEzUzY48P
-crexgu9WV00iryVUJZ2Snb+gxBN1b9dK5+UWoV4k7Z3i0LPtW0NLXoL9GSfUrXeQl87ZbfiYBNWm
-kdG+1RsiIhOUv7UhwR5CvuWGyMPiFZZln4UpshJSV36G1dzAP3g6RpGWy108/weeznL/vgsuZgTq
-+fiBTLz6q9pq+XJU9hrXEvLLjq93RxozS4P90DzB6VVYryT0+rElCyk+IEvXHCfiDwldPTWqm3Pe
-2xJ8d+5Blr0jPLRlPkZ8Tn3Po7BeQIrcuQX2M2aUueGtnwXpA7gLjZAYnfg/OZ5ocE0fcJk0SShq
-23qRD97rG7piXRD6DQcjepBz/3r6r3J4BZuIYh9SoasgUM9tu+3NAQahO5NCnO/pU/zTeadKYvJT
-9kiH5AS5jRvrsC78T63sbIKwvI/gpME3kDoIY7nT6eBdO5sBckFTmstIKNyNc3KNS9KbCJP1mTER
-Hp1xxNMci+/7SRwBnYTA6OBZ7Tcuu07g0yfAQSWFQNl0ojdmKaEo/zhdynP4t8+u+SZnFYOHirwX
-hmnk8b1eVeJkHutNanHHklM9VB9dVaNzqLA8xFhwfMfyYFSj9t6tTmUTPI906DFW5BL3oRIJgYqs
-8VELB4Jjbk3zusPhVp6zcpJQ5UDu5kMpDdM6cfyCzZOjtbm5lnyCsEuuXe/t26CTSQ7zIleYx7bO
-ZmQ8mDHoHeR5fcEPRlVhOZKIbHg64oG0na7/OB4+i4TfPv+9iHfLN/Y9T4msCOqnEWC+aQ71aWkS
-6ayvnaBqayBv1tmXXc9iaDKhgB5JtkhOLfJaLFRL4kI3Gfj0iuSGa1fGKy0YhamGpQZhASjSYsqk
-QZeaZwDC121OqNcCrdit0csSO/04aWTdd+/J+kYFTzyxirWLjFEm0Vsz3+ekuvo/zJeo+bknLc7L
-lI1bezKVXBHcP9l1eX1YMM/34nyYeO0nH9iDqwiNlcmjxEJxeOkTkeVLFtivLtt7obi6m9fHuMxo
-Id1RIiy3Mdvjw62UqwArHzUAgpWu/6J5JQS/cyc52asDJ/g2YEDIB77ITCI9X6NcHAzj2q4YQT+G
-W34UxkCXQNhivmORSVKttzenWlIkrXzpPzk98QA3QtiVaG0G7PEClGmauFhf706u5g4cyZDXk1KQ
-KOShmVENkHTna71/No+m8k8PpIiKAZiI2SQ514ZfeJTHr/nMDKlPCUwSwjVYGKPwEFFSx5iKjW5y
-+g0+sVeCN27wWWY4x/RmY1lldRAZd9WCBmnFbYtVuxS5oS74dmgeW/pBsUwCf/Cu0kvv0F/cPmFD
-jioVzfMpxRXPcdpc+FNnQAQzkZV18jb7T+bwcDJwcLMR4ugYgNbuTZRKlgI4J2rt+hALwsIePbCq
-EJOPvckBqtgjKPDGJPL2ZOisc5rmaqUHeh/bddA4U7eNpKsS2242CCLNAk8uqOaacyeqFHhsMG7+
-ySEXKbsYXjC9xvD4CuhC/xIFcIytdbORXNv3nkxYX88m6kES4AExcvsqDhsdlUDWkAwkH/D9gQQU
-5pqXRBToGIwnJFpb1nBNBX9nWEMPV8tDwFdvdO6qRvKzxnUvbzst2Et7MbicbsqhSnlYErGg+n3N
-X6T5W00hN4goL4d2r47SveIuR8uE9/Cz/uEsxlgqt/z8Vb81vFd6Nlft1X/iu+F+iquvxwl17qNr
-+Nuuhn8QyOYeZ0ZXul0q/O0iZaKGmPkoZGR+NIClzBVi+pz5Cyjk99DOH+PhsSG2Ec2waEGr5dL5
-mA76OFiutc3/kyFtr3AGNst32KhD5O0iyi0rwFgYxeeCMc/pTCv1blb5zoiQb+uMayqa/AlL2lEb
-1DeZv/NbzHJwv/QHcKPqmJPS6PADcXNcySnKiDF7mhosRzviZ1TrVmaumreg9jWwabMWiKyEYqZF
-Vbyf51onn19Z4COMKbgNWe3Kgd/9miLcJr+VwYKJigATxTKRdEODSEZyE3bRz4l1vP4lbbp/gOWw
-1Ek1iJ/IzRbxhss0aCcFYm2zhq+zaSJtuhJ/jJeBTUD/XadUIOGSdiivOiYk16PC5GEK7xU4ADb3
-CYvOk+XHk09WqCL3N6s87CgdiC3PvnQjY9lFjZx3y83zK+lHIaENddfuKLqEz8PXEAlcg8HrmZeS
-YCYCov0O82V+4GXDOwWEoajtgiHSUZAq+j3Il4Sg8L1JmA67S4NqPSdCJfZBq7oNXUIDj/PlO3Cs
-v+KSXTCYGQq1QdDF03H22mrOAtaMPfeNKXAA25PpusqaLngw7qiFh9xTxlVGlBxWpy9Qvjwn7gAF
-l6SG3Jh0en64phD8oIFLFRDO8rX7VzJpQwBfh1/oN8jZz77I32JgvztPuiDNTBryYS4jmXwo8Mg4
-eYNFEt0HZ+RJ4bgooBSjXLqfKluKBUbWDkQz5YriH6vbrlxW9qsW64Jaq+EOWzuJnI8BPuAl6CU2
-8d2WDHJpSS7Oj//Vp3/4I9nqanXp6/dRbyRosXoDsgN1V7q+FKEf6zZmKD2LCSHwt5SBLwYbR2J+
-ceY/dnlrro6YklirHq+Luu2BZcnS4jA6Ob61uyZKaf13WPKgmzQE5tgRcsxCycQAZNasL94WT7Lu
-ay1jYuQoopvrqUBkHlpCMjCVWz4CQym/g/Gac3Xg/+hhsltozzKFQf2nFOF7BnUOSMnTui5pIC9h
-OruLsdigt8hBPj0LNrPRmR/BeEAWAk99jXD5kpqUC6P9X5f5KX6AYpU5iE6LyywMW9IdOSEsYbVA
-9PK8QPu5gg0XlVSDiVuuuowVXrBnA24Q2w4n5TUj3edpHkx5j1h2bKWIZulmBWPk1crY9lMEiWyC
-nzftc3FN5nCuNmDdZz8rXtyscDWrpINaKWM7aPALYzbA0x8fFi8l/S5dSN9wa7MNUYnuj630gXUw
-UYlUj6W8glwSQ2IDw5ZaAwQdHURPQg9CRVKGbEtwTCQZicujerv+UW1w/xjk2t6arxu9NLeptkcu
-X2Kt7TKUp451oKYi3qX8XHSlVN9ROw9z4Qd1dq4sjjdtex0Y5xcQe+4TOl/GhuhgkqGQy57Ao5JF
-XNlw7lhC3eLHZR+/66RE3pe0KdbqyOhqylilesyrNnTMm5wo8qbusJEJ/IUVlLPam0Ncc2bgz3K4
-x+fVX4iplVrvvY55oWF3Gh4MVu2G7eI5I7JfNqTs5KgF0uH2h3+KPCMvPY9B6JGCz76fva4iO3TA
-b9V3PYOdFMhU/WiWRzBITNlGOfDfaSLqNDBbTz+/LJ960VzyVxB/NmjNbEaQeC125OarPORR5U+6
-CAgJO3GPs7BdDqSsfsISRdVXHhfJw/30T8ttFTxCElgoVaOWJYnrdspm9pAAswZfCKT7hE4vg4V/
-sd6LiFpRuuWWdkYLHAPWvr5PbauXPeEmEkX18jJCdUmpGWeuDakPaoGqXMjowCnSIs3eyq08QAxg
-GNZGkjJHjUtwDfoe0mpmgKr8CJESPIAn8qdSvY8cf5lchSuNXTvAbIRixGXmar+w23sPI6u6X65C
-uW2ChxeR3d9Ix2xGQyL2VOFZXdhKWLqT4t0gmz7Wrc2REXyED/8utw8d7aYPHpAFqshyEun7e4uX
-pIkNXz/oXrssauQ+thiAxC87JObk7eSD++NnFS5YgScsjmrP2L+iucr4t5g1slPwTwwgoCap/FYj
-dNn+v91V0E3lFkAd3ZigfDoQv83LHnTPWk33fzLFgv03ch876LbeYNuYGX867IF9kRW5wAS/V2JQ
-plhMi/xEVo1hAIpfKSpS81J8RHICnYjw1JLijdLPBjdvIufh9xmZEjhh74dwedgStKPj9cgP/uLx
-+UdRG+jc4lqT4B4asbRm9+WxMJ4tLCVsKL/IETt6GPCxgevBPd0PWOHarIZPIk1d6ftxrucq0NRJ
-4gq1VlSlQxT8kaysgEVCdz+D18h37gaJmZx8DAqxQ77EcbkrdtqIzd+rgPxAmbPMcai2e7Twvke7
-s7MLSjEqDpXoc0j8q5lB0Dn1jIwxWsDW9sOwDGGCm/VLuSbBVnehikpP4sqDkXi/1yWv+tA4SGpM
-hkXppHGAfe07PWsMHv/hUN+3XyLmtbvR3F/cfGfSGfCwXenMpJyuQ1Lx5itrmGSVTMkubymdl/Bw
-bky1LmNaa1V6ZJVO16tXqcbuoxrVB0O4UShQX/Iwp7OvlxOWisWioD0weGOrLLuIREHNafkQ/TKZ
-Mx9rCQlu30D0oBLhzJyDphkCwGSxMS/LojJkXaKfXtTId8K4ucugrw3J+TUF/f2ZsEJv9uFnUx65
-yf1mghm6DnFGdGbIsM750gzk13UpQAqEcSMxL0etKW42/VbSr2RcHkTqfQAYA/W1MvBA5xL6zlEM
-lEcsk5bdXw2QKCZRKuZ4TxEZyTSppERJEkn0ZmBN2SySGEZpIw4xsyak4YpaxtzFu8vWBX0f/wOC
-nbOpo6W8UWuk0CP2mWd83l5pqCJmOCDV83FQdZMMvq8gvydTjNxJeFwoNbtSaU6PTBv6DN7z9Woc
-lqz9S6Q+xuzQGYaBIUZiQkatzmUs12tTB215bozkRvi7tlTq7vctR35VMgt+pjzIPfcNXX7AmIBg
-dykk+gU0z3BNU+2nEAw8L1BNqVKHLWuE8CzVdabOeurtJQV9bXWrp216KLB6faOpYsUMYsxTBEcS
-MVqlcvI86p9fiNSIbn0AN1lyGhauluoQZPXtjSv/DHBbuLUcwP8WoNGFg5khWizL4ks/+i2YHBC9
-cPtUH4/fjGDR4YfYfzsX+BmobnIoMWsMzNl/zga1BN3NmkdGJakWAn6qXmFGz+UP8CbNT8KjCr/9
-kmeZmS1GKQ9ezf/lzRJTEOPi3iQdQdYwBFBgUzoIsGLGk+vQ14SwsdhAWauc+SP7ohkU1Uu7L2vS
-7/04zTb8Bbzrn/N9lqtV0QpN6el5O2s5P5HD+S1BgcgF+fYRQg32knHIdZZ05GeUal8qY7Hjk2E1
-FzAGLUd4/ICAvRcYQiQZmAmtRxPSbnJ5Z0UVgdBEhkXlEQU7a3BRfvta17wK8UErOUHDurqC7YC3
-dz2OwFHyNpzr92vJca18St0fle43Ttjj6ldaGliNFsjg7Bi3Z8ZmnjhMI+j8dYtHDINq9p0p0fAA
-mgRYSywwaReZAZWurQKR8Fe4G9hjG/b8KeNaUWvTT23Ku5quvlWNKK5ZkaneBAcgG0NPylPBdLvq
-lxyEH/+AKAKL7UFsRlSQPq5/emUG9f0geiDPcdmqeibieGpitsE72nPKcQh8KLllxJCiR4khNL2s
-LOBMQmrm3ZWWv20oDu7t5EeZ9twRQ1+WNmN/G2KopOAOPniOhYzLug1Et7T0YWnAqJ6ue4QykXG7
-nPfsYWE7y2XGO+kBd2p2ThZqQ0FVqOrME22tW8aVuv5ag/+4VI4qEQxlsIQlgSKmopz5PLnpAqhW
-BHR5xCXsToUm8hd8XqfxKJyWnooZlWnSoBc55NiiGaLDZguvHW5EQs28HXM2m68GR0iEaRtUxOVN
-YmD99SvAci/cTuxzRPvBKfXLNB5jh2FqLW0XHvjLjigy5TaKOagxdyQJM3S6ps435cgVuvzhhwAY
-efPRszanGcgDj0E59Tohj8IWa/fsOdtIfKoHPbHIhhYWilcsrn7VkcOO3En3b5It+uBJPp++RgU7
-jj5rt/2Dl69m/aAsAARRJQXaFQIT3WCDatg2Qb744N/kqTbLTZ9N3Tegg9yE5T2EdBtHDWwY2Uzv
-p3/+o3JinyiKhoA+s26ZX0mZXfKslQSpUrKCQgBCo9vfom81tN277kvKrDqn/vshVbosMWIN1gRV
-kdZ8KAQud6Y1BXE0eyRjFkrOUSVP5LQwOmyRQdQifXXQYyZrz4aN0olRhd2jFms4S/P9aUsnBqKw
-cDD8HrUEauiphrAarPOINV4SODdNjGBxvZDy0o9wDHtKMa3KdgfaOC0xq7l30p9gPOo9I9LThKse
-+adyA/+VcvFB+8d4yavqjqW+vMkM4109YEb1IW/jwO0xqraeQXDNbThIrnuFVJJTVhjzl0SQhOpY
-/gIDhzUTGdEs7vt93wd/XvZnRACrOai9pa42pnk9cqlE4kw/RMaxD2dJ/ZTJWT02CllG/QD/ENGH
-v2wr/dM397aCNJVx9ivjfLaZKLcIj6gwI/kfdPBKovc/Tdsi7ZbRle23CpMwUTwcLgwHV4kY25XT
-SxpIWLblX8zRjiQPRLkW/k1FyJSYY/+LuqjO5bRGo7dmQ8BW83QU5vCzGCbK6l8lyUvQbyKWYYCu
-oULRYZfpwLSB65ZraYnzTa/jNnwZEscW67yVZNhy2q5T7mITDmhjsUzaH0MIk96GAffxx0hTtG74
-eDX8y0k0esS0ix5caSKUYZh/l/t48w0sEQFFN1FuowMjaTKpGwEH08Z8XSROj9dBPLjtpJ0XJaTn
-k6hp+qJYtJqEuDZXOuhSm13tBp0c8sUMkim3bisWdnD9mu76Ila4aqF/ONMHTcKqYsuUvqLqRuHw
-0hQOD9Nxicl6Eso2ZX1qQITmW4ijc4cI2QcgaYPnVBZoO/yfU11mra8LmIVUVKl3deJT7/S56Qwa
-oGouWzaZ6njTjtCfuojrMIBOORbXNbiSZdaxlpJcqDspFmS46zOeq+DOUafu9VGAMpyXZk13xzvF
-zgxqg3SVPwzCVu4owPuIMI93ZnCfHCkKe9REjSs2Mbuca352VksmUJMp2Um6jNLgvqHnr5OQ6Rm4
-oYg1i/zgb2NAwo/+P7+MLJDJLDECrZx6nFQDgZSUcLiQUQPqhA6XQYyllsw7nI0lFvbUTexMZG46
-eur+GMLyg0qZ1deKBafAshcGXbRL1045yn86wTy95wXn8E+/C3RpfuTPKaMtnIE69ZWYpW31wq2u
-+DQ/98/NBqem71geHhYYQ85/5lL/3yehRaq7UfZqGDmPDjSGqNPZGA+oc/kkwey0LwgNuS4heI3p
-nxowNe3lKDG1MUvZ3Zg97x9cXIqidsw/3hy/0PwbC9J9303cnk5Sm1IyzAZguQRKBqCmsW7Surzt
-B0J0E6bOo6OIl28QOpx2pj/fIXQpswpzc2mDONwzXVMZj1+xVHHpnot9SDVpi7PJTN+Z/RH88h8v
-N0AAzsBpGIqgrtBxAuY0891DGFOw3fw3tzuWwcaGKistyY3CzM2Q5gkO6ilDukfB+WqQGqoGsdKz
-qaMj90Tps70rfKUtvW95hf+FfqvBEHl/Vl/n65dHphRv3+SqC5kgQaHO82zA3B3Ld+7u5IwSgevx
-PmKuizECmHm6gqHMnt5FoQ+iVlec/PgUtfORrA8dcLLm1H9oD2qZ1dDZG6GU69f3jtEwhKdUBqjf
-XHXuiGpY9aeJxCSVrcypCdxSjFbBr7pjCi7QPX7GNPA49sqC1HjD7AXZLDe4je/1wlsPdPJNUbMo
-tirEZqQfNmcTXsy7wrAZKpEMDB6EdzhoahI3Rn6pd0dFBCDPY0mFVN/A6RSIQQxWECzjPEjRBQTO
-wrqRA7FDrrcVlpPZTDT+ETflvusaw3sI5ZU6Cw/zLMYwsVrzSsCUqDKPpZFb1GrniPMBIGqC4JGx
-kNkZD413hxXeoshJUvZ4Z29RxLJMt5jJiDgJmjRLTpUUaU74CCjK75FI/ApV0kMLcBNDFWzUceMe
-SdIhzXFXIrH2264qsi1U/SbnbKuni8pDKG1dlUwK7lAgwy1TvqqnEtjZmoMR+kvalRN76Nsd7Xxz
-3GwkJOZ3jSV/hnyLlp2YbAdwJdhs7aVmWFo1ga6lTU8aoc5aCUR76hl2jklzavg9gbryVJH+Wtpj
-eN6XG1XmgSZNHbq3M0FCxzpbfg5FEqiPt5E03r2DfW2CXtkd4xtzD0BlvjC8B6KcxVnESissvc73
-Z8CEW/EQe2bFr2wgFX00IibuUIw3mxEbLPkbBs2yp01EZUGoOUSsawYv8kUu06k0g2rm1F9qupNM
-Z1BWc04xiyxag1W102Khc+NE415QrIPO2qeNGmcDVPt7ZgeT9a1+BIqmG4sPHqF/CnHUXRgRP600
-Qj+0tx2qG9trSV5XG+2vfRLYzB0eJxzdNFRIyN1MSHtRQBpZSSdNvJxbCk9u7sgMrJGL5psi9+/Q
-z7nr9KaQQ1zlCovu9EveqbOeYKROzw4FDnGJph/au7BGCX7nkAneJv86L3EJ6SI0pHX2hRtEFwEq
-+N4YJELbSzE9+21fSqIXPJV0LjuvVNwt4Ac71ijI4ZBA2BFqg6UZyCr5VFflWmv0QpTMNDp1oTpB
-ie/pJVzDG/ApsnIsTRuL54LlZsCBKHPtsupGBZMuT+AytFuAsF88E/hTgjZVGTYTWz9j8x4Y4pRh
-fqA80UGbKuUIurObDFP/VwjbcGQbKDSUTnGbj1yXboYyJFm5QgF7NRx7Ve7kZxdXXkYaPfRK36+/
-pAstixYmVpXduWpPjEsxizunqKdUHD/faXPvH1awliqTvv8OTE3JegFexjMEP/HK+vqeljnisPtE
-iDIJIHNtskLpPVAhxUtPhMXMYwYeBulq2JHZ6uoF91R1qLCmb437CrYMT2lndR9xravkfUKOHkdE
-ub0PrL840blSR4tOf+KAVUKAQLrYOWHcXDkWZJrJVLq0/t+dQEVT0FAR8mid4Ti0blsjLxmtvUMM
-d1oH+IqVPocnUPidgw4lo2jJ04rKQqG3A2NsaG+XUyN7qLxKCbSkpx+IPOu+TTv5uMopIInChu0o
-KYRVubfAfrye3S58v1nE9pVTzBQtk5ccWX+0JatoeFOzjlUWg5mMv/ZgOG4GUXUn7FKpntVq6Fd7
-q00UKzr34kwfkC/OU4m+4hNRxN344nSQn74eYdqS7Nj+BWOqu3UeDO+HqrP82zhGSbhnEU9GR3Xu
-6MiLd+43qQYrwCEE1PT+9Ht6NeTDVs60vPM8pr0jVNGh9uzcvfi+6n3tOd1Vqap9XEyHas84hkwj
-vBW4fag6qOillUTn3TjMCvLLSMHqJ8jE0t5L2tRFw667QBh2MYVIw0pi/IwkX5tUXHl1XYM9OmTw
-3o/TZI3exs188bNQ4SPXooOGzxQpR2PBE4jUnIUxiI4OXXCVVGRpu7MHRumoOWVPFWQDAv7nsZMv
-3SIrMFWtANoyGqQUbPzkC1ybQ1ae3HLlKoYAXrXbzIkB1dsD9zhLJE/37FxTNidNaKyWR7bZkJcC
-ZOPbDPu8h/S5jzmWazxNjrfzBETSlH9E2xgkT5o+CgW9Rncdgy7EJ8GvdPuApxywiVA+l+JjbGPz
-iEsVzEC6NzMNiqYncGe3bqYOx6CIHE6lf62CWLCFWrjAka1w5S213VyFXupcy6yKrJFgYaxxbf/A
-Ja0euJSpmiGN68MpIJ4WnWgdb0k+aHT+iDM/+zOYOXZi+L0GaKVHly++opCzgUdo9NG//MDbEoN+
-IfO06c9ZWePTnbe+m4c+8zZhQUUCpoNOsOWPqrF4eUc2J2zyM5JL8eJeE0y8A6qtCRjLXdSzG6VM
-n/Wlg1ilkCh952SHl9RZjZsLfUfQg7V3KX6rqWLRoRqfWyXWsM1gz808fGihU2oeUiersUdum6Sn
-xuUt1QjOZRHdQLah6Fts6AWQek7B0FLoH9jskEH98xDCE9ev2cFUZKnrOVjo+atAGqSq6Uele8EE
-Wh39KP0OeThJbGXg2rauyiw+vnVaO1OeYgPDy/VVIoz8P6sOtI14GQmWB77FnprJ+TVgjO6QuZWd
-grtMrFXjE4cgX1QuPSimI44kwvucuAKEOXqC0HgkB0WWfhbS5eGf08FuMEG+b+vWziMjjeg7mw6S
-FkPDbqywZdrWHbySKLGkKt+Nj6vbPaGT3aUA42KUueg3OU4aUcbQlAZr6wPlvU9GCjKLo7aTjT61
-+sI3JhZB6rZT1SUQKQ0BmfnLGZOS9gwzL8aVa5yl0/GqWI8WssVE/ZJeWsnqADJNaVS4dLuoMlu+
-XNZiW5bsAA/CdaYTU5C9Og5IRzZRfhWkou4a2in3oq3JcDDIO5PfOqhAubioKJK7qH1+V58Na7IW
-/wBvojc+rWQKN6/pAP+8xaZeE/CRlp3oJZ6RLiAWmeMf9abXt32RyK0MuCKXORxoD3Y+lRVc6FiU
-Nv0MqZhTze1NE3eOWSj/tXwb2j1CzvW/JOm/6sNjzN4VD3fk0RVcMS7+g/VM+z6UPuDl6VTWzcMZ
-0gTfqzXfbywdEQZBc9bPJAap6kXOttlAhp7AgnTv/kVD8/JKMuHkRvjlO5WmdJusC5Cj36NBFg0+
-17SIBltVcYd4Vyrel40SYfZsLvnQcAljGOnUEStVsTmQc6UP5mOjFYGUPE+VlUbHYlFKCxH8Mo/L
-bCkJ/8M6+5dfRW+6KBirn773VkTPO/+G1Aq8IPrAogKqMXJcLKQn59oLIswitdnumjolNOkVCZNj
-+YU1q0IGichO8tFPs9D0PZaEIyU59n+SWgNXT1Eu6nmPXeKU9M+dkMN6uYD4m7LQkR1wJx5rIWVr
-cjyJxomn5qqtFyRdsB32j/x1Lr8dnvVmwOQqvj6795V2Ji/XtOm/jn1Sddj/FRQSUGigChicVXrl
-Iu/ei0R1h/NK7xN8axOfYLzOOSPPscFG1aNgofCcr1gVlr6Hno5GCfadIRciWFDAOk9JoUfz8Bsd
-SNQzVYSvYIQL1PFoBNxupocS1slDi7p8ayDxCrte5tf633KNFZ73ns2UwbZqPlXmwMQ4ksZD39Hk
-wXuP/m6/k81+0cOr816Sc0t/VPyk6SFdJNVmYy4JpSgjy1W+KKlqM78X72JokueVWk9nIbO2SImn
-L/9JOkQevBo8OcbK4vUtFjorkEIZKz0Ypol//L1mCRTGx9gjGF7VArpZKa1ys/JoU+oeAXeXWUhy
-jxbPS0yHcHfy7ffx1EnyC2S8fuohc+7RxHzsQsRQaJyit4wKJuPsq/wwKSoO5tYxv7X55d9kslgl
-bYt3FTt/mCL8ImyBgfa3VqqC6QsMYFrJXeH5VysE2177AOgY6H9d0YDAqStJpEXgyafoKEmQjEGt
-eE4AMDEXpb85u9TtqGopSEZ7INWS3OJHg88PENHrs1hJLCsfA7NIzhMihQf3LrDG7MxI9vxOE7V7
-vrbFPjMx/ZiJU819nMIvGw7Np6FHJfa5Cz/zAsa50raP83BIdE8bJIdjD+ongpcR66L+XWOEMJY2
-I+2VJtILpTZqKTRWyiE90UdNIASJqnTqykMIk+3i2xoJuZT0nEXPGZrHLAfi4qHTGVvzco31FrN9
-80s3zMQu3ohXN7aLSAefxXHLpW+POX+wcVOZolNjyi5vgyLH8RRukxv2ob4R9TDyKg/QndtXLz+s
-zcSYiMB1X9aFltHa+alXE9eb62kyJjF2cKxtPMAgeJ+1c8ImxUgXnUBtYlDrpiBOG5OLwg4gSpFT
-JXvnFc9CFIPY8FXU8gd6PGqzrGmNoCMpVVPqabCZGWLNsHtAXxf244JeAJ7mJfsrO8z3S3Vf2ovU
-xdR0b76BgH8hcVCFi4Tjl4chgl7BgFZLa8jaGYaTRZ6E4Wd7TPiWWkVXFmHrrVb0BeJKgghfr+Pu
-RRblBW0AowmfGVBPIU7J289c7oJW+L8Lt3kwJqAPaVIE2pEaqDivcebFg3EWvHJr5oWT2TVJrgDc
-0/Vdp+2Ed9IyHtXQe3lOG+uXrvDDT80QOqXnETyMQnUMxnG/Xcg0t/HTpy5R3c8xqfTqEbs8wN8G
-OIpmL8KtlGZsZX3s4BoT2KEYg4XSyItZtR1fd3E5pm0QjasdJzhfiZTvh29Fi+PVVJwzY+8r2A4O
-Sr/dIthq25fpKGRvBs72q7W0rF8v1Deg7XyVm2cR2TbA03z4xr3LaU0QSgc5DhnCFkpvxFjBdh+K
-ZPmkfqDWm1GCei5KELVuQ8d3zXS1B/VGMC4gDQIaKg7FqhjUGzBnSDdZi5tu9dpf4vt5p0QM8JyW
-SQHMrMF8O5pALHEQW4XO2vlx237Lk1KSGfjC13e/mL4fwxSvmVr0ZoYliZkP345Il54rYGvRhqZb
-OLq+UXlDCc3Q0ItkdBfProW5MGTFKU/Zz9ghr7GmWsRovn3hZ3Re2lV+zjRQJnLUw2X7iTociX5J
-9RruDLX5kCyWB8QhzKEu5W4/WPw4ilSpvg9RXHuf2j/ObH4lVbn7hYFTkANO6lD5E9KKprIJwwBi
-YIyvmFAGdZwd3n0KoKeBn6mkaSiIotPzkcxZ0i0=
+<?php
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @author        D3 Data Development <support@shopmodule.com>
+ * @link          http://www.oxidmodule.com
+ */
+
+namespace d3\contenttabs\Setup;
+
+use d3\modcfg\Application\Model\Install\d3install_updatebase;
+use d3\modcfg\Application\Model\d3database;
+use OxidEsales\Eshop\Core\DatabaseProvider;
+use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\Eshop\Core\Exception\DatabaseException;
+
+
+/**
+ * Class setupWizard
+ */
+class setupWizard extends d3install_updatebase
+{
+    public $sModKey = 'd3contenttabs';
+    public $sModName = 'Content Tabs';
+    public $sModVersion = '4.0.0.0';
+    public $sModRevision = '4000';
+    public $sBaseConf = '--------------------------------------------------------------------------------
+2iDv2==V2cvQTQwclgyZ21Wd041cnpQNjBlQkdCSUpreTZEUWRoYnFPTWxjUlJ0aHJMamcyZFNHalpEb
+WlNQ0JGdkhONUtuVW5UZWxGbVRwcUNITUl5bDdZMHVWWFRKSi94Slp1VEJUM3NQbkJtK2RlZTBnOUhDS
+ExMTWRSV0xLZ0w4QzI4eEdxS1dpZHgrNUJkeWJkb1h5blhFTUh4bmxQQUcvVUlPUW1YZ1J4T0FJTTZSV
+2ptYmFyTTdmYVRXOGdPMytSbjgvMEFnQlBpZEdDSVlpTmdDWW0xbTlMMW5heURrZ2Eyays1QWFHZW05W
+HFxcm9CeUdlK0ltSjRTaHZuekJHNGFDc1VzUUQvd3FOV2p5bkdYODhZSVZ2MmY5b25qMStXRW5lWGlQc
+FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
+--------------------------------------------------------------------------------';
+    public $sRequirements = '';
+    public $sBaseValue = '';
+    public $sMinModCfgVersion = '5.1.0.0'; /* minimale Modul-Connector Version */
+
+    protected $_aUpdateMethods = array(
+        array( // Moduleintrag anlegen, wenn noch nicht vorhanden
+               'check' => 'checkModCfgItemExist',
+               'do'    => 'updateModCfgItemExist'
+        ),
+        array( // alte Datenbankfelder, sofern vorhanden, korrekt (um)benennen
+               'check' => 'checkRenameFields',
+               'do'    => 'fixRenameFields'
+        ),
+        array( // #5886 eigene Datenbanktabelle, legt diese an, wenn noch nicht vorhanden
+               'check' => 'existContentTabTable',
+               'do'    => 'addContentTabTable'
+        ),
+        array( // #5886 übernahme der Daten von oxarticles/oxartextends in die eigene Tabelle
+               'check' => 'needToMigrateArticleDataToContenttabsTable',
+               'do'    => 'migrateArticleDataToContenttabsTable'
+        ),
+        array( // #5886 alte DB-Felder nach erfolgreicher Übernahme der Daten aus oxarticles/oxartextends entfernen
+               'check' => 'needToDeleteOldContentTabDatabaseFields',
+               'do'    => 'deleteOldContentTabDatabaseFields'
+        ),
+        array( // Datenbankfelder korrigieren, sofern notwendig
+               'check' => 'checkFields',
+               'do'    => 'fixFields'
+        ),
+        array( // alte oxconfig-Einträge vorhanden?
+               'check' => 'hasOldModuleItems',
+               'do'    => 'deleteOldModuleItems'
+        ),
+        array( // auf gültige Modul-Dateien prüfen - see metadata.php d3FileRegister
+               'check' => 'hasUnregisteredFiles',
+               'do'    => 'showUnregisteredFiles'
+        ),
+        array( // viewusage
+               'check' => 'hasContentTabViewTables',
+               'do'    => 'registerContentTabViewTables'
+        ),
+        array( // viewusage
+               'check' => 'needToRegisterContentTabViewTable',
+               'do'    => 'registerContentTabViewTable'
+        ),
+        array( // Moduleintrag aktualisieren
+               'check' => 'checkModCfgSameRevision',
+               'do'    => 'updateModCfgSameRevision'
+        ),
+    );
+
+    public $aMultiLangTables = array('d3contenttabs');
+
+    public $aFields = array(
+        'OXID'        => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'OXID',
+            'sType'       => 'char(32)',
+            'blNull'      => false,
+            'sDefault'    => '',
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => false,
+            'blAddBreak'  => false,
+        ),
+        'ARTICLEOXID' => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'ARTICLEOXID',
+            'sType'       => 'char(32)',
+            'blNull'      => false,
+            'sDefault'    => '',
+            'sComment'    => 'article assignment',
+            'sExtra'      => '',
+            'blMultilang' => false,
+            'blAddBreak'  => false,
+        ),
+        'OXACTIVE'    => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'OXACTIVE',
+            'sType'       => 'TINYINT(1)',
+            'blNull'      => false,
+            'sDefault'    => '0',
+            'sComment'    => 'active flag',
+            'sExtra'      => '',
+            'blMultilang' => false,
+            'blAddBreak'  => false,
+        ),
+        'TABIDENT'    => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'TABIDENT', // Tab 2 , Tab 3, Tab 4, etc.
+            'sType'       => 'TINYINT(1) UNSIGNED', // 0 - 255
+            'blNull'      => false,
+            'sDefault'    => '0',
+            'sComment'    => 'tabident',
+            'sExtra'      => '',
+            'blMultilang' => false,
+            'blAddBreak'  => false,
+        ),
+        'TABTITLE'    => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'TABTITLE',
+            'sType'       => 'varchar(255)',
+            'blNull'      => false,
+            'sDefault'    => '',
+            'sComment'    => 'title for tabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => false,
+        ),
+        'TABCONTENT'  => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'TABCONTENT',
+            'sType'       => 'TEXT',
+            'blNull'      => false,
+            'sDefault'    => '',
+            'sComment'    => 'D3 ContentTab content',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => false,
+        ),
+        'TIMESTAMP'   => array(
+            'sTableName'  => 'd3contenttabs',
+            'sFieldName'  => 'OXTIMESTAMP',
+            'sType'       => 'TIMESTAMP',
+            'blNull'      => false,
+            'sDefault'    => 'CURRENT_TIMESTAMP',
+            'sComment'    => 'last change',
+            'sExtra'      => '',
+            'blMultilang' => false,
+        ),
+    );
+
+    public $aIndizes = array(
+        'PRIMARY'      => array(
+            'sTableName'  => 'd3contenttabs',
+            'sType'       => d3database::INDEX_TYPE_PRIMARY,
+            'aFields'     => array(
+                'OXID' => 'OXID',
+            ),
+            'blMultilang' => false,
+        ),
+        'D3ARTICLETAB' => array(
+            'sTableName'  => 'd3contenttabs',
+            'sType'       => d3database::INDEX_TYPE_UNIQUE,
+            'sName'       => 'D3ARTICLETAB',
+            'aFields'     => array(
+                'ARTICLEOXID' => 'ARTICLEOXID',
+                'TABIDENT'    => 'TABIDENT',
+            ),
+            'blMultilang' => false,
+        ),
+        'OXACTIVE'     => array(
+            'sTableName'  => 'd3contenttabs',
+            'sType'       => d3database::INDEX_TYPE_INDEX,
+            'sName'       => 'OXACTIVE',
+            'aFields'     => array(
+                'OXACTIVE' => 'OXACTIVE',
+            ),
+            'blMultilang' => false,
+        ),
+    );
+
+    // before oxid 6 > removed in oxid 6
+    public $aOldTabDbFields = array(
+        'D3LONGDESC2'      => array(
+            'sTableName'  => 'oxartextends',
+            'sFieldName'  => 'D3LONGDESC2', //oxlongdesc2 -> OXLONGDESC2 -> D3LONGDESC2 (Type: TEXT)
+            'sType'       => 'TEXT',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC3'      => array(
+            'sTableName'  => 'oxartextends',
+            'sFieldName'  => 'D3LONGDESC3', // oxlongdesc3 -> OXLONGDESC3 -> D3LONGDESC3
+            'sType'       => 'TEXT',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC4'      => array(
+            'sTableName'  => 'oxartextends',
+            'sFieldName'  => 'D3LONGDESC4', // oxlongdesc4 -> OXLONGDESC4 -> D3LONGDESC4
+            'sType'       => 'TEXT',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC5'      => array(
+            'sTableName'  => 'oxartextends',
+            'sFieldName'  => 'D3LONGDESC5', // oxlongdesc5 -> OXLONGDESC5 -> D3LONGDESC5
+            'sType'       => 'TEXT',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESCTITLE'  => array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3LONGDESCTITLE', // OXLONGDESCTITLE -> D3LONGDESCTITLE
+            'sType'       => 'varchar(255)',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC2TITLE' => array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3LONGDESC2TITLE', // oxlongdesc2title -> OXLONGDESC2TITLE -> D3LONGDESC2TITLE
+            'sType'       => 'varchar(255)',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC3TITLE' => array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3LONGDESC3TITLE', // oxlongdesc3title -> OXLONGDESC3TITLE -> D3LONGDESC3TITLE
+            'sType'       => 'varchar(255)',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC4TITLE' => array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3LONGDESC4TITLE', // oxlongdesc4title -> OXLONGDESC4TITLE -> D3LONGDESC4TITLE
+            'sType'       => 'varchar(255)',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+        'D3LONGDESC5TITLE' => array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3LONGDESC5TITLE', // oxlongdesc5title -> OXLONGDESC5TITLE -> D3LONGDESC5TITLE
+            'sType'       => 'varchar(255)',
+            'blNull'      => false,
+            'sDefault'    => false,
+            'sComment'    => 'D3 ContentTabs',
+            'sExtra'      => '',
+            'blMultilang' => true,
+            'blAddBreak'  => true,
+        ),
+    );
+
+    // before oxid 6, but we have to rename these fields afterward > f.e. shop/module-updates
+    public $aRenameFields = array(
+        'D3LONGDESC2'      => array(
+            'sTableName'     => 'oxartextends',
+            'mOldFieldNames' => array('oxlongdesc2', 'OXLONGDESC2'),
+            'sFieldName'     => 'D3LONGDESC2', //oxlongdesc2 -> OXLONGDESC2 -> D3LONGDESC2
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC3'      => array(
+            'sTableName'     => 'oxartextends',
+            'mOldFieldNames' => array('oxlongdesc3', 'OXLONGDESC3'),
+            'sFieldName'     => 'D3LONGDESC3', // oxlongdesc3 -> OXLONGDESC3 -> D3LONGDESC3
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC4'      => array(
+            'sTableName'     => 'oxartextends',
+            'mOldFieldNames' => array('oxlongdesc4', 'OXLONGDESC4'),
+            'sFieldName'     => 'D3LONGDESC4', // oxlongdesc4 -> OXLONGDESC4 -> D3LONGDESC4
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC5'      => array(
+            'sTableName'     => 'oxartextends',
+            'mOldFieldNames' => array('oxlongdesc5', 'OXLONGDESC5'),
+            'sFieldName'     => 'D3LONGDESC5', // oxlongdesc5 -> OXLONGDESC5 -> D3LONGDESC5
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESCTITLE'  => array(
+            'sTableName'     => 'oxarticles',
+            'mOldFieldNames' => 'OXLONGDESCTITLE',
+            'sFieldName'     => 'D3LONGDESCTITLE', // OXLONGDESCTITLE -> D3LONGDESCTITLE
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC2TITLE' => array(
+            'sTableName'     => 'oxarticles',
+            'mOldFieldNames' => array('oxlongdesc2title', 'OXLONGDESC2TITLE'),
+            'sFieldName'     => 'D3LONGDESC2TITLE', // oxlongdesc2title -> OXLONGDESC2TITLE -> D3LONGDESC2TITLE
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC3TITLE' => array(
+            'sTableName'     => 'oxarticles',
+            'mOldFieldNames' => array('oxlongdesc3title', 'OXLONGDESC3TITLE'),
+            'sFieldName'     => 'D3LONGDESC3TITLE', // oxlongdesc3title -> OXLONGDESC3TITLE -> D3LONGDESC3TITLE
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC4TITLE' => array(
+            'sTableName'     => 'oxarticles',
+            'mOldFieldNames' => array('oxlongdesc4title', 'OXLONGDESC4TITLE'),
+            'sFieldName'     => 'D3LONGDESC4TITLE', // oxlongdesc4title -> OXLONGDESC4TITLE -> D3LONGDESC4TITLE
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+        'D3LONGDESC5TITLE' => array(
+            'sTableName'     => 'oxarticles',
+            'mOldFieldNames' => array('oxlongdesc5title', 'OXLONGDESC5TITLE'),
+            'sFieldName'     => 'D3LONGDESC5TITLE', // oxlongdesc5title -> OXLONGDESC5TITLE -> D3LONGDESC5TITLE
+            'blMultilang'    => true,
+            'blAddBreak'     => true,
+        ),
+    );
+
+    protected $_aRefreshMetaModuleIds = array('d3contenttabs');
+
+    public $aOldModuleFiles = array();
+
+    protected $aDeleteOldContenTabDbField = array();
+
+    protected $aMigrateContents = array();
+
+    /******************************************************************************************************************/
+    /*** eigene Tabelle für Content-Tabs anlegen / Prüfen und Daten migrieren *****************************************/
+    /******************************************************************************************************************/
+    public function needToDeleteOldContentTabDatabaseFields()
+    {
+        // we have to delete all old fields! : $this->aOldTabDbFields
+        foreach ($this->aOldTabDbFields as $key => $aOldDbfield) {
+            // mehrsprachigkeit erforderlich?
+            if ($aOldDbfield['blMultilang']) {
+                // je sprache ist ein subfeld zu prüfen
+                for ($i = 0; count(Registry::getLang()->getLanguageArray()) > $i; $i++) {
+                    // felder je sprache
+                    $sAddfield = '';
+                    if ($i > 0) {
+                        $sAddfield = '_' . $i;
+                    }
+
+                    // check if field exist an has no content
+                    $sKey    = $aOldDbfield['sTableName'] . '__' . $aOldDbfield['sFieldName'] . $sAddfield;
+                    $mReturn = $this->existOldTabDatabaseFieldSql($sKey, false);
+
+                    if (false === $mReturn) {
+                        // skip field, we dont need to check this twice it does not exist!
+                        continue;
+                    }
+
+                    if (is_string($mReturn)) {
+                        // Feld existiert
+                        $mReturn = $this->existOldTabDatabaseFieldSql($sKey, true);
+
+                        if (false === $mReturn) {
+                            // skip field, we dont need to check this twice its empty
+                            $this->aDeleteOldContenTabDbField[$sKey] = array(
+                                'sTableName'         => $aOldDbfield['sTableName'],
+                                'sOriginalFieldName' => $aOldDbfield['sFieldName'],
+                                'sFieldName'         => $aOldDbfield['sFieldName'] . $sAddfield
+                            );
+                            continue;
+                        }
+                    }
+                }
+            } else {
+                // check if field exist and has content
+                $sKey    = $aOldDbfield['sTableName'] . '__' . $aOldDbfield['sFieldName'];
+                $mReturn = $this->existOldTabDatabaseFieldSql($sKey, false);
+
+                if (false === $mReturn) {
+                    // skip field, we dont need to check this twice it does not exist!
+                    continue;
+                }
+
+                if (is_string($mReturn)) {
+                    // Feld existiert
+                    $mReturn = $this->existOldTabDatabaseFieldSql($sKey, true);
+
+                    if (false === $mReturn) {
+                        // skip field, we dont need to check this twice its empty
+                        $this->aDeleteOldContenTabDbField[$sKey] = array(
+                            'sTableName'         => $aOldDbfield['sTableName'],
+                            'sOriginalFieldName' => $aOldDbfield['sFieldName'],
+                            'sFieldName'         => $aOldDbfield['sFieldName']
+                        );
+                        continue;
+                    }
+                }
+            }
+        }
+
+        if (count($this->aDeleteOldContenTabDbField) > 0) {
+
+            return true;
+        }
+
+        return false;
+    }
+
+    public function deleteOldContentTabDatabaseFields()
+    {
+        // show message, migrate?!
+        $sTranslation = Registry::getLang()->translateString('D3_CONTENT_TABS_DELETE_TABLE_FIELDS');
+        foreach ($this->aDeleteOldContenTabDbField as $sKey => $item) {
+            $sTranslation .= "ALTER TABLE " . $item['sTableName'] . " DROP COLUMN " . $item['sFieldName'] . ";" . PHP_EOL;
+        }
+
+        if ($this->hasExecute()) {
+            $oDb = DatabaseProvider::getDb();
+            foreach ($this->aDeleteOldContenTabDbField as $sKey => $item) {
+
+                try {
+                    // field exist if no Exception occurs
+                    $oDb->execute("ALTER TABLE " . $item['sTableName'] . " DROP COLUMN " . $item['sFieldName']);
+
+                } catch (DatabaseException $oEx) {
+                    // $oEx->getCode() : 1054
+                    // $oEx->getMessage() : 'Unknown column 'D3LONGDESCTEST_1' in 'field list''
+                }
+            }
+        }
+
+        return $this->_confirmMessage($sTranslation);
+    }
+
+    public function needToMigrateArticleDataToContenttabsTable()
+    {
+        // Prüfung existieren die alten Felder noch und sind diese gefüllt?
+        $blFieldsExist = false;
+        foreach ($this->aOldTabDbFields as $aOldDbfield) {
+            if ($aOldDbfield['blMultilang']) {
+                // mehrsprachigkeit erforderlich? wenn ja, je sprache ein subfeld
+                for ($i = 0; count(Registry::getLang()->getLanguageArray()) > $i; $i++) {
+                    // felder je sprache
+                    $sAddfield = '';
+                    if ($i > 0) {
+                        $sAddfield = '_' . $i;
+                    }
+
+                    $sKey = $aOldDbfield['sTableName'] . '__' . $aOldDbfield['sFieldName'] . $sAddfield;
+                    // only check if field exist
+                    $mReturn = $this->existOldTabDatabaseFieldSql($sKey);
+                    if (false === $mReturn) {
+                        // skip field, we dont need to check this fields twice it does not exist!
+                        continue;
+                    }
+
+                    // check for has content
+                    $mReturn = $this->existOldTabDatabaseFieldSql($sKey, true);
+                    if (false === $mReturn) {
+                        // skip field, we dont need to check this fields twice it doesn't have any content
+                        continue;
+                    }
+
+                    $this->aMigrateContents[$sKey] = array(
+                        'sTableName'         => $aOldDbfield['sTableName'],
+                        'sOriginalFieldName' => $aOldDbfield['sFieldName'],
+                        'sFieldName'         => $aOldDbfield['sFieldName'] . $sAddfield
+                    );
+                    $blFieldsExist                 = true;
+                }
+            } else {
+                $sKey = $aOldDbfield['sTableName'] . '__' . $aOldDbfield['sFieldName'];
+
+                // only check if field exist
+                $mReturn = $this->existOldTabDatabaseFieldSql($sKey);
+                if (false === $mReturn) {
+                    // skip field, we dont need to check this fields twice it does not exist!
+                    continue;
+                }
+
+                // check for has content
+                $mReturn = $this->existOldTabDatabaseFieldSql($sKey, true);
+                if (false === $mReturn) {
+                    // skip field, we dont need to check this fields twice it doesn't have any content
+                    continue;
+                }
+
+                $this->aMigrateContents[$sKey] = array(
+                    'sTableName'         => $aOldDbfield['sTableName'],
+                    'sOriginalFieldName' => $aOldDbfield['sFieldName'],
+                    'sFieldName'         => $aOldDbfield['sFieldName'],
+                );
+                $blFieldsExist                 = true;
+            }
+        }
+
+        return $blFieldsExist;
+    }
+
+    /**
+     * @param string $sKey
+     * @param bool   $blNotEmpty
+     *
+     * @return false|string
+     */
+    public function existOldTabDatabaseFieldSql($sKey, $blNotEmpty = false)
+    {
+        $aKey = explode('__', $sKey);
+        if (false == is_array($aKey) && 2 != count($aKey)) {
+            return false;
+        }
+
+        $oDb     = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC);
+        $sSelect = " SELECT " . $aKey[1] . " FROM " . $aKey[0];
+        if ($blNotEmpty) {
+            $sSelect .= " WHERE " . $aKey[1] . " != '' ";
+        }
+        $sSelect .= " LIMIT 1";
+
+        try {
+            // field exist if no Exception occurs, return content of the selected field
+            return $oDb->getOne($sSelect);
+
+        } catch (DatabaseException $oEx) {
+            // $oEx->getCode() : 1054
+            // $oEx->getMessage() : 'Unknown column 'D3LONGDESCTEST_1' in 'field list''
+
+            return false;
+        }
+    }
+
+    public function migrateArticleDataToContenttabsTable()
+    {
+        if (false == is_array($this->aMigrateContents) && empty($this->aMigrateContents)) {
+            return false;
+        }
+
+        $sTableFielNames = '';
+        foreach ($this->aMigrateContents as $aOldContent) {
+            $sTableFielNames .= $aOldContent['sTableName'] . '__' . $aOldContent['sFieldName'] . ', ';
+        }
+        $sTableFielNames = substr(strtolower($sTableFielNames), 0, strlen($sTableFielNames) - 2);
+
+        // show message, migrate?!
+        $aArgs        = array('dbfieldnames' => $sTableFielNames, 'count' => count($this->aMigrateContents));
+        $sTranslation = Registry::getLang()->translateString('D3_CONTENT_TABS_MIGRATED_TABLE_FIELDS');
+        $sTranslation = sprintf($sTranslation, $aArgs['dbfieldnames'], $aArgs['count']);
+        $blRet        = $this->_confirmMessage($sTranslation);
+
+        if ($this->hasExecute()) {
+            // NOTE standard-langtext-inhalt bleibt in oxarticles!
+            // auch wenn es einen Titel dazu gibt
+            // der Langtext wird weiterhin in oxarticles abgelegt/abgeholt!!!
+            // andernfalls käme es mit inaktivem Modul zu ....
+
+            // ----> transfer data to new table
+            $oDb = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC);
+            foreach ($this->aMigrateContents as $sKey => $aOldContent) {
+                //    map:
+                //    d3contenttabs__OXID                 > wird vom Shop generiert
+                //    d3contenttabs__ARTICLEOXID          > oxarticles__OXID bzw. oxartextends__OXID
+                //    d3contenttabs__OXACTIVE             > 1 bei einer übernahme
+                //
+                //    d3contenttabs__TABIDENT             > wird spannend ... > Tab 2 , Tab 3, Tab 4, etc.
+                //        anhand von:
+                //        -----------
+                //        d3contenttabs__TABTITLE             > oxarticles__D3LONGDESCTITLE
+                //                                                          D3LONGDESC2TITLE
+                //                                                          D3LONGDESC3TITLE
+                //                                                          D3LONGDESC4TITLE
+                //                                                          D3LONGDESC5TITLE
+                //
+                //        d3contenttabs__TABCONTENT           > oxartextends__D3LONGDESC2
+                //                                                            D3LONGDESC3
+                //                                                            D3LONGDESC4
+                //                                                            D3LONGDESC5
+                //
+                //    d3contenttabs__OXTIMESTAMP          > CURRENT_TIMESTAMP
+                $sSelect = "SELECT oxid as 'oxid', " . $aOldContent['sFieldName'] . " as 'content', oxtimestamp as 'time' "
+                    . " FROM " . $aOldContent['sTableName']
+                    . " WHERE  " . $aOldContent['sFieldName'] . " != ''";
+
+                $result = $oDb->getAll($sSelect);
+                if (count($result) > 0) {
+                    // we got min one result
+                    for ($i = 0; $i < count($result); $i++) {
+                        // var_dump($result[$i]['oxid'], $result[$i]['content'], $result[$i]['time']);
+                        if (strpos(strtolower($aOldContent['sOriginalFieldName']), "title") !== false) {
+                            // es geht um den Titel
+                            $newFieldName = 'TABTITLE';
+                        } else {
+                            // es geht um den Langtext
+                            $newFieldName = 'TABCONTENT';
+                        }
+
+                        // mehrsprachigkeit
+                        if ($aOldContent['sOriginalFieldName'] != $aOldContent['sFieldName']) {
+                            $newFieldName .= substr($aOldContent['sFieldName'], -2);
+                        }
+
+                        // besteht aus zwei schritten, 1. daten in die neue Tabelle rumnehmen
+                        $sMigrate1 = " INSERT INTO d3contenttabs (`OXID`, `ARTICLEOXID`, `OXACTIVE`, `TABIDENT`, `" . $newFieldName . "`, `OXTIMESTAMP`) VALUES "
+                            . " (" //
+                            . "'" . Registry::getUtilsObject()->generateUid() . "'," //
+                            . "'" . $result[$i]['oxid'] . "'," //
+                            . "'1'," //
+                            . "'" . $this->getContentTabId($aOldContent['sOriginalFieldName']) . "'," //
+                            . "'" . $result[$i]['content'] . "'," // TABTITLE or TABCONTENT
+                            . "'" . $result[$i]['time'] . "'" //
+                            . ") " //
+                            . " ON DUPLICATE KEY UPDATE " //
+                            . $newFieldName . " = '" . $result[$i]['content'] . "'";
+
+
+                        // inhalt aus altem feld entfernen...
+                        $sMigrate2 = " UPDATE " . $aOldContent['sTableName'] //
+                            . " SET " . $aOldContent['sFieldName'] . " = '' " //
+                            . " WHERE oxid = '" . $result[$i]['oxid'] . "' ";
+
+                        try {
+                            // field exist if no Exception occurs, return content of the selected field
+                            $blMigrated = $oDb->execute($sMigrate1);
+                            $blUpdated  = $oDb->execute($sMigrate2);
+
+                            if ($blUpdated && $blMigrated) {
+                                $this->setActionLog('SQL', $sMigrate1, __METHOD__);
+                                $this->setActionLog('SQL', $sMigrate2, __METHOD__);
+                                $this->setUpdateBreak(false);
+                            }
+
+                        } catch (DatabaseException $oEx) {
+                            // $oEx->getCode() : 1054
+                            // $oEx->getMessage() : 'Unknown column 'D3LONGDESCTEST_1' in 'field list''
+                            // do nothing, cause we like to finish the remaining data!
+                        }
+                    }
+                }
+            }
+        }
+
+        return $blRet;
+    }
+
+    public function getContentTabId($sFieldName)
+    {
+        switch (strtolower($sFieldName)) {
+            case 'd3longdesctitle':
+                return 1;
+            case 'd3longdesc2title':
+            case 'd3longdesc2':
+                return 2;
+            case 'd3longdesc3title':
+            case 'd3longdesc3':
+                return 3;
+            case 'd3longdesc4title':
+            case 'd3longdesc4':
+                return 4;
+            case 'd3longdesc5title':
+            case 'd3longdesc5':
+                return 5;
+        }
+
+        return 0; // unknown field...
+    }
+
+    /**
+     * @return bool true, if table is missing
+     */
+    public function existContentTabTable()
+    {
+        return $this->_checkTableNotExist('d3contenttabs');
+    }
+
+    /**
+     * @return bool
+     */
+    public function addContentTabTable()
+    {
+        $this->setInitialExecMethod(__METHOD__);
+        $blRet = $this->_addTable2(
+            'd3contenttabs',
+            $this->aFields,
+            $this->aIndizes,
+            'tab configuration',
+            'InnoDB'
+        );
+
+        return $blRet;
+    }
+
+    /**********************************************************************/
+    /*** Datei Verzeichniskontrolle ***************************************/
+    /**********************************************************************/
+    /**
+     * @return bool
+     */
+    public function hasUnregisteredFiles()
+    {
+        return $this->_hasUnregisteredFiles($this->sModKey, array('d3FileRegister'));
+    }
+
+    /**
+     * @return bool
+     */
+    public function showUnregisteredFiles()
+    {
+        return $this->_showUnregisteredFiles($this->sModKey, array('d3FileRegister'));
+    }
+
+
+    /**
+     * @return bool
+     */
+    public function hasContentTabViewTables()
+    {
+        return $this->checkMultiLangTables('d3contenttabs');
+    }
+
+    /**
+     * @return bool
+     */
+    public function registerContentTabViewTables()
+    {
+        return $this->fixRegisterMultiLangTables('d3contenttabs');
+
+    }
+
+    /**
+     * @return bool
+     */
+    public function needToRegisterContentTabViewTable()
+    {
+        return $this->checkConvertToMultiLangTable('d3contenttabs');
+    }
+
+    /**
+     * @return bool
+     */
+    public function registerContentTabViewTable()
+    {
+        return $this->convertToMultilangTable('d3contenttabs');
+    }
+}

@@ -1,36 +1,50 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-gTdJhuCGe8q=
+<?php
+
+$sLangName = "Deutsch";
+// -------------------------------
+// RESOURCE IDENTITFIER = STRING
+// -------------------------------
+$aLang = array(
+    'charset'                                          => 'UTF8',
+    // Navigation
+    'd3mxContentTabs'                                  => '<i class=\'fa fa-folder\'></i> Content Tabs',
+    'd3mxContentTabs_settings'                         => 'Tabverwaltung',
+    'd3mxContentTabs_main'                             => 'Stamm',
+    // article-list-fields?!
+    'GENERAL_ARTICLE_D3LONGDESCTITLE'                  => 'Titel 1 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC2TITLE'                 => 'Titel 2 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC3TITLE'                 => 'Titel 3 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC4TITLE'                 => 'Titel 4 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC5TITLE'                 => 'Titel 5 ContentTabs',
+    'D3_ARTICLE_MAIN_TITLE_CONTENT_TAB_EDIT'           => 'Langtexte des Artikels',
+    // Admin-Template
+    'D3_CONTENT_TABS_FIRST_SELECT_ARTICLE'             => 'Bitte erst einen Artikel aus der Liste zum Editieren ausw&auml;hlen.',
+    'D3_CONTENT_TABS_TITEL'                            => 'Tab-Titel',
+    'D3_CONTENT_TABS_ARTICLE_VARIANTSELECT'            => 'Wechsel zu Variante <i>(Art.-Nr. -- Auswahlname)</i>',
+    'D3_CONTENT_TABS_ARTICLE_PARENTARTICLE'            => 'Elternartikel',
+    'D3_CONTENT_TABS_ARTICLE_GENERAL_LANGUAGE'         => 'In Sprache',
+    'D3_CONTENT_TABS_ARTICLE_SELECTED_ARTICLE_TO_EDIT' => 'Aktuell editieren Sie den Artikel',
+    'D3_CONTENT_TABS_FIELD'                            => 'Langtext',
+    'D3_CONTENT_TABS_ARTICLE_EDITOR_PLAINTEXT_HINT'    => '<b>Anmerkung:</b><br>'
+        . 'Bei verwendung eines HTML-Editors, benutzen Sie "Source" anstatt "Design", <br>'
+        . 'wenn Sie Zeilenumbrüche unverändert übernehmen möchten (z. B. für plaintext E-Mail).',
+    'D3_CONTENT_TABS_GENERAL_SAVE_IN'                  => 'Kopiere in Sprache',
+    'D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE'              => 'Aktiv',
+    'D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE_HELP'         => 'Beachten Sie bitte, dass der 1. Langtext nur inaktiv ' //
+        . 'gesetzt werden kann, sofern ein eigener Tab-Titel vergeben wird!',
+    // Installation
+    'D3_CONTENT_TABS_MIGRATED_TABLE_FIELDS'            => 'Das Modul bringt ab Version 4.0.0.0 eine eigene ' //
+        . 'Datenbanktabelle \'d3contenttabs\' mit. <br>' //
+        . 'In dieser werden zukünftig neue Tab-Inhalte abgelegt und ausgelesen.<br><br>' //
+        . 'In Ihrer Shopdatenbank wurden alte Felder (%s) mit Inhalt registriert. ' //
+        . 'Im Zuge des Updates werden Titel und/oder Content-Tab-Langtexte von %d ' //
+        . 'alten Feld/ern in die neue Tabelle \'d3contenttabs\' migriert.<br>' //
+        . 'Anschließend stehen Ihnen dann alle vorhandenen, bereits gepflegten Tab-Inhalte wieder zur Verfügung.<br><br>' //
+        . 'Die alten moduleigenenen Datenbankfelder (oxarticles__* und oxartextends__*) werden im Anschluss der ' //
+        . 'Datenmigration entfernt. Legen Sie bei Bedarf vor Ausführung dieses Schrittes ein Backup der beiden ' //
+        . 'Datenbanktabellen an!<br><br>'
+        . 'Beachten Sie bitte, dass die Migration abhängig vom Umfang der Daten einige Zeit in Anspruch nehmen kann.',
+    'D3_CONTENT_TABS_DELETE_TABLE_FIELDS'              => 'In diesem Instalationsschritt wird versucht, die in der ' //
+        . 'Shopdatenbank gefundenen alten Felder zu entfernen.<br><br>'
+        . 'Die SQL-Querys die dabei ausgeführt werden lauten wie folgt:<br>',
+);

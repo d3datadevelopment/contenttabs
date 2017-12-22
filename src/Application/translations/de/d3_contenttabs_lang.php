@@ -1,13 +1,12 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPu3FZCjEBdNi5tGPw6J0XZ9PBChibS78gvcui6tchLaZzDM5UjqUzdzWyzTs+m4Ud0W8CGZ2
-T861PjN+mm1MQpuYWBcsNgMHBaYZU9yFOT4K188pIS61zfZnhCJOziRoJUj0TEKoUtvpY8HWX8EL
-7I7jJxAq1I3el0PP2cZW2U1ugckzBchl+i0YLaFqmNTKXGTy9J+OiaBdJR1XnGl2KBXFyBM0puFR
-e3d67PQkmI+jlmVfv16ojhGk/TMsjrHd5x6aPbUUB4FHKpaK9FV1qoZXqHTjdVi5Jx4rTNS3iCNB
-G8Hq/nVb7KXNPg3t5IorFrf8hp53Urpwi5go/CcZTnVC7PFeXAfKRZQSIgBli/Wo9SzpE2HUUmiv
-rrIzANv9/az274QofPn9AKCZTe1fEkxg1xFa4qCfmSN19+mxj2y1KUXtbU2RjfvCK9JVhbyRe7fO
-xS8wz/x4DeFyYbj2rMyZ8pspqWjoKCJqowvPEMXavK1zyLCjUdbUJg6l2SQHKZZHnDtoj/4dKGI4
-WnTq3FLcpjaO0Gphmf2A6zLGcNF2wnNEE125gSgY8u5fQZr8xSCg9/hfn2wPjKhzSz1XVZvtiQcD
-Ec/yNd4jbhKr2b9ROW+kkYzfoiRzEh4RwWcoDFfIJLCxoo9mbomFxCcmsuoS8XZcZvvXattNrXli
-alPTi2ANlvSG3fGlorKnfYGWWYQ73k0Bn8ykiJ0BgdH1ycIaivjdZ0==
+<?php
+
+$sLangName = "Deutsch";
+// -------------------------------
+// RESOURCE IDENTITFIER = STRING
+// -------------------------------
+$aLang = array(
+    'charset'                => 'ISO-8859-15',
+    //Navigation
+    'D3_CONTENTTABS_TITLE_1' => 'Beschreibung',
+    'D3_CONTENTTABS_TITLE_X' => 'Tab',
+);
