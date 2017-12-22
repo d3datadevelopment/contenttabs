@@ -1,91 +1,50 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-jiXPEJHd12GHHcSzgKswdW/Y30==
+<?php
+
+$sLangName = "Deutsch";
+// -------------------------------
+// RESOURCE IDENTITFIER = STRING
+// -------------------------------
+$aLang = array(
+    'charset'                                          => 'UTF8',
+    // Navigation
+    'd3mxContentTabs'                                  => '<i class=\'fa fa-folder\'></i> Content Tabs',
+    'd3mxContentTabs_settings'                         => 'Tabverwaltung',
+    'd3mxContentTabs_main'                             => 'Stamm',
+    // article-list-fields?!
+    'GENERAL_ARTICLE_D3LONGDESCTITLE'                  => 'Titel 1 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC2TITLE'                 => 'Titel 2 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC3TITLE'                 => 'Titel 3 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC4TITLE'                 => 'Titel 4 ContentTabs',
+    'GENERAL_ARTICLE_D3LONGDESC5TITLE'                 => 'Titel 5 ContentTabs',
+    'D3_ARTICLE_MAIN_TITLE_CONTENT_TAB_EDIT'           => 'Langtexte des Artikels',
+    // Admin-Template
+    'D3_CONTENT_TABS_FIRST_SELECT_ARTICLE'             => 'Bitte erst einen Artikel aus der Liste zum Editieren ausw&auml;hlen.',
+    'D3_CONTENT_TABS_TITEL'                            => 'Tab-Titel',
+    'D3_CONTENT_TABS_ARTICLE_VARIANTSELECT'            => 'Wechsel zu Variante <i>(Art.-Nr. -- Auswahlname)</i>',
+    'D3_CONTENT_TABS_ARTICLE_PARENTARTICLE'            => 'Elternartikel',
+    'D3_CONTENT_TABS_ARTICLE_GENERAL_LANGUAGE'         => 'In Sprache',
+    'D3_CONTENT_TABS_ARTICLE_SELECTED_ARTICLE_TO_EDIT' => 'Aktuell editieren Sie den Artikel',
+    'D3_CONTENT_TABS_FIELD'                            => 'Langtext',
+    'D3_CONTENT_TABS_ARTICLE_EDITOR_PLAINTEXT_HINT'    => '<b>Anmerkung:</b><br>'
+        . 'Bei verwendung eines HTML-Editors, benutzen Sie "Source" anstatt "Design", <br>'
+        . 'wenn Sie Zeilenumbrüche unverändert übernehmen möchten (z. B. für plaintext E-Mail).',
+    'D3_CONTENT_TABS_GENERAL_SAVE_IN'                  => 'Kopiere in Sprache',
+    'D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE'              => 'Aktiv',
+    'D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE_HELP'         => 'Beachten Sie bitte, dass der 1. Langtext nur inaktiv ' //
+        . 'gesetzt werden kann, sofern ein eigener Tab-Titel vergeben wird!',
+    // Installation
+    'D3_CONTENT_TABS_MIGRATED_TABLE_FIELDS'            => 'Das Modul bringt ab Version 4.0.0.0 eine eigene ' //
+        . 'Datenbanktabelle \'d3contenttabs\' mit. <br>' //
+        . 'In dieser werden zukünftig neue Tab-Inhalte abgelegt und ausgelesen.<br><br>' //
+        . 'In Ihrer Shopdatenbank wurden alte Felder (%s) mit Inhalt registriert. ' //
+        . 'Im Zuge des Updates werden Titel und/oder Content-Tab-Langtexte von %d ' //
+        . 'alten Feld/ern in die neue Tabelle \'d3contenttabs\' migriert.<br>' //
+        . 'Anschließend stehen Ihnen dann alle vorhandenen, bereits gepflegten Tab-Inhalte wieder zur Verfügung.<br><br>' //
+        . 'Die alten moduleigenenen Datenbankfelder (oxarticles__* und oxartextends__*) werden im Anschluss der ' //
+        . 'Datenmigration entfernt. Legen Sie bei Bedarf vor Ausführung dieses Schrittes ein Backup der beiden ' //
+        . 'Datenbanktabellen an!<br><br>'
+        . 'Beachten Sie bitte, dass die Migration abhängig vom Umfang der Daten einige Zeit in Anspruch nehmen kann.',
+    'D3_CONTENT_TABS_DELETE_TABLE_FIELDS'              => 'In diesem Instalationsschritt wird versucht, die in der ' //
+        . 'Shopdatenbank gefundenen alten Felder zu entfernen.<br><br>'
+        . 'Die SQL-Querys die dabei ausgeführt werden lauten wie folgt:<br>',
+);
