@@ -5,7 +5,7 @@ $sLangName = "Deutsch";
 // RESOURCE IDENTITFIER = STRING
 // -------------------------------
 $aLang = array(
-    'charset'                                          => 'UTF8',
+    'charset'                                          => 'UTF-8',
     // Navigation
     'd3mxContentTabs'                                  => '<i class=\'fa fa-folder\'></i> Content Tabs',
     'd3mxContentTabs_settings'                         => 'Tabverwaltung',

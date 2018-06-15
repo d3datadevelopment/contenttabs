@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="ISO-8859-15"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <OX>
     <OXMENU id="d3mxd3modules">
         <MAINMENU id="d3mxContentTabs">
-            <SUBMENU id="d3mxContentTabs_settings" cl="d3\contenttabs\Application\Controller\Admin\settings" list="\d3\contenttabs\Application\Controller\Admin\contentTabList">
-                <TAB id="d3mxContentTabs_main" cl="\\d3\\contenttabs\\Application\\Controller\\Admin\\contentTabs" disableForDemoShop="1"/>
+            <SUBMENU id="d3mxContentTabs_settings" cl="d3contenttabs_settings" list="d3contenttabs_tablist">
+                <TAB id="d3mxContentTabs_main" cl="d3contenttabs_tabs" disableForDemoShop="1"/>
             </SUBMENU>
-            <!-- SUBMENU id="d3tbcl_licence" cl="d3\contenttabs\Application\Controller\Admin\support" /-->
-            <!-- does not work in EE > cause of missing namespacesupport and d3install_updatebase::_changeToShop -->
+            <SUBMENU id="d3tbcl_licence" cl="d3contenttabs_support" />
         </MAINMENU>
     </OXMENU>
 </OX>
