@@ -1,13 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.0.0.1 (2018-03-01)
+- Exception im Admin unter /Content Tabs/Tabverwaltung/Stamm/
 
-## 4.0.0.0 (2017-12-22) -- Unreleased
+## 4.0.0.0 (2018-03-01)
 - Kompatibilität und Support ab Oxid 6.0.0
 - Integration eines eigenen Admin-Bereich "D³ Content Tabs"
 - Titel und Langtexte der Tabs werden in einer eigenen Tabelle gespeichert
 - Langtexte haben eine "Aktiv" - Option erhalten, welche im Frontend zusätzlich geprüft wird
 - Altlasten und unnötige Dateien entfernt
+- Umstellung auf Namespaces
 - Grundinstallation via Composer
 
 ## 3.2.0.1 (2016-12-19)

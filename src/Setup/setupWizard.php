@@ -12,11 +12,19 @@
  * @link          http://www.oxidmodule.com
  */
 
-namespace d3\contenttabs\Setup;
+namespace D3\Contenttabs\Setup;
 
-use d3\modcfg\Application\Model\Install\d3install_updatebase;
-use d3\modcfg\Application\Model\d3database;
+use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
+use D3\ModCfg\Application\Model\Exception\d3ParameterNotFoundException;
+use D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException;
+use D3\ModCfg\Application\Model\Install\d3install_updatebase;
+use D3\ModCfg\Application\Model\d3database;
+use Doctrine\DBAL\DBALException;
 use OxidEsales\Eshop\Core\DatabaseProvider;
+use OxidEsales\Eshop\Core\Exception\ConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
+use OxidEsales\Eshop\Core\Exception\StandardException;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Exception\DatabaseException;
 
@@ -28,15 +36,15 @@ class setupWizard extends d3install_updatebase
 {
     public $sModKey = 'd3contenttabs';
     public $sModName = 'Content Tabs';
-    public $sModVersion = '4.0.0.0';
-    public $sModRevision = '4000';
+    public $sModVersion = '4.0.0.1';
+    public $sModRevision = '4001';
     public $sBaseConf = '--------------------------------------------------------------------------------
-2iDv2==V2cvQTQwclgyZ21Wd041cnpQNjBlQkdCSUpreTZEUWRoYnFPTWxjUlJ0aHJMamcyZFNHalpEb
-WlNQ0JGdkhONUtuVW5UZWxGbVRwcUNITUl5bDdZMHVWWFRKSi94Slp1VEJUM3NQbkJtK2RlZTBnOUhDS
-ExMTWRSV0xLZ0w4QzI4eEdxS1dpZHgrNUJkeWJkb1h5blhFTUh4bmxQQUcvVUlPUW1YZ1J4T0FJTTZSV
-2ptYmFyTTdmYVRXOGdPMytSbjgvMEFnQlBpZEdDSVlpTmdDWW0xbTlMMW5heURrZ2Eyays1QWFHZW05W
-HFxcm9CeUdlK0ltSjRTaHZuekJHNGFDc1VzUUQvd3FOV2p5bkdYODhZSVZ2MmY5b25qMStXRW5lWGlQc
-FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
+w22v2==SlpiL0xNUTM1Y0JiN2hzNmZjYzJ2THRmcXJNS0pQaEFaWkdwTFdOMEROS1ZIVU90a09VUDVMN
+jF6bVBzMXpJRFpLeStFUUdnQmpwTkpjQ0tLVHczMHhFSVNSbzVPcElnZ3VxN0RJNk03enYvUStueHlhe
+nFoSVVuRWloK1BIU3lldy9JTWZxM2N5Z3JlN2Yyc1A5a0gwczVSb01QSjlVZEtyamFyaHBCTkVOSTE1e
+GcrZDJIajNheFIvbVU4Y3Y1QTYzdm5ObjRObElsd2hzS0lzeWV6YWQrc0hseU9YMDM3N1RkWFQ5M3pKN
+E1mWUM2YzRtVVdyY1RFU0xHbEFLTkE5OWxwY0xhZ3hPT3BybkpsamYySmJDZVh2L1BFSEh2Q040QmVZY
+TloSDFuWFE1blZGbUpWYmJHbjArZWY5RGZhRmwrUGpuYVREb1VwYzRkQkJqUW53PT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
     public $sBaseValue = '';
@@ -381,6 +389,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
     /******************************************************************************************************************/
     /*** eigene Tabelle für Content-Tabs anlegen / Prüfen und Daten migrieren *****************************************/
     /******************************************************************************************************************/
+    /**
+     * @return bool
+     * @throws DatabaseConnectionException
+     */
     public function needToDeleteOldContentTabDatabaseFields()
     {
         // we have to delete all old fields! : $this->aOldTabDbFields
@@ -454,6 +466,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
         return false;
     }
 
+    /**
+     * @return bool
+     * @throws DatabaseConnectionException
+     */
     public function deleteOldContentTabDatabaseFields()
     {
         // show message, migrate?!
@@ -480,6 +496,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
         return $this->_confirmMessage($sTranslation);
     }
 
+    /**
+     * @return bool
+     * @throws DatabaseConnectionException
+     */
     public function needToMigrateArticleDataToContenttabsTable()
     {
         // Prüfung existieren die alten Felder noch und sind diese gefüllt?
@@ -547,9 +567,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
 
     /**
      * @param string $sKey
-     * @param bool   $blNotEmpty
+     * @param bool $blNotEmpty
      *
      * @return false|string
+     * @throws DatabaseConnectionException
      */
     public function existOldTabDatabaseFieldSql($sKey, $blNotEmpty = false)
     {
@@ -577,6 +598,11 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
         }
     }
 
+    /**
+     * @return bool
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     */
     public function migrateArticleDataToContenttabsTable()
     {
         if (false == is_array($this->aMigrateContents) && empty($this->aMigrateContents)) {
@@ -713,6 +739,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
 
     /**
      * @return bool true, if table is missing
+     * @return bool
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws DBALException
      */
     public function existContentTabTable()
     {
@@ -721,6 +751,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
 
     /**
      * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws ConnectionException
      */
     public function addContentTabTable()
     {
@@ -741,23 +775,37 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
     /**********************************************************************/
     /**
      * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws d3ParameterNotFoundException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws StandardException
      */
     public function hasUnregisteredFiles()
     {
-        return $this->_hasUnregisteredFiles($this->sModKey, array('d3FileRegister'));
+        return $this->_hasUnregisteredFiles($this->sModKey, array('blocks', 'd3FileRegister'));
     }
 
     /**
      * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
      */
     public function showUnregisteredFiles()
     {
-        return $this->_showUnregisteredFiles($this->sModKey, array('d3FileRegister'));
+        return $this->_showUnregisteredFiles($this->sModKey, array('blocks', 'd3FileRegister'));
     }
 
 
     /**
      * @return bool
+     * @throws ConnectionException
      */
     public function hasContentTabViewTables()
     {
@@ -766,6 +814,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
 
     /**
      * @return bool
+     * @throws ConnectionException
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function registerContentTabViewTables()
     {
@@ -775,6 +827,9 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
 
     /**
      * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function needToRegisterContentTabViewTable()
     {
@@ -783,6 +838,10 @@ FhBOHFrekJtY0krNHlSWFJsblN5TFFEejVmMWg2Y3pNbU1tZHVuK21mWDl6M2pBPT0=
 
     /**
      * @return bool
+     * @throws ConnectionException
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function registerContentTabViewTable()
     {

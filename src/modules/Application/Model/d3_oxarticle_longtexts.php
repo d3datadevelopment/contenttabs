@@ -1,5 +1,9 @@
 <?php
 
+namespace D3\Contenttabs\Modules\Application\Model;
+
+use D3\Contenttabs\Application\Model\contentTabs as TabsModel;
+
 /**
  * Article manager.
  * Creates fully detailed article object, with such information as VAT,
@@ -27,7 +31,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
             return parent::delete($sOXID);
         }
 
-        oxNew(d3\contenttabs\Application\Model\contentTabs::class, $this)->deleteAllLongtexts($sOXID);
+        oxNew(TabsModel::class, $this)->deleteAllLongtexts($sOXID);
 
         return parent::delete($sOXID);
     }

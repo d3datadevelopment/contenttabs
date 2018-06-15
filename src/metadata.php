@@ -11,12 +11,14 @@
  * @link          http://www.oxidmodule.com
  */
 
+use OxidEsales\Eshop\Application as OxidApplication;
+
 /**
  * Metadata version
  */
-$sMetadataVersion = '1.1';
+$sMetadataVersion = '2.0';
 
-$sD3Logo = (class_exists(d3\modcfg\Application\Model\d3utils::class) ? d3\modcfg\Application\Model\d3utils::getInstance()->getD3Logo() : 'D&sup3;');
+$sD3Logo = (class_exists(D3\ModCfg\Application\Model\d3utils::class) ? D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo() : 'D&sup3;');
 
 /**
  * Module information
@@ -32,23 +34,19 @@ $aModule = array(
         'en' => '',
     ),
     'thumbnail'      => 'picture.png',
-    'version'        => '4.0.0.0',
+    'version'        => '4.0.0.1',
     'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'url'            => 'http://www.shopmodule.com',
     'email'          => 'support@shopmodule.com',
     'extend'         => array(
-        'oxwarticledetails' => 'd3/contenttabs/modules/Application/Component/Widget/d3_oxwarticledetails_contenttabs',
-        'oxarticle'         => 'd3/contenttabs/modules/Application/Model/d3_oxarticle_longtexts',
+        OxidApplication\Component\Widget\ArticleDetails::class  => \D3\Contenttabs\Modules\Application\Component\Widget\d3_oxwarticledetails_contenttabs::class,
+        OxidApplication\Model\Article::class                    => \D3\Contenttabs\Modules\Application\Model\d3_oxarticle_longtexts::class,
     ),
-    'files'          => array(
-        // Admin
-        \d3\contenttabs\Application\Controller\Admin\settings::class       => 'd3/contenttabs/Application/Controller/Admin/settings.php',
-        \d3\contenttabs\Application\Controller\Admin\support::class        => 'd3/contenttabs/Application/Controller/Admin/support.php',
-        \d3\contenttabs\Application\Controller\Admin\contentTabList::class => 'd3/contenttabs/Application/Controller/Admin/contentTabList.php',
-        \d3\contenttabs\Application\Controller\Admin\contentTabs::class    => 'd3/contenttabs/Application/Controller/Admin/contentTabs.php',
-        //
-        \d3\contenttabs\Application\Model\contentTabs::class               => 'd3/contenttabs/Application/Model/contentTabs.php',
-        \d3\contenttabs\Setup\setupWizard::class                           => 'd3/contenttabs/Setup/setupWizard.php',
+    'controllers'   => array(
+        'd3contenttabs_settings'    => \D3\Contenttabs\Application\Controller\Admin\settings::class,
+        'd3contenttabs_support'     => \D3\Contenttabs\Application\Controller\Admin\support::class,
+        'd3contenttabs_tablist'     => \D3\Contenttabs\Application\Controller\Admin\contentTabList::class,
+        'd3contenttabs_tabs'        => \D3\Contenttabs\Application\Controller\Admin\contentTabs::class,
     ),
     'templates'      => array(
         // Admin
@@ -59,7 +57,7 @@ $aModule = array(
         'd3contenttabs_tab1.tpl' => 'd3/contenttabs/Application/views/tpl/d3contenttabs_tab1.tpl',
     ),
     'events'         => array(
-        'onActivate' => \d3\modcfg\Application\Model\Install\d3install::class . '::checkUpdateStart',
+        'onActivate' => \D3\ModCfg\Application\Model\Install\d3install::class . '::checkUpdateStart',
     ),
     'blocks'         => array(
         // azure / flow blocks
@@ -71,12 +69,20 @@ $aModule = array(
     ),
     'settings'       => array(),
     'd3FileRegister' => array(
-        'd3/contenttabs/metadata.php',
+        'd3/contenttabs/Modules/Application/Component/Widget/d3_oxwarticledetails_contenttabs.php',
+        'd3/contenttabs/Modules/Application/Model/d3_oxarticle_longtexts.php',
         'd3/contenttabs/Application/views/admin/de/d3_contenttabs_lang.php',
         'd3/contenttabs/Application/translations/de/d3_contenttabs_lang.php',
-        'd3/contenttabs/Application/views/blocks/details_tabs_longdescription.tpl',
+        'd3/contenttabs/Application/Controller/Admin/contentTabs.php',
+        'd3/contenttabs/Application/Controller/Admin/support.php',
+        'd3/contenttabs/Application/Controller/Admin/contentTabList.php',
+        'd3/contenttabs/Application/Controller/Admin/settings.php',
+        'd3/contenttabs/Application/Model/contentTabs.php',
+        'd3/contenttabs/metadata.php',
+        'd3/contenttabs/Setup/setupWizard.php',
+        'd3/contenttabs/IntelliSenseHelper.php',
     ),
     'd3SetupClasses' => array(
-        \d3\contenttabs\Setup\setupWizard::class,
+        \D3\Contenttabs\Setup\setupWizard::class,
     ),
 );
