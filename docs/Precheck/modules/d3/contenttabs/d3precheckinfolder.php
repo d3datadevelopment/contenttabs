@@ -17,7 +17,7 @@ date_default_timezone_set('Europe/Berlin');
  */
 class d3PreCheckInFolder
 {
-    public $sVersion = '4.10.2';
+    public $sVersion = '5.0.0';
 
     /**
      * @return string

@@ -47,4 +47,5 @@ $aLang = array(
     'D3_CONTENT_TABS_DELETE_TABLE_FIELDS'              => 'In diesem Instalationsschritt wird versucht, die in der ' //
         . 'Shopdatenbank gefundenen alten Felder zu entfernen.<br><br>'
         . 'Die SQL-Querys die dabei ausgeführt werden lauten wie folgt:<br>',
+    'D3_CONTENT_TABS_EXC_NOTFILLED_TITLE_CONTENT'      => "Der Langtext kann nicht gespeichert werden, da dieser keinen Titel oder Inhalt hat.",
 );

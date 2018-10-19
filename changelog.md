@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.0.0.2 (2018-10-19)
+- Freigabe für OXID 6.1.x
+- Fehlerhinweise eingefügt, wenn Langtexte nicht ausreichend befüllt sind
+- bugfix: Schreibschutz für Langtexte an Artikelvarianten entfernt
+
 ## 4.0.0.1 (2018-03-01)
 - Exception im Admin unter /Content Tabs/Tabverwaltung/Stamm/
 

@@ -34,7 +34,7 @@ $aModule = array(
         'en' => '',
     ),
     'thumbnail'      => 'picture.png',
-    'version'        => '4.0.0.1',
+    'version'        => '4.0.0.2',
     'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'url'            => 'http://www.shopmodule.com',
     'email'          => 'support@shopmodule.com',

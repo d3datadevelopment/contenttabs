@@ -43,7 +43,7 @@ class requConfig
 
     public $sModId   = 'd3contenttabs';
 
-    public $sModVersion = '4.0.0.1';
+    public $sModVersion = '4.0.0.2';
 
     /********************** check configuration section ************************/
 
@@ -120,7 +120,7 @@ class requConfig
             ),
         ),
 
-        // minimal benötigte Shopversion (editionsgetrennt), wird (sofern möglich) Remote aktualisiert
+        // minimal benötigte Compilationversion (editionsgetrennt), wird (sofern möglich) Remote aktualisiert
         'hasMinShopVersion'      => array(
             'blExec'  => 1,
             'aParams' => array(
@@ -130,7 +130,7 @@ class requConfig
             ),
         ),
 
-        // maximal verwendbare Shopversion (editionsgetrennt), wird (sofern möglich) Remote aktualisiert
+        // maximal verwendbare Compilationversion (editionsgetrennt), wird (sofern möglich) Remote aktualisiert
         'hasMaxShopVersion'      => array(
             'blExec'  => 0,
             'aParams' => array(
@@ -203,7 +203,7 @@ date_default_timezone_set('Europe/Berlin');
  */
 class requCheck
 {
-    public $sVersion = '4.10.2';
+    public $sVersion = '5.0.0';
 
     protected $_db = false;
 
@@ -311,7 +311,7 @@ class requCheck
         try {
             /** @var SplFileInfo $oFileInfo */
             $oIterator = new RecursiveDirectoryIterator($sFolder);
-
+        
             foreach ($oIterator as $oFileInfo) {
                 if (in_array($oFileInfo->getFileName(), $aIgnoreDirItems)) {
                     continue;
@@ -333,12 +333,12 @@ class requCheck
 
         return $aCheckScripts;
     }
-
+    
     public function addMessage($sMessage)
     {
         $this->aMessages[md5($sMessage)] = $sMessage;
     }
-
+    
     public function getMessages()
     {
         return $this->aMessages;
@@ -923,7 +923,7 @@ EOT;
         $sScriptName        = $_SERVER['SCRIPT_NAME'];
         $sTranslShopPhpInfo = $this->translate('showPhpInfo');
         $sTranslDependent   = $this->translate('dependentoffurther');
-
+        
         if (count($this->oBase->getMessages())) {
             echo '<span class="messages"><ul>';
             foreach ($this->oBase->getMessages() as $sMessage) {
@@ -2172,10 +2172,8 @@ class requTests
     public function hasMinShopVersion(&$aConfiguration)
     {
         if ($this->getDb()) {
-            $sField  = 'oxversion';
-            $sSelect = "SELECT " . $sField . " FROM oxshops WHERE 1 ORDER BY oxversion ASC LIMIT 1";
-            $rResult = mysqli_query($this->getDb(), $sSelect);
-            $oResult = mysqli_fetch_object($rResult);
+            require_once '../vendor/oxid-esales/oxideshop-ce/source/Core/ShopVersion.php';
+            $shopVersion = OxidEsales\EshopCommunity\Core\ShopVersion::getVersion();
 
             $oEditionResult = $this->_getShopEdition();
             $sEdition       = strtoupper($oEditionResult->oxedition);
@@ -2192,7 +2190,7 @@ class requTests
                 $aConfiguration['aParams'] = array('version' => $aConfiguration['aParams'][$sEdition]);
             }
 
-            if (version_compare($oResult->oxversion, $aConfiguration['aParams']['version'], '>=')) {
+            if (version_compare($shopVersion, $aConfiguration['aParams']['version'], '>=')) {
                 return true;
             }
         }
@@ -2208,10 +2206,8 @@ class requTests
     public function hasMaxShopVersion(&$aConfiguration)
     {
         if ($this->getDb()) {
-            $sField  = 'oxversion';
-            $sSelect = "SELECT " . $sField . " FROM oxshops WHERE 1 ORDER BY oxversion DESC LIMIT 1";
-            $rResult = mysqli_query($this->getDb(), $sSelect);
-            $oResult = mysqli_fetch_object($rResult);
+            require_once '../vendor/oxid-esales/oxideshop-ce/source/Core/ShopVersion.php';
+            $shopVersion = OxidEsales\EshopCommunity\Core\ShopVersion::getVersion();
 
             $oEditionResult = $this->_getShopEdition();
             $sEdition       = strtoupper($oEditionResult->oxedition);
@@ -2228,7 +2224,7 @@ class requTests
                 $aConfiguration['aParams'] = array('version' => $aConfiguration['aParams'][$sEdition]);
             }
 
-            if (version_compare($oResult->oxversion, $aConfiguration['aParams']['version'], '<=')) {
+            if (version_compare($shopVersion, $aConfiguration['aParams']['version'], '<=')) {
                 return true;
             }
         }
