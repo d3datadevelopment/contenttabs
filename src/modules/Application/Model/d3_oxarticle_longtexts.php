@@ -1,34 +1,53 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-HF/aZR4jtxXd
+<?php
+
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
+ * @link      http://www.oxidmodule.com
+ */
+
+namespace D3\Contenttabs\Modules\Application\Model;
+
+use D3\Contenttabs\Application\Model\contentTabs as TabsModel;
+
+/**
+ * Article manager.
+ * Creates fully detailed article object, with such information as VAT,
+ * discounts, etc.
+ *
+ */
+class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
+{
+    /**
+     * Deletes record and other information related to this article such as images from DB,
+     * also removes variants. Returns true if entry was deleted.
+     *
+     * @param string $sOXID Article id
+     *
+     * @throws \Exception
+     *
+     * @return bool
+     */
+    public function delete($sOXID = null)
+    {
+        if (!$sOXID) {
+            $sOXID = $this->getId();
+        }
+        if (!$sOXID) {
+            return parent::delete($sOXID);
+        }
+
+        oxNew(TabsModel::class, $this)->deleteAllLongtexts($sOXID);
+
+        return parent::delete($sOXID);
+    }
+}
