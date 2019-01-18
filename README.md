@@ -2,6 +2,8 @@
 Erweiterung der Produktdetailsseite mit weiteren "Tabs".
 Dies ermöglicht es viele Produktionformationen sauber und übersichtlich auszulisten.
 
+[![](https://img.shields.io/badge/Dokumentation-online-brightgreen.svg)](https://docs.oxidmodule.com/Content_Tabs/)
+
 ## Systemanforderungen:
 - installierter OXID eShop
 - PHP-Version, für die Installationspakete verfügbar sind
@@ -14,5 +16,4 @@ Sie bitte der Dokumentation im docs-Verzeichnis dieses Paketes.
 
 ## Installation:
 
-Verwenden Sie zur Installation bitte immer unser Quellenverzeichnis unter https://satis.oxidmodule.com.
 Eine detaillierte Installationsanleitung finden Sie im docs-Verzeichnis dieses Pakets.

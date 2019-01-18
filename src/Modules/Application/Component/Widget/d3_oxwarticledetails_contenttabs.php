@@ -21,21 +21,33 @@ namespace D3\Contenttabs\Modules\Application\Component\Widget;
  * Class d3_oxwarticledetails_contenttabs
  */
 use D3\Contenttabs\Application\Model\contentTabs as TabsModel;
+use D3\Contenttabs\Modules\Application\Model\d3_oxarticle_longtexts;
+use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
+use D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException;
+use Doctrine\DBAL\DBALException;
 use OxidEsales\Eshop\Application\Model\Article;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
+use OxidEsales\Eshop\Core\Exception\StandardException;
 
 class d3_oxwarticledetails_contenttabs extends d3_oxwarticledetails_contenttabs_parent
 {
-
     /**
      * @return array|null
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
      */
     public function d3GetTabs()
     {
-        /**
-         * @var Article
-         */
+        /** @var d3_oxarticle_longtexts $oArticle */
         $oArticle = $this->getProduct();
 
-        return oxNew(TabsModel::class, $oArticle)->getTabs();
+        /** @var TabsModel $oTabs */
+        $oTabs = oxNew(TabsModel::class, $oArticle);
+        return $oTabs->getTabs();
     }
 }

@@ -1,59 +1,56 @@
 [{d3modcfgcheck modid="d3contenttabs"}][{/d3modcfgcheck}]
 [{if $mod_d3contenttabs}]
     [{assign var='d3Tabs' value=$oView->d3GetTabs()}]
+    [{assign var="oContentTabs" value=$oDetailsProduct->d3GetContentTabs()}]
+    [{assign var='blFirstTab' value=true}]
 
     [{if $d3Tabs}]
         [{if $oModCfg_d3contenttabs->isThemeIdMappedTo('flow')}]
             [{* FLOW *}]
-            [{foreach from=$d3Tabs item='tabData' name="tabs" key='current'}]
-                [{if 'inactive' == $tabData.TAB}]
-                    <!-- inactive first tab -->
-                [{elseif $tabData.TAB != false}]
+            [{section name=tab start=1 loop=$oContentTabs->getTabCount()}]
+                [{assign var="tabId" value=$smarty.section.tab.index}]
+                [{if $oContentTabs->canGetLongDescription($tabId)}]
                     [{capture append="tabs"}]
-                        <a href="#tab_[{$current}]" data-toggle="tab">
-                            [{$tabData.TITLE}]
+                        <a href="#tab_[{$tabId}]" data-toggle="tab">
+                            [{$oDetailsProduct->d3GetLongDescriptionTitle($tabId)}]
                         </a>
                     [{/capture}]
                     [{capture append="tabsContent"}]
-                        <div id="tab_[{$current}]" class="tab-pane[{if $blFirstTab}] active[{/if}]" itemprop="description">
-                            [{if '1' == $tabData.TAB}]
-                                [{include file='d3contenttabs_tab'|cat:$current|cat:'.tpl'}]
+                        <div id="tab_[{$tabId}]" class="tab-pane[{if $blFirstTab}] active[{/if}]" itemprop="description">
+                            [{if '1' == $tabId}]
+                                [{include file='d3contenttabs_tab1.tpl'}]
                             [{else}]
-                                [{oxeval var=$tabData.CONTENT}]
+                                [{assign var="tabContent" value=$oDetailsProduct->d3GetLongDescription($tabId)}]
+                                [{oxeval var=$tabContent}]
                             [{/if}]
                         </div>
                     [{/capture}]
                     [{assign var='blFirstTab' value=false}]
-                [{else}]
-                    <!-- standard -->
-                    [{$smarty.block.parent}]
                 [{/if}]
-            [{/foreach}]
+            [{/section}]
         [{else}]
             [{* AZURE *}]
-            [{foreach from=$d3Tabs item='tabData' name="tabs" key='current'}]
-                [{if 'inactive' == $tabData.TAB}]
-                    <!-- inactive first tab -->
-                [{elseif $tabData.TAB != false}]
+            [{section name=tab start=1 loop=$oContentTabs->getTabCount()}]
+                [{assign var="tabId" value=$smarty.section.tab.index}]
+                [{if $oContentTabs->canGetLongDescription($tabId)}]
                     [{capture append="tabs"}]
-                        <a href="#tab_[{$current}]">
-                            [{$tabData.TITLE}]
+                        <a href="#tab_[{$tabId}]">
+                            [{$oDetailsProduct->d3GetLongDescriptionTitle($tabId)}]
                         </a>
                     [{/capture}]
                     [{capture append="tabsContent"}]
-                        <div id="tab_[{$current}]" class="cmsContent">
-                            [{if '1' == $tabData.TAB}]
-                                [{include file='d3contenttabs_tab'|cat:$current|cat:'.tpl'}]
+                        <div id="tab_[{$tabId}]" class="cmsContent">
+                            [{if '1' == $tabId}]
+                                [{include file='d3contenttabs_tab1.tpl'}]
                             [{else}]
-                                [{oxeval var=$tabData.CONTENT}]
+                                [{assign var="tabContent" value=$oDetailsProduct->d3GetLongDescription($tabId)}]
+                                [{oxeval var=$tabContent}]
                             [{/if}]
                         </div>
                     [{/capture}]
-                [{else}]
-                    <!-- standard -->
-                    [{$smarty.block.parent}]
+                    [{assign var='blFirstTab' value=false}]
                 [{/if}]
-            [{/foreach}]
+            [{/section}]
         [{/if}]
     [{else}]
         [{$smarty.block.parent}]

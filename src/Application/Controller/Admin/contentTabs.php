@@ -1,245 +1,384 @@
-<?php //006eb
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package ContentTabs @version 4.0.0.2 PHP71 (19.10.2018) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2018, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPoK6Zh6QktA6O+ORadAzm8yK/oyf8fPGUfsuwUsyxC5f6tsQqi9e8Bbb/qCYTzWc/dUIIrz0
-buteSZKofTIym0E6e5Q5l9szOyrWzti1R/p+S+Od6Y12AKS0A4y78HL9i2wpk7RfSFITrgDm+hHi
-VDxyJ62K8jbJw3eGJNxq4FMKSiSHJx3c1B2K54NuSLXeD7kJ3l/Zf/Yo2C8FQc6/1U6/fLB9BTNc
-kVA+8GYgepUqS4RGuOMPObKXVIOVSe7HqtYYEsNfQdD0gM+CFkOmX186Ct9f91yXTintdjDX+bO0
-rfzx/vqcJun5k/bTcE4pesHsPUaQN16xD5DGy4MzWrgnAlX3mpfWJIW4lnmdUwZX1TwQJibYWNpI
-ie+dyVuOxgHne9ortBWBxtVRnOIZSxDM9GXFn95rhv5mGhdJmSnfLJVvMvmUTnyvqgwpEPmIcJaO
-bcJY7Xnl3GbvbYNR7Oh1vQJWtSHl0RKndJKNzUkYloaXM20pHGsW53rBREcVSkNA5SgOcTNOPOAe
-cUghcbWr0i5Xgn/QrdnJWb+I/c0lcezVxd+93OBLrJKP4sx2AHt7JzJaTOTeC4nbNHhL7V0w6c5d
-MIkfeItcctonnxYvC+gcMFkePay15QqQnB1NEVwK2stmI7wJtAQRHRAH08+lE5pTnDdkSbeZsVKw
-9WsPXqTylVwyVgsLonfoKy344DD5Lebehq70B6IVJpDHxqm3x7ZG5Ru+xntBTtkZl9Mu74YtqRNA
-hecdo4nEflqMNbetYe32bH4v+noEanXI/+XVUakVqHi4GH5bIbLujZ1AK2oIRq1J96iOe7A29+lx
-RYpoqpbX/puIvP5A3vG+EUU7NLzhrGQFSi9o6DiYh5gjtHvMzbK7D5kvL+zituUPX4aXl7th7zJ+
-MsIWK9DFnI09WBdryDwU95PhJ4vjAeCIUhoLiU6bMzps+BEc6NYsAStkbe7zZVHW3b+ShPNi19Me
-8K/oYj7i5VyXUJJy/kw+YCPME2JlpUPMDogPPX+DQCOoAAdwlUuDZycm9JyGxr+XEJVhCTwdWBHv
-DAph4RkZy+ToSelybicpkDCfiWCtytarXsKWIKt1y58XlqnuTItfLRtrVhAvOOd6O84JC7KirXvb
-5VjeqanHRca+yQlpmA9sgc0zK558za/mgshecjMRqAcvNB70bJNQMe8UaKsDw0H6tETjgbhdpxTg
-Q0YaXMq+EtPDzk5XcSGGanXDLSXtj93zatoT4zdK6PjnOhdpSDMltLr2KaRbcVVqw2tV6SEwEYa7
-PPGFx4zdJTbkXQoXp+369ouflmqZ+HL4czhEV6mYv2nLoQnu1+SoVXB+mu6OPNatTRdh7P/D/+NN
-h5YEqWluQhLiKTHUwv2Y9QVYk6ZvNe+azeKotlfd4kmvaQkhehtp8SCSWGb27vdd70SQlG/k9DMt
-dBCOd5GR1DbWitfzEP/gHtHaQF94DVkPHXPACsbvxtsmoKY0sJWRNA7m2oaBjWsTWRHdxJiBTPGp
-9TE4WTlsPJsEGUbYc41c9DTerx1Q4Ehev2xjCHEQLzdB89Y3cS2NlnZbwcb7DEROjIndughgY8Cc
-ejFz5UM937ZYSVsnWsrBsYCQv8U242Xl36vhqvfMLpOThNq4azQuZ+9y1nMDkPWJ2nhgwhXhh5Is
-EUxV4a+NXhF40orsSW8QKbrjeIVmTYYFretwSdefCsHtm0d4pCyz6458Ld+nFvxTPBhjeRNzJljB
-BWLrECeirKcFIMIHaShdMuz/7wL8PonRPKoq/3DDgC4FDh8VlPl8q2a6rTailpyQ+N/lIAg9k2FF
-RPT6gqVpijRjqBxl4UdQC93K1+Qb4VYuzKKOMB2W4AM6Bkkby79toc4obGsqnruWw02NoAZuCE+f
-nut7X+LrxGOq7BD9dNdOi4UBzFIWlobeLG03bE9UeD/7e/tHgKcPG8eG3X2QFumuBlMp3+ywKJ77
-MVxmw9jHwViiwBiK+LA857jAJ3itmFpF/tl2JfHYIUUCXpGe3l+MAWNDaK8Yb63KUIcC5tR/XDbZ
-xr38qDABf+jF+zTMp70WbxX8zumBroy1+Uf+uYxbePTIFOeJ+iOK+OZr/6mtnoJABVk37jADmJgj
-5Q4k/k4or01/gN9dk+vT2AyazLlWdB28Y904WAjAjpqHp7VQNhryI/QFiSQ4vvG+2sOaBHEOnG67
-bqHgY8HMIVxrvVNtHN0cDqJn341h0hxShQ0g7SVmvy/RiNXeI4nktISQhoEJSNjSomuv2LVSsrMw
-HeRPx8tCHlqMnTLW4g+oiGEWCkZEjk5WzKfzG2rWkaV5ykZvHHLPt11Ti5PYP/a50LNfXPp8tses
-5SdLAG1+sqjtxoD59F8ZLhJnDbwaqT/HWLzLgqP1+oTVsQ3C1t8KGnzO1M1CtpWGbNTe//efmpyh
-GfO4oy2t65FoTw5WjCNnwgF2ZIjck0yg6slAzORB9SzNmzzjKt9rDTbLpSt1VwJPkDfrnErYXDxE
-9UYSdaWGctKzjElmdGy53J6wmd38PrhgAio5e6ooywWkUkkkryDegzcLXxSVoaA0sR/aIt0fcc+s
-XVnf85QCxAfOro4I4+OrQyMkzLYI3U7CnyQ8LvM07KdW3mxvxEa/AiCluuLoQiRbn2mT0hJh+XPq
-2qU9SOn+5kvJWNs5YMUfnuVsY4UE2Nwlw+prr8d9p0MmtlJHCP8BUGvSJC+jUuuzdUXA2SwolQh3
-of1r7oornCtJ05Prv60AvjFmt7xhxedoBwplNiaQCcBIMvhB7ITCaE2ow8eYinCRi8L/E2u8VzVe
-CktxBLyXx8lq1HBOfFUyv6kA3Eg1+vpXwQ8CAf2F6gS5Ql3Kg6YyY9tsfdegaRwFYby0UHrjVbtw
-HBcFS8Kvx8phpDSYyRaFz7sS+pMFqi1eXntaQai31rOL/08CVOrRNyCEHo+5FWsJ3DhUv7I4dXly
-ZAWmpXDi+KBWKlDqVLJ+mOojDKdH7c9b4yWS65LfpfCflUNuTMBVydyIdyiqSZTNHTOgkl0nKR9T
-/Ku17SFLIHe+kCdDcIoZIrrkqRtIh/i0nrvCxiEbsWCuPaBNIdUukGn3C9gAT/GM1kOtoP30Kg4e
-dXlt2/kW41oJyIGTzu9lQvosFhmFVSPCJIyNo9URKFhmxLfheLtDvAKtPErqrzcZirxWrRk9Tms6
-2qRpb8zqzVapPjAhTruL7lND2RdT6q6lZem0TLhdFOAb7WSNP8VWSsshJ8fZQbg3DbM/dZ6VzeER
-iYGXOPdZst4v9MlF6wNbcYdVxZy02wV+JuhX3l/Cw+kVPq3oUVGTbxOK7wh2WADK03IBOf9OHwRd
-kP4mKp7DQ+iUBZcclfQduhzaY8AR/5sACW4iWJWIsQ92IsjCfGmwGyptYDzPt12ps+vAU6+m+Olz
-aMdblbRlihxUnAwAHiDfHx4zv/O7Xg/ZZyUqmjUBMTqZD5AQFrzjRrs2LgcVjCgUO2YTWYFLg5u6
-Y0erx3WqD4r7wLCAgT/aXTb8qFGHvmI9bwaZxCxBYQy+PAiTC4hUsJzHxg2chf4/YwZhR3IlusLT
-AbNm+eFFBmlJ7+a1b1bfgIPo8i86d+gvonVRGdUAHb+JwcrHTrGc9rN7UbkpLwJ8WYdN0GXJOF8i
-7FGP3BIF7OFCybZwZ87JgqfhD2IUfXSAUyyxrsr2QK9+5PVn3aSdSDuLHc/SRQXrPhSH9zQtvlKg
-C3I4JpOD9b0gt1SM4WmhPlEhmFM1fW3AOGnPkXA9f0h8Ov1YVUzH224ZKDv9bVYisEYyFrLaVlMw
-e04JI7oH2e1mFs4ru3x91hi3YN1C61Sw5zGv/3ch5lxoVY2fZMMYui+8x5bvbVNLUt8E4FACe0YO
-ccT67fTvi3xMRsMBgkqmXlMuw1OfrN9XFhnhnqJAdDK41E6nkB4h9fMkQpg8muZE8fi/WwGHn2Q/
-RXWJSXaL0/DrVqRYhD8K3PLu8t8IvZjefhvU9FEsfNj4hXinRfLpk2QkW62zYorT448CkczdriY7
-Jon+oUxsnv+TfJvEeW0HZL4cZsKLs+qY6VpUUIdhFchkwuDjCReD5rTJJp1+0aN5foq5JNMuE/Dg
-CHpvhVzOpzU88zxefU2nh03K+0WJGQW4SHrcv+2MsZ11NVyOtJr49VpaK/dxYOip04t66XmMH8kf
-eCFvSY9aiacEtDW0E/7QGnxpTIkDvO2wLJxm8r0iBKwCo4tfq1S+8fcK/f58GN00AuhJ/WhZNUPt
-A+ZBfJejAS1R/jfYvYdDLCPYd+YOg93NPk7GX51mQmrv+cZkOoxEFG7fC9j6KuJWA7gMrgnLWOc9
-Zsq/9CehDlDlkq+nHo0f9GGoKRaxW0XHT0cT2wqpl3QbtIOxygk26Itb1t2IQWUWUWLFRlevwQRS
-ti2PZefDyns8B+YygggOVy4dNse6iilOO5s3iTSfzDTO7tbw01EY5QAb7NA7GAlJEDQclvmzbB2D
-asPprpe2qeAXWaum42EhNUORgF0JiSiSNpU2Rqn4FGnk6Xn7bN0p2Cqc7ufZpXv4iQsIswThU5Sk
-23tauWZ6tFDY/Um+Ob5+o/sjR2quJLxP9Y6Mo53TLWmVWjXRlHFp+SyLqZ4MuAe8gB1ECcrXLA4h
-wmjA21Iqm571GtJUv5hr7eQzs5oNnYqlV8cKXLDWv6Vzyj8qLXJKClrMedW1C02WYoF5bQjAsshQ
-Vh+/Wfr3koQ3iGIR3vc9dAEvKwAxf4hIUY5flsDzn394JtWaBs2Y3EMk9mqiseBR72nj6hDqfAKb
-eQn1PNJ1ijl/z2yZTuUMxlnQ5AUqWfk16YyiVgddYFPcL8rCSNx/AzPmzOKzbUCJB/KwBJ9cA4aW
-vR9w5kr9TVLZCkhpcDRsRXfAbQ1vfn68bqXO+6FXvmaaaduH8v+2LtmckkjZ5aoRK0n3XFNADQAI
-VKojm0oBS82LbtMUEelTmZzWFVu7as69fG1xVrYHK/MsxWmz1PL8QHbEd+HgFXo1Wy8+4a5QZXSM
-KhomloIQUXnT7YZrvaf1u/ZZjci3z7Eodci/10tgTA+GvnIMfUyQLWM/AHkarwaHBdARDFIqz/ib
-pVE+og1pXxSFEHfJhMhmVOH5H8EY42VjrfYHNp2Nm28nnVdHJNi3UgEb0vO0Z+vrxPSL9wfHe1n1
-2SqaNUmlPZhL63ul9M4pqiruNKOjIH87feqrj+rPBo1F3sQ3EOxUx2LnMNIZ9Z5/GFLP6Wtci8Uh
-yel9ja23rMDQOlKz7mRErvZ/8fwnUfPhsE5OMYhK92qUnnDpCsD+EkNXjKs4Aw2nAXe0SadoUR+Z
-aYpx6YcSCFwyKHgJ6Ighfvh9u8RxoJZ8NYwj66fZh4thmxzaOHtWFR0hTCA0AFLzV9EjHQ22QmsK
-8OTr5LPHMfpjTq09HZR96LYV4NnrplUH/3fCzd+yQuKxYYUzGZwrnkAjHWxyMKHTZigNdUybKiEE
-JSCQ486we8B4Lo497jQYr1rffoVrYOBHrCig2uPdlDNKsKZAnQ6N8Wd1OX5sEd047rtfnJlOMbrT
-VTxUkEA1x8FgI5p35IBFa8xoI8YUYV+b8FZQ3SPPp3V3e5Mjp/mu3m+bofB3TIwMZ1F4VHsFl9h5
-DUKxsFHNZ9aciB+E4WdY4eNiwTUMY6TWo7U+5t2Ki1SSB5kr9FTBkiPfI5GwU94FPqxVKRX1H5o+
-53A/SJ6LhG5y9zPbQ6W/9gWNEcn+ZmSNoG4av+2Porol/m2bkjAMb1KTH5DgfER4s5oBZPlgfvTp
-v3D4LPZq4hyMtTMUgsLI+ddw/gDjklrTMlREcN9tQocrY05whKMHLi73pohJ6Ulsc9r4t/cU5E+j
-GkKRk2KHcuIb5Fq/Jy9kgaTHlL3/mvnLql21lf1AiGZ+3M6LLLi/ckAZl70QpMAhi+sWEI6OW53D
-mnuauMTCHRAH6Qp/xiN2BJFPEO1tTF9fgDhES0ocf5AtSGUUd4wyfBQcghepsB6tf+B+rEjBoq/O
-aIDXAV68xnruMkCDRvYO+6VVjV7j5/XsL69G/cYtxsUPy/kTapOETbHOGUO/4YOjmVVmgTGxMo3m
-bZG782NuA8Sg+DNXwQomSLOp20TUWGJRJo4gqACjI9XDS6fM2kuiKAdG5ZvC0ONOZrpivTsp6Fru
-mdMyDYjAo5uz6VwhAIxH5WyZsv4IMomq62Dc/VgG3Ol5qrww/khq7X/m4BJDjpO2Ol+YmgvwFYKY
-YEyHiIUfteg05nIFhJkhNc8uhneIWMCZ0EQK24VW7MyMEt+qCsQl9lD0NH+BU5r36IHvjeApsc53
-EzJzydVJ/C1V5PNO3yighd6jUjSiLexpjNhcPf6YmMXBoS8D/3uxdJlbBo4nkFThNLMC+UoaUzX7
-EZf1+oQmEqOZQXGeo9i7HrfQZ3R/I4YaarkyPcIaEEvOtOsesFlJrUYhBvjQA/f+VXd9+Or0Z3Pl
-3z0ShVIU2pFomJj88G8aAp7NM40c2J8b737Z8Vl2L4usUxBqCKiGfMpe40q2siS1U2okMFhl6DK5
-jZy+wPqehDEhZNUQhKAK0EM5rPKb/wyzT730LHxRlaXIE236TdvsrLxPTEQet9+a/3bGkv+9CGgu
-uAD94q8ozILti6NwgY6/pHSqPJWqXSe428574lWYx0/UBE9K843KkEJwAYWhzXZvELCsOTVpPB3/
-Sr6o+6kkWJT3bIagCVk+URGz+nLGarAxciSiyY6ONxVIBEz0O4xY8zNY7WK5+xlMg3XKtQfV8YAh
-IZ+ohxATfMNVRm4fSH0CbFA5/m3T1S9qoVB/ZG22SumOmR06xSJI8NZTHvza4dp5GSmlUrNAubLW
-Efb769lq1vhacF5SqAyGHbQL8Uth6DYME0poN2mO8LMiyrY3nCWa5/gK60g8bgujyrdkFsWeHmAU
-b0tS0Vz3B7KodbHBCnTBl+PJR0HIzJWPl9AMKLEu3/cfitX90kFKEoeIxgRiFVqUKDqTLv/kUCYd
-rJ+XU37eOEnqaXbhHwWi4SB3t3zcdTgY0FDgQaOehPT9W0VTjjPaeSjiJFa4lY0Jp1PPLmWdk6Cq
-Cm9onBgQ7LmttK/HRxi/w3rw05gr2tjao8G9C6bZnKyqPikXp7xoTDRLnQt/iHX7Tb+VtAPtHcvu
-BAE6RhrRZ1ko9EOh+/OGVLaGmkFviH6pIZMcCdZ2F+h0CFIRG/ekW+ukQ6O8LETlcjsPKG5pdla9
-9SCvyfavJX0Z/PC2C6v7TKPYiZlNmL5A8VzibDkvy6v700BtlPgU6BNwPyEpIY0/Yq9UBCK3WefR
-Tug5c+bn/dLoLisNZ7k6gL8ZoEwC1EPVi1MoYsYJ7rgqksiocOqm8xY0fF1De2qcPomqKDcW+QTE
-Ty6CwgnLWSz9Bl2oOov/L2151BCNgdSsBUMTa9sFixmk9q6lfHAmXgdaQpEIFMRowXihRwGhA2i6
-EmVTRUIgp2YIl3zW7URip1Aw9eOxgSRdvKyiz4TUUOSjcvV6RLmLH9+4CINge4wdqm1O8FhExGYy
-fAdfm9fsvbKnBe3WbaZRT3WLaQIzqZ/29nTgPNIKK5c7kl0VtIXZQm2gHOQJlIwTQYF97MOo9BmI
-8bCoh9mdDZzGwQMCMvV/WRfBJE0PSZ0pll5AZj/BkTbfOfA6EDfsoOt8xN2384d4bvZrGPOKlio9
-QMPC2VfK6mi2IVT67HRkubm6WcTc8KXiRqwGKAl8soJ+tRUQwb7TxhXW6Tb55ZXpasfFf/Rb31fz
-FKVFiwkQu+n7bi9pYiO2KH/3QAi3v/OXkEZJ/IRdRGmP8o8/QwMhB88qPk3PJE6VUpxBe4GQqBer
-tIWL37dD7xPkLlLZn0D6xDEJJNDblWLrgI88eo9mgMH9V2Tl7f5XrYfNL/EFgeaZhCQxGCLGblWX
-ODgivaAoD4CLH4hXdormysAZqHhlCJVHFjpVQbB/7wctwu56H/FkQ6Gzw5z+0EiYZkbae2hu1VZi
-1/kpOQYc1eBnDZRJzGrkIrp7UXwe96owiC4W7nISH/29zkDGjOaLAnSX/0X+1p3kQKd+C2ipAu4Y
-/NeoPCJyzWiZ3GZBs6uMGAkKFJdXBciImQkGlI2Mngamzig9hmd0MHw8sOxjsOOJLTwtnr27FjMM
-JuMi6HnxZm0bc/COHfIiqHDROGJsU4wnqMxTAajYHe/IVC8CET95EaO7y9dJwazNC0t3lq03dIED
-HQorsgKcslM5e1t+68tiJDnT6YWYY3t05jZtKUKL53+lcLz0WqDdC6GZ4QvYp0dphqYZ+FNme03D
-QJ3o+mvqN8pREn7VrJZ295Isnjy84fHtDuG2FkjXoUQh2NB+SXx1efixaop89H9UcJ29PmlEPKTS
-0wNlI9yP7JRGhhzJUE9pvXKTat2MdmmhOlQD4cqzHx6wmQFRgdccw2I1A0J6x3evg+uNPJWNmOmb
-mW9yWTaswCejDnBNUYLcE+sr61XT4c2BS4h+NU1bbqyuUiZKiRzWo4ChpWEFoU+Yh3we1KYjPO7C
-C4YSI8oxfojgR1xr8rsatgUAd4UvqoDssclYxxM9ChYqL2bUpJgORo9tAmCTJMIKhhMawsVrdvuV
-e1HMRWqNFrLBy+zre9V3kgkUEwOv9DC6Q2pszPK1YEC2/w7kww6AW8JuqrU2DHMPU3xJlTmXkMaS
-z69yotKtzOJgko+jbecz8ekUanmMk3axc7Q1NNuEm2hTRWm9aptAPIa3DfI1h5ueeswbdZMKvWd7
-lEokttvvtcfgwtB9T1vooladE5FiWPEm07ymNmOJAEEqaL4Uf6ub48IwULpOy24u4t2dp4J6ibrw
-tN4a6OjeZcQSouTk8eL9rhRAIWZn5m1/C2gSVyvjmHg7U9mMo/+vMpltaronBUJ7cHWe11vPMz2m
-xiitE2yB0wQ7kCoaooiCcW935hqRWZTdpSBfQaAGKwPdRYsoNmQLWA+yDDZ8s3QdQrFJgUADIwjC
-NI6AVKyEnPkvcE7eX270dpe9U1QFKKGx0YA4deUz8KtxmXi0Iipn8sd0iyHa8DhR8mczcZ0Wen3Q
-kly4XBGlDVLZfMCoM+tAmUwaZ5hoBkyMz9rh0K+BsMexNtER8+WkSAql2dEVB0kime4pdUJk/nNu
-yAS7eMA5M7CSxuCwX1Q1x8bBxSbSUZqtBxZQ+xS1hJ3BrXwAd7TN7g//Ah8YCqa9gVL+zeQXWGoB
-m08/AdBgPiMjQ886sJ+kZz5BEZDfV5SihHGsWBpW+EzQRmHuDYCtSOCNZJtNIXaOGMw7Jxh5E06L
-+Xwk3FXYP+1nfJxVbvel7nqXDCLPsNoBEdg0YPIzxrPn+MscsbPJKYpvHDexLJPc2KcSc9KvzIt+
-h8Q9U/Mu/QGX9jEQcilQuC97tLBia1Zpte6dKN/pOod4xaMJoniJ9prdJsXINMf+XY7qeCaevD8Y
-Fv3zGv5Anz8Y3vV2zbo4raX647gAw8ha4MR89tD9seo3v/5dj0FhhB4GDhsx+hNXGe31ZW1hzl99
-Mb206QUTESsIK9La0nNQKlJ4VQawkvvgtVWmVogyFR3ZsCy0f9H8azm7X4226VCnkivymVMV2f7r
-vLn7oBGt323yR8d/5ZYd+6pyghjx451usSVXpWM37IZ410WmTNSmxoAcrWaG9YX/QMsMpRrHBBmF
-qsY+ZKbLeqZH3uJlnpO9CI8DMvHzH2B/UIX9HsM300nnKanX92/5Uu60VT1ujhj1elwRm00nib6d
-GcTd8/14sm/zdb4YebQQyU0/jUyZfsKgX0ur/o0mMXMlZ2IYmIvEgjrAwF60RUhqOYksYRO63+Ff
-g9db1Oyj9zsfvPIeHwCIeqyl8Sg9em54r7D84KMLm6E9OITIGjpwQT6SkWh+1henIkAmVRD1ylGW
-oXirXQndxTgBWJ/+RLlfpq00AiNpD2tBrZ3wYXWON4J2q5JHwoi0zaVJRkJbRliOgPsUrOirLzuP
-j3ySP3VfyakWghZDqZ2j/6hgsD652D+BL0dQPWKYEYEXcVW6as7HgOJ1bAUcPramUI3NDyZrLyIg
-CglgDiwAaLR4jcb3i/dAK19z/CO6EQWD4qGGDCWfSHYHPciMI/gkDPtbszLXNHJUSXmdhgXRQ2Lk
-4GuvZBBIl2TJcE58MIVjt2iBRlHv+c/OH6wHPSmlMZa20Aw1z1R5dNQMaJquo9En4Cwo78UtwYbS
-5zrPa8cZOdmEFO7txB1Go8LpndVc8P3tXcueALfc7WLOLmPTHx6cA+kLrE1P2prRRLKGl5fkKyej
-Sg+Ou7Dzm9onIxt7r3lCtfxPsU2QnMKuCvUPRZOM3cEnkwXXPJSFdOp+vWPO8tQ9JwLfrwnXVgae
-Ex7PzI2LDnvzJ9LM//mH6AXVfLyUOPw4bHK18tOsBYcDDgv94vVUdtpFXT3Y6qfyYIJf2kunWiYC
-/xHX8UQcWNigYH6M8Qsh9iebNvmcjZux3NrsPHgOdsGo805rVRkSAAMj9eGuEc4lPlCMcJRIz3l0
-b9eCX+Ai8LUi7JO9A8rZf3fZbpMOAMjIxqb/gtQocvr2aBHt9ltRvFPf0f4DjmhO/MzNNuEOMnfa
-s0OXKP3yxGJxsBiwBrH6EzLxC/S3d26ccnCKeiKOy97eYbKW25vB+Af3+drkWBLRBFnoRY353Adu
-9Z5NmE7/lxF1tfg5PrCCiv9/r41Otb/D7+ON8TNtJSrwQpGvctKN6o/1EWQehcnmFUL5dmQRvEoT
-RLAGNEwMyNNcSbN/3GtfKAi0NTpeXyupYuV4Bm07gYT/KcTkXTgb6Hpr5n1QnR3OXWcqPbMHkFjJ
-u0fhA9DXZIk251UGU1x6mk7SxZ3LdvJvhLlRAPjcNlc4/J2zh7Y+BIluaIr1Dt6d/u/tgSqDYbXU
-jVbFQjRNevbkWSwITdnhctl9SnIwi7barHkKvcl61VwYy+S7pfPxLam1ikkNC2K4st31C9Lbj+VJ
-7Xoj4ZLjZhnjhHLVL0P3iEteRqPYVfJNUa+pK9MvOVbNY08sHVk9mRP0VlPGq3NbXVI2A+I8GaSd
-eYaLam256nF/hRB3phpxB6TnDBae6bPXArN9bsbS7exM4V5TBW6wfV2XS6eUauuz0KNsGM9aCItm
-vJCuaf0Fu/F4rsIa2UTv31oR5fFfnV80JwQlg3h7ZfKQrCvMiWzomfhzggKW+qIqA8LdOKWzZ7JE
-+NBvD7lHft2A9QQq+JuuMb4Bq1P7fizpwsq/jkMSUnhXPKl1MrTWf4EpBKiB02U1yoEHiQESzafL
-dloeovd7BLfVljMx2Dx8BkhQNSg6Xvx+VslpnDP8fKS6R4C63m6z1y4eauw/1ifywvF7NVYa8bV3
-UTuemK7pwmgz/wVj5ti2pltmvRIOV5ZZ5Y0PX/P8Kv+CYYu3YDMiuQktH5fMcpegaj91Oy5Q+Now
-zrT26nKBKqDs4cfVfOPac/f4nYY1wpsEzIzayuAw1q6/kSBoNH4ZsL006D+Lq+bB9ep/f/Zv4Me6
-HJqrQBGLp915TkVQOsL15fMqOO6MDjEZITYnlRuxbEWTQI2fFtLTTNPrqQA4Dx7ASRKNzNhwwfsU
-bvZE/ARPexNBOXWGH55FI+Fa7iAGs2/MGCGHusi7RFGAhaaKY7q7Em58EL9RzBfN1T5EgyyFQ0iq
-tCrk74k2EWrtIytDMCUuD4ghEgxgXTmgnelZpyL21vK/xhduUSqoHvEA6G7ccRi7GFDD3++th2Z1
-1xhzHzjlm62B4I5AVqiV7pWYAKwrQPK3z5iL6k7i9vhI4i8LD+2qcmIyTFkOqd3jnfwk4LoT0T9P
-/o3bHjKRdbMqRrlvfEH7ooNWwyTi8+5mZwEf6ZXCaUXd3kFSWnZdHPY4/jNcGWtlJcCdN+rx6+ig
-gg8dhxqYgyRtNqUUyBXIaoPQazXObbZrx2JcpZcmscEqwmqHjr7cG+77nbBk32hBT2j4TucO4KOR
-U6OCgYPmseuCtXroJYWvaUk1zJNMwBsZJiuhx3Fjh34NZMNjoNk2V+F4QYYX5op2tZtRg2vibj7k
-oE6qUzeosyc1+pUh+BtoQiocuGEkmk2QgHzfGcZo2Y/ECYeb11WoVBBKREBoMlbDZmsVV7RQfEfN
-Yg7fqv7Xcl/8cIGuz3vcWTfK/EcCQ0ppvdr1SMuDaSjtcTjDZOMDqA1U6uw/SV74DpT2q6vndOUA
-hfhg93UHooc2jQgJHlqlSYkOKqfjPrEBrxqNicK8g6mT/weqMWp3YejkLf/G+icwl3GD0q12vINV
-0/QbQ8sL+d67diiTayhpWPZonUB6/dddFdOEKHHj3WKkNIUA0ds02X0HugPQboWlEKUdkG09+DXB
-n7LDIfRAL4hrAxV9eHA+Q6PVes3JUUmWkY6sdg3sLphTQUXToX2yeS/a4YHgauX0gqUO4Xbw1MGp
-DPQuLbRFgb5R5Xv7vp8HMpYkcinDRf85O0L0rxma+/bLHdBO2423/uMkTXMP6Q9HNQIK4J6Hr6D5
-3/6F7vnARG343JGJASOhj8xnaW2NJr1kyLLPiR1O3Ph2sSUX46rQTj/5JkWgnUgxSGf98pLFeOVf
-02IQlMHDXyysrDy203C8MEjHY3c9PKlN44vczQh+iKDx0EkIQ0Xw0V3ByEhOFnVXl37GrEQ+8j6L
-q39WqJ+l51YSPgtaFrOKfSR2sYuahqcN5S77e4FPTkBqL/4qRWYPHIdZ4dBsEroVz0vYvHFDhJzq
-8NyDbOsf4qNUBQ1AqsGgrMFtHoBcfM34pF9GY1jPPXqTXtDuPfdHjGM5tNuk9BAYV4dBxw0hUR2F
-nRxVvmbnaQLtncZHBnm+I8mRqrfwxxdaY9mwbPkcZmV4sxPX/tqe6E7P5dIKQ2ZsJqlNBtDhBFB8
-bwNTkxxLCRaMIACobB4/kv3ioRDQfHoUcTIFyWGRllXbz0JmutPjVGpcbhWkb7g2rrKAwPA6hfJH
-96MDSv6uXYOMl173FNa8kEtgrAAZ0yQCZSGs7D480eIX5M0mZivj5K1IcClWebeacGdTXv7NvWzb
-T1Qhdnd/KmyrGM6nO4wK3DnH+cUjwhH2vVOIVOnY0LJOueDSTWn0yVlisDlXVDjvpQyx8Lav1dFK
-yCnSnlCWaDp21pLqFfdLTY4Nfkq/Og3DuO88j/cpbtf2f2wGWtFjhiMwCWEb9hfDZgTd5EL1VSQJ
-Rb5zRjqSTd//l5vL3k4KYhyft+E7ufK0mqU2CjpkFPA+RAHxcehxmFqK2QdHUNWggNBX8HjphzqV
-bNYe5SXIOw3pIEI4iqGobyQ/O2EsoYcwpx7SNz3z41GXQh9VRjCXUj3FPu7+7ieZg5fYka9Zy7j+
-B4mNl0zZpWovOsuf1M/6HRDoK/BCxS+YccaEIgnKxO1DRfC1Z+ZICVMh5/waKz+bc0niMpsgAV6j
-Dr236OXypx5SUtXWX0qSpLDGsL5GMoNJmc+WDf6Mqbn8bh+TjCQmP40DsJiChmnjiDLoJuG5UBG1
-t4oLbUaxVzAvdRhJYSu6hEjhsgIBUUpLOzI66B9QUrjs/fbE9l/WxGqAmCK3jo9MEqTuQGP879p1
-1oLcm00acfDQvlvBgG5CBPlRijwl0kKO/oK78o0xu0utRHYj3g10OAe13LzZcxBw7D2ehDprX+gN
-DmS90RiCrT7xDsdSULFF8iGfdckDwg7ESGvfO7w/XPxAerySrJ0dS0wr4zTmVlM8TcCGZpHckcoY
-gG+NwDeTafwpr5TLVEzvbgKral3tXL8DlB/avjn0sgLeQf5Yhtv8Q2nEYZ72iv5WBl+v9BUvMTDz
-3D3Z9ae9DW72LlIan3+4wP+VtU3rgN70gAgal+KgZz8dfq62LgscZP/FHLNGl8i548lUzteFOBwe
-w+aHsvWUvMa51IEoPW2BXMbmMql+xnnp9hvaPoWbU1ldjmi3hgmP+Yb1AUORbPVDN4eAATVgBujj
-C6mZUpvTzZT6y3z9DXXfJpiT+73tp5fMYwKYeHdoVd2txO7D7N5jJK7pVaft2h7HaYKR5egGvbb/
-lhYOkH9JE/qTMF/BEAjJ3bgXhPlcvvIAC7PtLiR2QgvlK0mRxGFw2TSvLs+etYCBsd9uNfool7vg
-HK62XUEIBSNUVyUyZizMHhtsuRJ5VWgiQw4FltwWRocXhwmEcsscUoIwMN7U25AqDNeWzoSTCQ1Q
-GJhXfyeYBh2kjUgXJfcSPnswfnp+uStbkCLArkxX+/UGBIviL3Hvji7baH+dWZ8AE/NXusRDzrV2
-FPBxBGpfFbBX/WgWJPB2zQMDjZBdETE6h6tVtcRqM+sFSlsSGiFgUQnBhEY+grtHNnlMATabxrS8
-MoHKpkKRR73uSWzT3e/7dBfn4ewUQR52zoG8Aj7Q1qRJzlrN6VtdTUmV9/dUUxdnMLBnUc7DsZqC
-Uyac0nXiEZNBPLEN/lmIuHjrx2qpsmmYVCSxoFOaANcutvYpYkZq3OszVb7Vvxk7+F4X0avDIQxV
-RW7k3TzwyNR/SbtSXTFTvqkon8XzKml8V+T5a5UcRlfa9vOutBXcusd9sWJllMNo3cd+zW20VRMu
-vYeCs/kepdT8I1L02VuGkuMJqtxMJLlDK5PC2LcP/QPz/lQcA9vjWnpf6jyQylcDJh7MB1kr2tb4
-Se89sExy5vAukUGJBbSPlfpdqzg9VpL/CC1s7QB6Lq9+hHnRJ70psxnmgbEWA9tzcOHFPxoPPv2S
-R6KT+7Wa/Y2MfJ28sETBzILKBJ7y0YrZjR6fMfZH9E29fKbeu/x3GhVkYV83jKHh3i7vGMm2/ZNr
-mMWzTkyxrLQmmQ0wiQnnx9PDtZhdW2URi22RWzPOn6QEzCRRwmdjfM1lt1968umHK49crBS0/Pt7
-rDSf3JiO3EVoC2G8EhPgg5BUacu1HlwBbc7XMyKbC7U9mjwivsEBvt4l/RBqJsQPBA9SpkLOcDbe
-DBf3/uInGkmNnkJBDRgECLdRNQbT8NKHmoNP+SFZQKcqnrgt9ds6W/sh0mtNStMqxPa4jo/QGEuR
-qvfiSN48hdE7WzsqSDZGsY2/wd+aP8y5nuT0e/j+/EB3SUklir2nSGbLgstvifsZo4fd8+rHpo9v
-mmozTIriQGQoOGQfkSE0PK6jCIbIoev8wpxVc9l0tlmOukM5zvZ1hWKOBxkPs3L2OjREEY1KZVR0
-UGgypiFloaPJesFs31z6bjT4HCk73AdHXe6WBPOQjV1IYcL/JrXcYx9gUZqZ0ohW3W6TH9wMYGQ6
-QzVZKs7tCgQtfJ2D1tIA3vZC+7pptsX5UN/EKPMy90xl5X1AMg3zw2d1P/c3RwmvmkH1/YuXe+jT
-ETL5HKg0bM58/NhnFprz0pTq7gGB7Bgqh8+/7CsQMYDsi2xGGbqH+Od4xPIEB9wlDxFGgq1eYdB5
-mpNmfXm7mlE54RqJd4vGocplfqCMD1YI0xRseO3i3ldrwAV4jahaZibIKusl50cT9kzNKmAlSKDC
-ds1A5CfGX56hS1icKFsoe6i2evyL0giI6Rtu4ExME/T+0FYSZiem0tRSzZMV4ul26kMV4QEDqf2Y
-CjCbGpS9U3tKVelbkdBYOYSVPwXf+o8Z623ORB1utN0nxi5uXxHJj6a1OJQEEpaF0mwxFY+xYzj0
-vHFQ8DKhCWRR7I4nklIIqmlu0XnkqWm5ku78cvTgQfaMAjkmmSyjJNompH5XQCqeNize2rZ4UbLs
-N4nVTGVH0cc9ZfFDIC/63zuo77HxURYEdJhqFe7aknlXT9IfTyhGFPTJNrJugwBNvtUS/mxEqk1/
-NP2tpWm4m5CAkyOV/g2/GyFuqUjXzDzL39586qOvEeq2YH9bYdZoTPz/mVfvn0PeGBdff8ElP1/0
-4dU8BMQNahMy/N0EKeFCHryHDMdvTj4M5Cl0AH3js3flitEjXPww4gi9KSqG6Xw0iiZvb7MQO/BQ
-SVaGzXMI909GukxRmUDy5H9JwLRcAtxk71fw95bzjPPLpnGrAHbu/+fy2oP26kUdEZlDN26yyHH9
-Obmt9BnCQgN6MrEaEn2/R/dH8a2Loo+bVzfcKrV/na8WzpCDoR/D8vUSpKGNcFF0WvVZQeyMFUd3
-EMr4ZsMUpE59rpJAIISkTqWSLE6zMl1O+KdKm8DCRI/BrM/O7IOY+/FEIwlppBd/6V5hDFr+n80L
-r/Q3EgtiXJ3HR+t/HVLFIPu19hMQXNcss4EgppreFQkFpyqMLdVqKZ2aYzzJKMIwBXCiwWq+/Nba
-oOHBK9lZ9GArgqkeXkp74ekZ0PPcQdr7VggV1n9AJKdaNuSwZunyHio4rUxzisyCUHm1NbiZBvn/
-MygpLFFrQi7Sr5l/ZScCku6+T83AlEQcJkj5UOGzn+/w1AZlpD6kQpigOnhSc3DOcfDx1Hrgu/C0
-5DI+mPxqK6asJSO2YQh3DjifC2A1aoM+232eeeLqlPfoLYebrg8j+QAZ1qyTDFgWld2/zxe2ue49
-0kpUB8LgOuPdIxLTC6oqENAiJZLFy2KtembXi9WC2JLR4D+wZc95fECEHaYHZURhtjJEKLH3qnb1
-aZcRuGxqlbT7og2Xjo+htX2THdSkOb6btT5Jp0+lMASmNsv+wP8utVQfOjTBFJDzqlR/WOXRY8Fj
-T+HVFH2ok2IBJn0Sk/kZ3Qgl8y1i/4v0Gsr8tW7boQLFTsLmSlFyNFy0iVKO8KGo8CMRDUztWOfy
-fn2mswxCR0kZuFjantX+hKjsRa9p66/eIVUYBqA+mHvhpJOBjNc2GUp+xjCnEi+tdaQvgvl4M66N
-T9232SLWnZOE2AgzerkPlMhofDroxvNuMLcrzmR8paKrUKZjaQE1UxWKZdT94UaDKx+tRDM0+Ugy
-M4FjQM5inzexJ+fgI2EWMaB+pR6lOR2/tIX3anHDjyJ0hgZcfNYktQVrdB73JxNQkMs8i9V9XAjm
-er9dHDnH+kkFvM2RiPKfyEE+40hpcv3sSL8rlBreAlO8NGGI47fHFucTORpqdDOhvPvNljj1KbR0
-2mln6sb4x/euW6yt/x3fb4Nuvci+xyj8reaj0cm5VOXEZWAaSgrAdrMinHPUwPovlLRlLZSl0Q0I
-Mu9JHaV33d2pP0J4sYi736zSsDUQdSq9oWHa+nU9MzD9sevYMXbgf9An0ZMj2vo3AlsvOugKrMP9
-+/Ue/xMchesKDBkJGKWRRoMAPC6Aric51Fx/2t2fbXu805dYFmM4xnlKHII1HGXaSKXSnRUnWOHx
-fMdjJd26FNlRWw2giDYdPChkvhjV10wenvSU7BfA6zwYaTeYgGAZrCvOlwNq0C0GPyLvKuXCshjQ
-CXOXAKOcXF4IYieTCJ06ZaGKhAC/4mosCW27hk24PQpVS8DlDsxvUr7/9/07gMzYkvzWfe5IcOGJ
-3/sNEPO4Lx+k056Js0EYSJvDEK4z/SxHJ5KKR9jwncA62KBaIaeSKlzsb4m+PNKHKwCb+XezJNJT
-FoJWoRpJGEBHBS/etcantIu0yy+p18+47WvcecsjIEQEqBlONiKIvPZqY/mVLY52xX0HoFn4z+3F
-GQR9KMB/JkA+MLtUAVjJzQQOiIvDlYEF8naLI61mtfV6M/6gOWhVZp0CAZbg6LyCIxFIoxIUGjwb
-ALHp5l2pkrrwAxUU9+pbLHHEEEZ7UzFRrd1QaaKu6bBkrBwqFsL+badG4pY/MwRUXrCZy0rgFjkV
-gOglhzb2yF3Psb6BKVzq18/cv0bnW9rL1O5tBc5vpAp8QKLGYt3gBIu8tTv/wQ9qZjma/2MsZfPs
-BU4mOCeMW+Lr+xwkBjbtdmuZZreG8ombKJUkWiY9DawBrWqKpVVoT6eGmLxfIm1fb6X4m6GqUtfH
-3Pv0b4rDzHuc6vzjyIZKWb7qXFSnFNkrLC2jiUNHAxT9WH0NIy3ED2XiKDmYYSNVq02JDUutO4iH
-DkzXxWxhHPSrTF4aZOnYFUJxVFX9o5SQB9PahxLcuOJqATT4RVM1nVzfB2QY27xoYHv5RdgTqy05
-X1Jfz3wMl+8G76bK0yntyrtBg0wJWk24UZ0YgbsY1m/nSFcVP7/djjeJpDC1eRYLhFpKn3FmYOpS
-EeTZl6R0YQwBexs2iC35BNEca6mQQub4NFJECYaAD/lHvMndKTYLba8YbAA7h/gx7wyv2gRMnGDc
-sh/sI6duz6PlkGGVQBWXNj5QJoOWdc7DGgtYIyu8hVCMRYEb+tNZSM7pTDRd9EcLtuh+mRUtIDWO
-k+qEbAE+5QdR/qQvRo5xYb3kdItvH8Va0reO+dV1uKMlnoA2Dd2WSxe/SXNaTwnSSn53kMgRjwlU
-+x88gx3aaBdWwWIQjSixR7JBURSmKMUz
+<?php
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @author        D3 Data Development <support@shopmodule.com>
+ * @link          http://www.oxidmodule.com
+ */
+
+namespace D3\Contenttabs\Application\Controller\Admin;
+
+use D3\Contenttabs\Application\Model\contentTabs as TabsModel;
+use D3\Contenttabs\Modules\Application\Model\d3_oxarticle_longtexts;
+use Exception;
+use OxidEsales\Eshop\Application\Controller\Admin\AdminDetailsController;
+use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
+use D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException;
+use Doctrine\DBAL\DBALException;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
+use OxidEsales\Eshop\Core\Exception\StandardException;
+use \OxidEsales\Eshop\Core\Registry;
+use \OxidEsales\Eshop\Core\Request;
+use \OxidEsales\Eshop\Application\Model\Article;
+
+/**
+ * Class contentTabs
+ * @package D3\Contenttabs\Application\Controller\Admin
+ */
+class contentTabs extends AdminDetailsController
+{
+    protected $_sTabsTemplate = 'contentTabs.tpl';
+
+    /**
+     * Variant parent product object
+     *
+     * @var Article
+     */
+    protected $_oProductParent = null;
+
+    protected $_sCurrentTabId = '';
+    protected $_sActFieldTitleName = '';
+
+    /**
+     * Loads article variants data, passes it to Smarty engine and returns name of
+     * template file "article_variant.tpl".
+     *
+     * @return string
+     */
+    public function render()
+    {
+        parent::render();
+
+        $soxId       = $this->getEditObjectId();
+
+        /** @var d3_oxarticle_longtexts $oArticle */
+        $oArticle                 = oxNew(Article::class);
+        $this->_aViewData["edit"] = $oArticle;
+
+        if (isset($soxId) && $soxId != "-1") {
+            // load object
+            $oArticle->loadInLang($this->_iEditLang, $soxId);
+
+            if ($oArticle->isDerived()) {
+                $this->_aViewData['readonly'] = true;
+            }
+
+            $_POST["language"] = $_GET["language"] = $this->_iEditLang;
+
+            if (0 < $oArticle->getFieldData('oxvarcount')) {
+                $oVariants = $oArticle->getAdminVariants($this->_iEditLang);
+                if (false == empty($oVariants)) {
+                    $this->_aViewData["mylist"] = $oVariants;
+                }
+            }
+
+            if ($oArticle->getFieldData('oxparentid')) {
+                $this->_aViewData["parentarticle"] = $this->_getProductParent($oArticle->getFieldData('oxparentid'));
+            }
+
+            /** @var TabsModel $oTabsModel */
+            $oTabsModel = oxNew(TabsModel::class, $oArticle);
+            $sFullLongDescField = $oTabsModel->getArticleContentFieldName( $this->getSelectedTabId());
+            if (false == empty($sFullLongDescField)) {
+                $this->_aViewData["editor"] = $this->generateTextEditor(
+                    '100%',
+                    280,
+                    $oArticle,
+                    $sFullLongDescField,
+                    'details.tpl.css'
+                );
+            }
+        }
+
+        return $this->_sTabsTemplate;
+    }
+
+    /**
+     * Returns variant parent object
+     *
+     * @param string $sParentId parent product id
+     *
+     * @return Article
+     */
+    protected function _getProductParent($sParentId)
+    {
+        if ($this->_oProductParent === null ||
+            ($this->_oProductParent !== false && $this->_oProductParent->getId() != $sParentId)
+        ) {
+            $this->_oProductParent = false;
+            $oProduct              = oxNew(Article::class);
+            if ($oProduct->load($sParentId)) {
+                $this->_oProductParent = $oProduct;
+            }
+        }
+
+        return $this->_oProductParent;
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getLongDescActiveField()
+    {
+        /** @var TabsModel $oTabsModel */
+        $oTabsModel = oxNew(TabsModel::class, oxNew(Article::class));
+        return $oTabsModel->getArticleActiveFieldName( $this->getSelectedTabId());
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getLongDescTitleField()
+    {
+        /** @var TabsModel $oTabsModel */
+        $oTabsModel = oxNew(TabsModel::class, oxNew(Article::class));
+        return $oTabsModel->getArticleTitleFieldName( $this->getSelectedTabId());
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getLongDescContentField()
+    {
+        /** @var TabsModel $oTabsModel */
+        $oTabsModel = oxNew(TabsModel::class, oxNew(Article::class));
+        return $oTabsModel->getArticleContentFieldName( $this->getSelectedTabId());
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getSelectedTabId()
+    {
+        $request              = Registry::get(Request::class);
+        $this->_sCurrentTabId = $request->getRequestEscapedParameter( 'sTabId');
+
+        if (empty($this->_sCurrentTabId)) {
+            $this->_sCurrentTabId = 1;
+        }
+
+        $this->addTplParam('sCurrentTabId', $this->_sCurrentTabId);
+
+        return $this->_sCurrentTabId;
+    }
+
+    /**
+     * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function isActiveFieldSaveable()
+    {
+        $soxId       = $this->getEditObjectId();
+
+        $oArticle = oxNew(Article::class);
+        if (isset($soxId) && $soxId != "-1") {
+            $oArticle->loadInLang( $this->_iEditLang, $soxId );
+        }
+
+        $sTabId = Registry::get(Request::class)->getRequestEscapedParameter('sTabId');
+        $sTabId = $sTabId === NULL ? 1 : $sTabId;
+
+        if (isset($soxId)
+            && $soxId != "-1"
+            && in_array($sTabId, array(1, NULL))
+            && !strlen($this->getLongDescTitle($oArticle, $sTabId))
+        ) {
+            return false;
+        };
+
+        return true;
+    }
+
+    /**
+     * template getter for backend / admin
+     *
+     * @param $oArticle Article
+     * @param $sTabId
+     *
+     * @return string
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function getLongDescTitle($oArticle, $sTabId)
+    {
+        $oTabsModel = oxNew(TabsModel::class, $oArticle);
+        return $this->_getEditValue( $oArticle, $oTabsModel->getArticleTitleFieldName( $sTabId));
+    }
+
+    /**
+     * @param $oArticle
+     * @param $sTabId
+     *
+     * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function isLongDescActive($oArticle, $sTabId)
+    {
+        /** @var TabsModel $oTabsModel */
+        $oTabsModel = oxNew(TabsModel::class, $oArticle);
+        return $oTabsModel->isTabActive($sTabId);
+    }
+
+    /**
+     * @param $oArticle
+     * @param $sTabId
+     *
+     * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function tabExists($oArticle, $sTabId)
+    {
+        /** @var TabsModel $oTabsModel */
+        $oTabsModel = oxNew(TabsModel::class, $oArticle);
+
+        return !is_null($oTabsModel->isTabActive($sTabId))
+            || !is_null($oTabsModel->getLongDescriptionTitleFromArticleObject($sTabId))
+            || !is_null($oTabsModel->getLongDescriptionFromArticleObject($sTabId));
+    }
+
+    /**
+     * template getter for backend / admin
+     * @return array
+     */
+    public function getTabIdList()
+    {
+        return range(1, oxNew(TabsModel::class, oxNew(Article::class))->getTabCount());
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function save()
+    {
+        $request         = Registry::get( Request::class );
+        $isAllowedToSave = $request->getRequestEscapedParameter( "isPermittedToSaveData" );
+
+        if ( empty( $isAllowedToSave ) ) {
+            return;
+        }
+
+        parent::save();
+
+        $soxId = $this->getEditObjectId();
+        $this->setEditObjectId( $soxId );
+
+        if ( $soxId == "-1" ) {
+            return;
+        }
+
+        /** @var d3_oxarticle_longtexts $oArticle */
+        $oArticle = oxNew( Article::class );
+        $oArticle->setLanguage( $this->_iEditLang );
+
+        if ( false == $oArticle->load( $soxId ) ) {
+            return;
+        }
+
+        $aParams = $request->getRequestEscapedParameter( "editval" );
+        $oArticle->assign( $aParams );
+        $oArticle->setArticleLongDesc( $this->_processLongDesc( $aParams['oxarticles__oxlongdesc'] ) );
+
+        $oArticle->save();
+    }
+
+    /**
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     */
+    public function delete()
+    {
+        $request         = Registry::get( Request::class );
+        $isAllowedToSave = $request->getRequestEscapedParameter( "isPermittedToSaveData" );
+
+        if ( empty( $isAllowedToSave ) ) {
+            return;
+        }
+
+        $aParams = $request->getRequestEscapedParameter( "editval" );
+
+        $oArticle = oxNew(Article::class);
+        $oArticle->load($aParams['oxarticles__oxid']);
+
+        /** @var TabsModel $oTabsModel */
+        $oTabsModel = oxNew(TabsModel::class, $oArticle);
+        $oTabsModel->loadByArticleTab($aParams['oxarticles__oxid'], $this->getSelectedTabId());
+        $oTabsModel->delete();
+    }
+
+    /**
+     * inhaltliche Uebernahme analog Article_Main
+     * wird genutzt zum Abspeichern der Artikel-Langbeschreibung
+     *
+     * @param $sValue
+     *
+     * @return mixed
+     */
+    protected function _processLongDesc($sValue)
+    {
+        $aSearch  = array('&amp;nbsp;', '&amp;', '&quot;', '&lang=', '<p>&nbsp;</p>', '<p>&nbsp; </p>');
+        $aReplace = array('&nbsp;', '&', '"', '&amp;lang=', '', '');
+
+        return str_replace($aSearch, $aReplace, $sValue);
+    }
+
+    /**
+     * Returns string which must be edited by editor
+     *
+     * @param Article $oObject object with field will be used for editing
+     * @param string  $sField  name of editable field
+     *
+     * @return string
+     */
+    protected function _getEditValue($oObject, $sField)
+    {
+        if (false == isset($oObject) || $sField != $oObject->getCoreTableName().'__oxlongdesc') {
+            return parent::_getEditValue($oObject, $sField);
+        }
+
+        $sEditObjectValue = '';
+        if ($oObject) {
+            $oDescField = $oObject->getLongDescription();
+            $sEditObjectValue = $this->_processEditValue($oDescField->getRawValue());
+        }
+
+        return $sEditObjectValue;
+    }
+
+    public function getUserMessages()
+    {
+        return null;
+    }
+
+    public function getHelpURL()
+    {
+        return null;
+    }
+}

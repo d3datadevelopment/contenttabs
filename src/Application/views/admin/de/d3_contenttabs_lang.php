@@ -20,6 +20,7 @@ $aLang = array(
     // Admin-Template
     'D3_CONTENT_TABS_FIRST_SELECT_ARTICLE'             => 'Bitte erst einen Artikel aus der Liste zum Editieren ausw&auml;hlen.',
     'D3_CONTENT_TABS_TITEL'                            => 'Tab-Titel',
+    'D3_CONTENT_TABS_TITEL_DEFAULT'                    => 'ohne Angabe heißt der Tab "Beschreibung"',
     'D3_CONTENT_TABS_ARTICLE_VARIANTSELECT'            => 'Wechsel zu Variante <i>(Art.-Nr. -- Auswahlname)</i>',
     'D3_CONTENT_TABS_ARTICLE_PARENTARTICLE'            => 'Elternartikel',
     'D3_CONTENT_TABS_ARTICLE_GENERAL_LANGUAGE'         => 'In Sprache',
@@ -29,6 +30,7 @@ $aLang = array(
         . 'Bei verwendung eines HTML-Editors, benutzen Sie "Source" anstatt "Design", <br>'
         . 'wenn Sie Zeilenumbrüche unverändert übernehmen möchten (z. B. für plaintext E-Mail).',
     'D3_CONTENT_TABS_GENERAL_SAVE_IN'                  => 'Kopiere in Sprache',
+    'D3_CONTENT_TABS_GENERAL_DELETE'                   => 'Tab löschen',
     'D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE'              => 'Aktiv',
     'D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE_HELP'         => 'Beachten Sie bitte, dass der 1. Langtext nur inaktiv ' //
         . 'gesetzt werden kann, sofern ein eigener Tab-Titel vergeben wird!',
