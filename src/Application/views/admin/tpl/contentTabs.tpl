@@ -43,17 +43,16 @@
             [{oxmultilang ident="D3_CONTENT_TABS_FIRST_SELECT_ARTICLE"}]
         </div>
     [{else}]
-        <form name="myedit" id="myedit" action="[{$oViewConf->getSelfLink()}]" method="post" onSubmit="copyLongDesc('[{$sActFieldName}]');">
+        <form name="myedit" id="myedit" action="[{$oViewConf->getSelfLink()}]" method="post" onSubmit="copyLongDesc('[{$oView->getLongDescContentField()}]');">
             <div>
                 [{$oViewConf->getHiddenSid()}]
                 <input type="hidden" name="cl" value="[{$oViewConf->getActiveClassName()}]">
                 <input type="hidden" name="fnc" value="save">
                 <input type="hidden" name="oxid" value="[{$oxid}]">
                 <input type="hidden" name="voxid" value="[{$oxid}]">
-                <input type="hidden" name="oxparentid" value="[{$oxparentid}]">
                 <input type="hidden" name="editlanguage" value="[{$editlanguage}]">
                 <input type="hidden" name="editval[oxarticles__oxid]" value="[{$oxid}]">
-                <input type="hidden" name="editval[[{$sActFieldName}]]" value="">
+                <input type="hidden" name="editval[[{$oView->getLongDescContentField()}]]" value="">
                 [{if $canSaveLongtext}]
                     <input type="hidden" name="isPermittedToSaveData" value='1'>
                 [{/if}]
@@ -89,8 +88,7 @@
                             [{oxmultilang ident="D3_CONTENT_TABS_ARTICLE_VARIANTSELECT"}]
                         </td>
                         <td class="edittext" colspan="2">
-                            <select id="ctabvariantselect" name="variantselect" style="width:100%;"
-                                    onchange="editThis(this.value);" [{$readonly}]>
+                            <select id="ctabvariantselect" name="variantselect" style="width:100%;" onchange="editThis(this.value);">
                                 <option value="">--</option>
                                 [{if $oViewConf->isBuyableParent()}]
                                     <option value="[{$edit->oxarticles__oxid->value}]" [{if $edit->oxarticles__oxactive->value == 1}]style="background-color: #D4F554;"[{/if}]>
@@ -124,19 +122,17 @@
                 <tr>
                     <td colspan="3">
                         <div style="float:left; width:20%;">
-                            <input type="hidden" name="editval[d3contenttab__oxactive]" value="0">
-                            <input class="edittext" type="checkbox" name="editval[d3contenttab__oxactive]" value='1' [{if $isTabActive}]checked[{/if}] [{$readonly}]>
+                            <input type="hidden" name="editval[[{$oView->getLongDescActiveField()}]]" value="0">
+                            <input class="edittext" type="checkbox" name="editval[[{$oView->getLongDescActiveField()}]]" value='1' [{if $oView->isLongDescActive($edit, $sCurrentTabId)}]checked[{/if}] [{$readonly}] [{if !$oView->isActiveFieldSaveable()}] checked readonly disabled[{/if}]>
                             <span>[{oxmultilang ident="D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE"}]</span>
                             <span>[{oxinputhelp ident="D3_CONTENT_TABS_ARTICLE_MAIN_ACTIVE_HELP"}]</span>
                         </div>
                         <div style="float:left; width:80%;">
-                            <select name="sFieldName" style="width: 100%;"
-                                    onChange="document.myedit.fnc.value='changeField'; document.myedit.submit();">
-                                [{foreach from=$oView->getLongDescFieldList() item="value" key="sMultiLangDesc" name="ctabFieldselect"}]
-                                    <option value="[{$value}]" [{if $sActFieldName == $value}]selected[{/if}]
-                                            style="[{if $oView->isLongDescActive($edit, $value)}]background-color: #D4F554;[{/if}]">
-                                        [{oxmultilang ident="D3_CONTENT_TABS_FIELD"}] [{$smarty.foreach.ctabFieldselect.iteration}]
-                                        [{assign var="sLongDescTitle" value=$oView->getLongDescTitle($edit, $value)}]
+                            <select name="sTabId" style="width: 100%;" onChange="document.myedit.fnc.value=''; document.myedit.submit();">
+                                [{foreach from=$oView->getTabIdList() item="tabId" key="sMultiLangDesc" name="ctabTabSelect"}]
+                                    <option value="[{$tabId}]" [{if $sCurrentTabId == $tabId}]selected[{/if}] style="[{if $oView->tabExists($edit, $tabId)}]background-color: #D4F554;[{/if}]">
+                                        [{oxmultilang ident="D3_CONTENT_TABS_FIELD"}] [{$tabId}]
+                                        [{assign var="sLongDescTitle" value=$oView->getLongDescTitle($edit, $tabId)}]
                                         [{if $sLongDescTitle}]: [{$sLongDescTitle}][{/if}]
                                     </option>
                                 [{/foreach}]
@@ -152,32 +148,22 @@
                         [{oxmultilang ident="D3_CONTENT_TABS_TITEL"}]:
                         [{assign var='sLongDescTitleField' value=$oView->getLongDescTitleField()}]
                         <input type="text" name="editval[[{$sLongDescTitleField}]]"
-                               value="[{$oView->getLongDescTitle($edit, $sLongDescTitleField)}]" size="30"/>
+                               value="[{$oView->getLongDescTitle($edit, $sCurrentTabId)}]" size="30"  [{$readonly}]>
+                        [{if !$oView->isActiveFieldSaveable()}]
+                            [{oxmultilang ident="D3_CONTENT_TABS_TITEL_DEFAULT"}]
+                        [{/if}]
                     </td>
                     <td align="right">
-                        [{if $posslang}]
-                            [{block name="admin_tabs_language_edit"}]
-                                [{foreach from=$posslang key=lang item=desc}]
-                                    [{if $editlanguage == $lang}]
-                                        <input type="hidden" name="new_lang" value="[{$lang}]">
-                                        <div class="d3modcfg_btn icon d3color-blue" style="float: right;">
-                                            <button type="submit" name="ok"
-                                                    onClick="document.myedit.fnc.value='saveinnlang'"
-                                                    style="height:25px;" [{$readonly}]>
-                                                <i class="fa fa-copy fa-inverse"></i>
-                                                [{oxmultilang ident="D3_CONTENT_TABS_GENERAL_SAVE_IN"}] [{$desc}]
-                                            </button>
-                                        </div>
-                                    [{/if}]
-                                [{/foreach}]
-                            [{/block}]
-                        [{else}]
-                            <div class="d3modcfg_btn icon d3color-green" style="float: right;">
-                                <button type="submit" name="ok" [{$readonly}]>
-                                    <i class="fa fa-check-circle fa-inverse"></i>[{oxmultilang ident="D3_CFG_MOD_GENERAL_SAVE"}]
-                                </button>
-                            </div>
-                        [{/if}]
+                        <div class="d3modcfg_btn icon d3color-red" style="float: right; margin-left: 10px">
+                            <button type="submit" name="ok" [{$readonly}] [{if !$oView->isActiveFieldSaveable() || !$oView->tabExists($edit, $sCurrentTabId)}] readonly disabled[{/if}]  onClick="document.myedit.fnc.value='delete'">
+                                <i class="fa fa-times-circle fa-inverse"></i>[{oxmultilang ident="D3_CONTENT_TABS_GENERAL_DELETE"}]
+                            </button>
+                        </div>
+                        <div class="d3modcfg_btn icon d3color-green" style="float: right;">
+                            <button type="submit" name="ok" [{$readonly}]>
+                                <i class="fa fa-check-circle fa-inverse"></i>[{oxmultilang ident="D3_CFG_MOD_GENERAL_SAVE"}]
+                            </button>
+                        </div>
                     </td>
                 </tr>
                 <tr>

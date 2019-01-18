@@ -18,13 +18,15 @@ use OxidEsales\Eshop\Application as OxidApplication;
  */
 $sMetadataVersion = '2.0';
 
+$sModuleId = 'd3contenttabs';
+
 $sD3Logo = (class_exists(D3\ModCfg\Application\Model\d3utils::class) ? D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo() : 'D&sup3;');
 
 /**
  * Module information
  */
 $aModule = array(
-    'id'             => 'd3contenttabs',
+    'id'             => $sModuleId,
     'title'          => $sD3Logo . ' Content Tabs',
     'description'    => array(
         'de' => 'Dieses Modul bietet die M&ouml;glichkeit umfangreiche Artikelinformationen, auf der ' //
@@ -34,7 +36,7 @@ $aModule = array(
         'en' => '',
     ),
     'thumbnail'      => 'picture.png',
-    'version'        => '4.0.0.2',
+    'version'        => '4.1.0.0',
     'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'url'            => 'http://www.shopmodule.com',
     'email'          => 'support@shopmodule.com',
@@ -67,11 +69,31 @@ $aModule = array(
             'file'     => 'Application/views/blocks/details_tabs_longdescription.tpl',
         ),
     ),
-    'settings'       => array(),
+    'settings' => array(
+        array(
+            'group'     => 'd3thememapping_module',
+            'name'      => 'd3custParentThemeMappedToFlow_'.$sModuleId,
+            'type'      => 'str',
+            'value'     => ''
+        ),
+        array(
+            'group'     => 'd3thememapping_module',
+            'name'      => 'd3custParentThemeMappedToMobile_'.$sModuleId,
+            'type'      => 'str',
+            'value'     => ''
+        ),
+        array(
+            'group'     => 'd3thememapping_module',
+            'name'      => 'd3custParentThemeMappedToAzure_'.$sModuleId,
+            'type'      => 'str',
+            'value'     => ''
+        ),
+    ),
     'd3FileRegister' => array(
         'd3/contenttabs/Modules/Application/Component/Widget/d3_oxwarticledetails_contenttabs.php',
         'd3/contenttabs/Modules/Application/Model/d3_oxarticle_longtexts.php',
         'd3/contenttabs/Application/views/admin/de/d3_contenttabs_lang.php',
+        'd3/contenttabs/Application/views/admin/de/module_options.php',
         'd3/contenttabs/Application/translations/de/d3_contenttabs_lang.php',
         'd3/contenttabs/Application/Controller/Admin/contentTabs.php',
         'd3/contenttabs/Application/Controller/Admin/support.php',

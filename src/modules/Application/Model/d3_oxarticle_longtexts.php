@@ -18,15 +18,62 @@
 namespace D3\Contenttabs\Modules\Application\Model;
 
 use D3\Contenttabs\Application\Model\contentTabs as TabsModel;
+use D3\Contenttabs\Application\Model\contentTabs;
+use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
+use D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException;
+use Doctrine\DBAL\DBALException;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
+use OxidEsales\Eshop\Core\Exception\StandardException;
+use OxidEsales\Eshop\Core\Field;
 
 /**
- * Article manager.
- * Creates fully detailed article object, with such information as VAT,
- * discounts, etc.
- *
+ * extends Article manager with content tab functionality
  */
 class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
 {
+    /**
+     * @param string $sOXID
+     *
+     * @return bool
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     */
+    public function load($sOXID)
+    {
+        $blReturn = parent::load($sOXID);
+
+        /** @var contentTabs $oContentTabs */
+        $oContentTabs = oxNew(contentTabs::class, $this);
+        $oContentTabs->addTabFields();
+
+        return $blReturn;
+    }
+
+    /**
+     * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function save()
+    {
+        $blRet = parent::save();
+
+        /** @var contentTabs $oContentTabs */
+        $oContentTabs = oxNew(contentTabs::class, $this);
+        $oContentTabs->saveTabFields();
+
+        return $blRet;
+    }
+
     /**
      * Deletes record and other information related to this article such as images from DB,
      * also removes variants. Returns true if entry was deleted.
@@ -42,12 +89,107 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
         if (!$sOXID) {
             $sOXID = $this->getId();
         }
-        if (!$sOXID) {
-            return parent::delete($sOXID);
+
+        if ($sOXID) {
+            oxNew( TabsModel::class, $this )->deleteAllLongtexts( $sOXID );
         }
 
-        oxNew(TabsModel::class, $this)->deleteAllLongtexts($sOXID);
-
         return parent::delete($sOXID);
+    }
+
+    public function getFieldNames()
+    {
+        /** @var contentTabs $oContentTabs */
+        $oContentTabs = oxNew(contentTabs::class, $this);
+
+        foreach ($oContentTabs->getNewArticleFields() as $sFieldName)
+        {
+            $this->_addField(
+                $sFieldName,
+                (int) $oContentTabs->isMultilingualField($oContentTabs->getTableFieldNameFromArticleField($sFieldName))
+            );
+        }
+
+        return parent::getFieldNames();
+    }
+
+    /**
+     * @return contentTabs
+     */
+    public function d3GetContentTabs()
+    {
+        return oxNew(contentTabs::class, $this);
+    }
+
+    /**
+     * Get article long description
+     *
+     * @return object $oField field object
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function getLongDescription()
+    {
+        if ($this->d3CanShowTab(1)) {
+            return parent::getLongDescription();
+        }
+
+        return oxNew(Field::class);
+    }
+
+    /**
+     * @param $iTab
+     *
+     * @return bool
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function d3CanShowTab($iTab)
+    {
+        return $this->d3GetContentTabs()->canGetLongDescription($iTab);
+    }
+
+    /**
+     * @param $iTab
+     *
+     * @return mixed|object|Field|string
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function d3GetLongDescriptionTitle($iTab)
+    {
+        return $this->d3GetContentTabs()->getLongDescriptionTitleFromArticleObject($iTab);
+    }
+
+    /**
+     * @param $iTab
+     *
+     * @return mixed|object|Field
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     */
+    public function d3GetLongDescription($iTab)
+    {
+        if ($iTab == 1) {
+            return $this->getLongDescription();
+        }
+
+        return $this->d3GetContentTabs()->getLongDescriptionFromArticleObject($iTab);
     }
 }

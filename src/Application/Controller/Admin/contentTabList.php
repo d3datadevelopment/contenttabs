@@ -1,146 +1,260 @@
-<?php //006eb
-// This Software is the property of DÂ³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package ContentTabs @version 4.0.0.2 PHP56 (19.10.2018) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2018, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+/**
+ * @copyright     © D³ Data Development
+ *
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @author        D3 Data Development <support@shopmodule.com>
+ * @link          http://www.oxidmodule.com
+ */
+
+namespace D3\Contenttabs\Application\Controller\Admin;
+
+// Controller
+use \OxidEsales\Eshop\Application\Controller\Admin\AdminListController;
+// Core
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use \OxidEsales\Eshop\Core\Registry;
+use \OxidEsales\Eshop\Core\Request;
+use \OxidEsales\Eshop\Core\DatabaseProvider;
+// Models
+use \OxidEsales\Eshop\Application\Model\Article;
+use \OxidEsales\Eshop\Application\Model\ArticleList;
+use \OxidEsales\Eshop\Application\Model\CategoryList;
+use \OxidEsales\Eshop\Application\Model\ManufacturerList;
+use \OxidEsales\Eshop\Application\Model\VendorList;
+
+
+/**
+ * Class contentTabList
+ * @package D3\Contenttabs\Application\Controller\Admin
+ */
+class contentTabList extends AdminListController
+{
+    protected $_iViewListSize = 5;
+
+    protected $_sThisTemplate = 'contentTabList.tpl';
+
+    /**
+     * Name of chosen object class (default null).
+     *
+     * @var string
+     */
+    protected $_sListClass = Article::class;
+
+    /**
+     * Type of list.
+     *
+     * @var string
+     */
+    protected $_sListType = ArticleList::class;
+
+    /**
+     * @return string
+     */
+    public function render()
+    {
+        $myConfig      = $this->getConfig();
+        $request       = Registry::get(Request::class);
+        $sPwrSearchFld = $request->getRequestEscapedParameter("pwrsearchfld");
+        $sPwrSearchFld = $sPwrSearchFld ? strtolower($sPwrSearchFld) : "oxtitle";
+        $oArticle      = null;
+        $oList         = $this->getItemList();
+
+        if ($oList) {
+            foreach ($oList as $key => $oArticle) {
+                $sFieldName = "oxarticles__{$sPwrSearchFld}";
+
+                // formatting view
+                if (!$myConfig->getConfigParam('blSkipFormatConversion')) {
+                    if ($oArticle->$sFieldName->fldtype == "datetime") {
+                        Registry::getUtilsDate()->convertDBDateTime($oArticle->$sFieldName);
+                    } elseif ($oArticle->$sFieldName->fldtype == "timestamp") {
+                        Registry::getUtilsDate()->convertDBTimestamp($oArticle->$sFieldName);
+                    } elseif ($oArticle->$sFieldName->fldtype == "date") {
+                        Registry::getUtilsDate()->convertDBDate($oArticle->$sFieldName);
+                    }
+                }
+
+                $oArticle->pwrsearchval = $oArticle->$sFieldName->value;
+                $oList[$key]            = $oArticle;
+            }
+        }
+
+        $return = parent::render();
+
+        // load fields
+        if (!$oArticle && $oList) {
+            $oArticle = $oList->getBaseObject();
+        }
+        $this->_aViewData["pwrsearchfields"] = $oArticle ? $this->getSearchFields() : null;
+        $this->_aViewData["pwrsearchfld"]    = strtoupper($sPwrSearchFld);
+
+        $aFilter = $this->getListFilter();
+        if (isset($aFilter["oxarticles"][$sPwrSearchFld])) {
+            $this->_aViewData["pwrsearchinput"] = $aFilter["oxarticles"][$sPwrSearchFld];
+        }
+
+        $sType   = '';
+        $sValue  = '';
+        $sArtCat = $request->getRequestEscapedParameter("art_category");
+
+        if ($sArtCat && strstr($sArtCat, "@@") !== false) {
+            list($sType, $sValue) = explode("@@", $sArtCat);
+        }
+        $this->_aViewData["art_category"] = $sArtCat;
+
+        // parent categorie tree
+        $this->_aViewData["cattree"] = $this->getCategoryList($sType, $sValue);
+
+        // manufacturer list
+        $this->_aViewData["mnftree"] = $this->getManufacturerList($sType, $sValue);
+
+        // vendor list
+        $this->_aViewData["vndtree"] = $this->getVendorList($sType, $sValue);
+
+        return $return;
+    }
+
+    public function getSearchFields()
+    {
+        $aSkipFields = [
+            "oxblfixedprice", "oxvarselect", "oxamitemid",
+            "oxamtaskid", "oxpixiexport", "oxpixiexported"
+        ];
+        $oArticle    = oxNew(Article::class);
+
+        return array_diff($oArticle->getFieldNames(), $aSkipFields);
+    }
+
+    public function getCategoryList($sType, $sValue)
+    {
+        /** @var \OxidEsales\Eshop\Application\Model\CategoryList $oCatTree parent category tree */
+        $oCatTree = oxNew(CategoryList::class);
+        $oCatTree->loadList();
+        if ($sType === 'cat') {
+            foreach ($oCatTree as $oCategory) {
+                if ($oCategory->oxcategories__oxid->value == $sValue) {
+                    $oCategory->selected = 1;
+                    break;
+                }
+            }
+        }
+
+        return $oCatTree;
+    }
+
+
+    /**
+     * Load manufacturer list, mark active category;
+     *
+     * @param string $sType  active list type
+     * @param string $sValue active list item id
+     *
+     * @return ManufacturerList
+     */
+    public function getManufacturerList($sType, $sValue)
+    {
+        $oMnfTree = oxNew(ManufacturerList::class);
+        $oMnfTree->loadManufacturerList();
+        if ($sType === 'mnf') {
+            foreach ($oMnfTree as $oManufacturer) {
+                if ($oManufacturer->oxmanufacturers__oxid->value == $sValue) {
+                    $oManufacturer->selected = 1;
+                    break;
+                }
+            }
+        }
+
+        return $oMnfTree;
+    }
+
+    /**
+     * Load vendor list, mark active category;
+     *
+     * @param string $sType  active list type
+     * @param string $sValue active list item id
+     *
+     * @return VendorList
+     */
+    public function getVendorList($sType, $sValue)
+    {
+        $oVndTree = oxNew(VendorList::class);
+        $oVndTree->loadVendorList();
+        if ($sType === 'vnd') {
+            foreach ($oVndTree as $oVendor) {
+                if ($oVendor->oxvendor__oxid->value == $sValue) {
+                    $oVendor->selected = 1;
+                    break;
+                }
+            }
+        }
+
+        return $oVndTree;
+    }
+
+    /**
+     * @param null $oListObject
+     * @return string
+     * @throws DatabaseConnectionException
+     */
+    protected function _buildSelectString($oListObject = null)
+    {
+        $sQ = parent::_buildSelectString($oListObject);
+        if ($sQ) {
+            $sTable = getViewName("oxarticles");
+            $sQ .= " and $sTable.oxparentid = '' ";
+
+            $sType = false;
+            $request       = Registry::get(Request::class);
+            $sArtCat = $request->getRequestEscapedParameter("art_category");
+            if ($sArtCat && strstr($sArtCat, "@@") !== false) {
+                list($sType, $sValue) = explode("@@", $sArtCat);
+            }
+
+            switch ($sType) {
+                // add category
+                case 'cat':
+                    $oStr = getStr();
+                    $sViewName = getViewName("oxobject2category");
+                    $sInsert = "from $sTable left join {$sViewName} on {$sTable}.oxid = {$sViewName}.oxobjectid " .
+                        "where {$sViewName}.oxcatnid = " . DatabaseProvider::getDb()->quote($sValue) . " and ";
+                    $sQ = $oStr->preg_replace("/from\s+$sTable\s+where/i", $sInsert, $sQ);
+                    break;
+                // add category
+                case 'mnf':
+                    $sQ .= " and $sTable.oxmanufacturerid = " . DatabaseProvider::getDb()->quote($sValue);
+                    break;
+                // add vendor
+                case 'vnd':
+                    $sQ .= " and $sTable.oxvendorid = " . DatabaseProvider::getDb()->quote($sValue);
+                    break;
+            }
+        }
+
+        return $sQ;
+    }
+
+    public function buildWhere()
+    {
+        // we override this to select only parent articles
+        $this->_aWhere = parent::buildWhere();
+
+        // adding folder check
+        $request       = Registry::get(Request::class);
+        $sFolder = $request->getRequestEscapedParameter('folder');
+        if ($sFolder && $sFolder != '-1') {
+            $this->_aWhere[getViewName("oxarticles") . ".oxfolder"] = $sFolder;
+        }
+
+        return $this->_aWhere;
+    }
+}

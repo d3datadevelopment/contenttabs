@@ -36,15 +36,15 @@ class setupWizard extends d3install_updatebase
 {
     public $sModKey = 'd3contenttabs';
     public $sModName = 'Content Tabs';
-    public $sModVersion = '4.0.0.2';
-    public $sModRevision = '4002';
+    public $sModVersion = '4.1.0.0';
+    public $sModRevision = '4100';
     public $sBaseConf = '--------------------------------------------------------------------------------
-sbVv2==eEZoekY3ZnZxMm5yY0c4bm41dCtTMnRHNjdxMGUrMk9ua3lOa0tFL3hkTUlESG5WdGhhN05ia
-Gw0ZHAvanU5a1daNFZESlNTaUdtMlJVOCtndnlRYmViSUorTGV3ZG9Ma1YzOThqem9FOTIwTVpFYXZwU
-WlnTVVnMlUwMXB3NHVEYldrd2FrdjdrTVY3dFl1amdsZVlwYm5yY3NSODJTV3pDamdZb1JORk9vclN1R
-nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
-0dSUmJOSWVUTFRzNTEyZ0VBRFpheDljeGpLdUIwSVdvbU5pM0Z1ekJwdzhhaFZlWE5HalJYWjRIZ0t6Y
-3NORzFsc2oxRzRMUk45T1FCMFVuT0RSWkwzR0hBQ0Znc1ZLYzBxOWR5UGJSVm93PT0=
+V7Xv2==NmpFalNzY2x6SjJsWjFoRStDanlXakdQelRPZGtmVUtCL0M5MlNDK3lkTUZIWFI1NE5jbDdDS
+3F0OW5OL3ltUG1ya3NsQXBtYW1nNVFmQkNROHUwbWxBbHlsemJVWVcwRTduS2N1dDJUZkFQT0szZm5jb
+2VVbWNRaVF6U2J6OUdOSHlyUk9YWlBCNGlycVhCejBiZXhIQzZ0VjVzeitjTmZjSDBia000SGcvcnk0c
+XR0U29zc2pCeU9jM3BTczMwZWlnNnBiak9MREVNNEJwNHRlb2xNU3RUV0orc3BsNnR1TFI1dXZ5Y01UT
+ThxOUhoTWExQU54WWFzOXk0a0YwOW5UUWZaK2RuVjNmV01PQjFhY09MY2MxM1Bhd2lNL3U5aEt6SUlzY
+WNBVURXd2JOSW52SU0vRjZzQmFtSTNqWFlIRk5zSHM0dGdWWXhSY3BtYk1zRTBBPT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
     public $sBaseValue = '';
@@ -63,11 +63,11 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
                'check' => 'existContentTabTable',
                'do'    => 'addContentTabTable'
         ),
-        array( // #5886 übernahme der Daten von oxarticles/oxartextends in die eigene Tabelle
+        array( // #5886 Uebernahme der Daten von oxarticles/oxartextends in die eigene Tabelle
                'check' => 'needToMigrateArticleDataToContenttabsTable',
                'do'    => 'migrateArticleDataToContenttabsTable'
         ),
-        array( // #5886 alte DB-Felder nach erfolgreicher Übernahme der Daten aus oxarticles/oxartextends entfernen
+        array( // #5886 alte DB-Felder nach erfolgreicher Uebernahme der Daten aus oxarticles/oxartextends entfernen
                'check' => 'needToDeleteOldContentTabDatabaseFields',
                'do'    => 'deleteOldContentTabDatabaseFields'
         ),
@@ -75,11 +75,11 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
                'check' => 'checkFields',
                'do'    => 'fixFields'
         ),
-        array( // alte oxconfig-Einträge vorhanden?
+        array( // alte oxconfig-EintrÃ¤ge vorhanden?
                'check' => 'hasOldModuleItems',
                'do'    => 'deleteOldModuleItems'
         ),
-        array( // auf gültige Modul-Dateien prüfen - see metadata.php d3FileRegister
+        array( // auf gueltige Modul-Dateien pruefen - see metadata.php d3FileRegister
                'check' => 'hasUnregisteredFiles',
                'do'    => 'showUnregisteredFiles'
         ),
@@ -387,7 +387,7 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
     protected $aMigrateContents = array();
 
     /******************************************************************************************************************/
-    /*** eigene Tabelle für Content-Tabs anlegen / Prüfen und Daten migrieren *****************************************/
+    /*** eigene Tabelle fuer Content-Tabs anlegen / Pruefen und Daten migrieren *****************************************/
     /******************************************************************************************************************/
     /**
      * @return bool
@@ -399,7 +399,7 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
         foreach ($this->aOldTabDbFields as $key => $aOldDbfield) {
             // mehrsprachigkeit erforderlich?
             if ($aOldDbfield['blMultilang']) {
-                // je sprache ist ein subfeld zu prüfen
+                // je sprache ist ein subfeld zu pruefen
                 for ($i = 0; count(Registry::getLang()->getLanguageArray()) > $i; $i++) {
                     // felder je sprache
                     $sAddfield = '';
@@ -502,7 +502,7 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
      */
     public function needToMigrateArticleDataToContenttabsTable()
     {
-        // Prüfung existieren die alten Felder noch und sind diese gefüllt?
+        // Pruefung existieren die alten Felder noch und sind diese gefuellt?
         $blFieldsExist = false;
         foreach ($this->aOldTabDbFields as $aOldDbfield) {
             if ($aOldDbfield['blMultilang']) {
@@ -625,7 +625,7 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
             // NOTE standard-langtext-inhalt bleibt in oxarticles!
             // auch wenn es einen Titel dazu gibt
             // der Langtext wird weiterhin in oxarticles abgelegt/abgeholt!!!
-            // andernfalls käme es mit inaktivem Modul zu ....
+            // andernfalls kaeme es mit inaktivem Modul zu ....
 
             // ----> transfer data to new table
             $oDb = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC);
@@ -633,7 +633,7 @@ nh3aWpyUWplL0JsTFNYdkVvL3RvS3dITEljR1dtRVpTK1BTR1RjOExnNzRMSU1Uc3ZQZUhhOHM5MEFUT
                 //    map:
                 //    d3contenttabs__OXID                 > wird vom Shop generiert
                 //    d3contenttabs__ARTICLEOXID          > oxarticles__OXID bzw. oxartextends__OXID
-                //    d3contenttabs__OXACTIVE             > 1 bei einer übernahme
+                //    d3contenttabs__OXACTIVE             > 1 bei einer uebernahme
                 //
                 //    d3contenttabs__TABIDENT             > wird spannend ... > Tab 2 , Tab 3, Tab 4, etc.
                 //        anhand von:
