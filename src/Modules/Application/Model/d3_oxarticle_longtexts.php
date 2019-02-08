@@ -32,6 +32,8 @@ use OxidEsales\Eshop\Core\Field;
  */
 class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
 {
+    protected $_aD3ContentTabsSkipSaveFields = array();
+
     /**
      * @param string $sOXID
      *
@@ -97,6 +99,13 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
         return parent::delete($sOXID);
     }
 
+    protected function _skipSaveFields()
+    {
+        parent::_skipSaveFields();
+
+        $this->_aSkipSaveFields = array_merge($this->_aSkipSaveFields, $this->_aD3ContentTabsSkipSaveFields);
+    }
+
     public function getFieldNames()
     {
         /** @var contentTabs $oContentTabs */
@@ -108,6 +117,10 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
                 $sFieldName,
                 (int) $oContentTabs->isMultilingualField($oContentTabs->getTableFieldNameFromArticleField($sFieldName))
             );
+
+            if (!in_array($sFieldName, $this->_aD3ContentTabsSkipSaveFields)) {
+                $this->_aD3ContentTabsSkipSaveFields[] = $sFieldName;
+            }
         }
 
         return parent::getFieldNames();
