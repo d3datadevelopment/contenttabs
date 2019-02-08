@@ -304,7 +304,11 @@ class contentTabs extends AdminDetailsController
 
         $aParams = $request->getRequestEscapedParameter( "editval" );
         $oArticle->assign( $aParams );
-        $oArticle->setArticleLongDesc( $this->_processLongDesc( $aParams['oxarticles__oxlongdesc'] ) );
+
+        // default longdesc can parsed only, if longtext #1 is selected, all other longtext selections don't contains its value
+        if (is_array($aParams) && isset($aParams['oxarticles__oxlongdesc'])) {
+            $oArticle->setArticleLongDesc( $this->_processLongDesc( $aParams['oxarticles__oxlongdesc'] ) );
+        }
 
         $oArticle->save();
     }

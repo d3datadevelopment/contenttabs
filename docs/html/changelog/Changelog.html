@@ -77,46 +77,68 @@
     <div class="Page__header">
         <h1><a href="../changelog/Changelog.html">Changelog</a></h1>
                 <span class="ModifiedDate">
-                        18.01.2019        </span>
+                        08.02.2019        </span>
                     </div>
 
     <div class="s-content">
         <h1 id="page_Changelog">Changelog</h1>
 <p>All notable changes to this project will be documented in this file.</p>
+<h2 id="page_4-1-0-1-2019-01-18">4.1.0.1 - 2019-01-18</h2>
+<h3 id="page_fixed">fixed</h3>
+<ul>
+<li>Artikel konnten nicht gespeichert werden: verhindert, dass tabellenfremde Felder in den Save Query integriert werden</li>
+<li>Speichern veränderte HTML Encoding parallel existierender Tabinhalte</li>
+<li>Speichern von Tabinhalten (&gt;= Tab 2) löschte Standardlangtext des Artikels</li>
+<li>Tabinhalte wurden mit verändertem HTML Encoding ans Frontend ausgeliefert</li>
+</ul>
+<hr />
 <h2 id="page_4-1-0-0-2019-01-18">4.1.0.0 - 2019-01-18</h2>
+<h3 id="page_added">added</h3>
 <ul>
 <li>Variantenartikel erben Langtexte der Elternartikel</li>
+<li>modulspzifisches Thememapping eingefügt</li>
+<li>Löschfunktion für angelegten Tab eingefügt</li>
+</ul>
+<h3 id="page_changed">changed</h3>
+<ul>
 <li>keine Bearbeitung von zwischen Mandanten vererbten Artikelinhalten möglich</li>
 <li>Admin deaktiviert Eingabefelder, wenn deren Funktion vom Tab vordefiniert ist</li>
 <li>Admin zeigt Hinweis für Standard-Tabtitel, wenn kein Titel vergeben wurde</li>
-<li>modulspzifisches Thememapping eingefügt</li>
 <li>Tab-Eigenschaften werden in Artikel-Objekt geladen und gespeichert (statt im proprietären eigenen Objekt)</li>
-<li>Löschfunktion für angelegten Tab eingefügt</li>
 <li>Logik aus Template ins Model verschoben (flow + azure)</li>
 <li>auf HTML-Dokumentation umgestellt</li>
 </ul>
 <hr />
 <h2 id="page_4-0-0-2-2018-10-19">4.0.0.2 - 2018-10-19</h2>
+<h3 id="page_added-2">added</h3>
 <ul>
 <li>Freigabe für OXID 6.1.x</li>
 <li>Fehlerhinweise eingefügt, wenn Langtexte nicht ausreichend befüllt sind</li>
-<li>bugfix: Schreibschutz für Langtexte an Artikelvarianten entfernt</li>
+</ul>
+<h3 id="page_fixed-2">fixed</h3>
+<ul>
+<li>Schreibschutz für Langtexte an Artikelvarianten entfernt</li>
 </ul>
 <hr />
 <h2 id="page_4-0-0-1-2018-03-01">4.0.0.1 - 2018-03-01</h2>
+<h3 id="page_fixed-2">fixed</h3>
 <ul>
 <li>Exception im Admin unter /Content Tabs/Tabverwaltung/Stamm/</li>
 </ul>
 <hr />
 <h2 id="page_4-0-0-0-2018-03-01">4.0.0.0 - 2018-03-01</h2>
+<h3 id="page_added-2">added</h3>
 <ul>
 <li>Kompatibilität und Support ab Oxid 6.0.0</li>
 <li>Integration eines eigenen Admin-Bereich &quot;<i class='fab fa-d3 d3fa-color-blue'></i> Content Tabs&quot;</li>
-<li>Titel und Langtexte der Tabs werden in einer eigenen Tabelle gespeichert</li>
 <li>Langtexte haben eine &quot;Aktiv&quot; - Option erhalten, welche im Frontend zusätzlich geprüft wird</li>
+<li>Grundinstallation via Composer</li>
+</ul>
+<h3 id="page_changed-2">changed</h3>
+<ul>
+<li>Titel und Langtexte der Tabs werden in einer eigenen Tabelle gespeichert</li>
 <li>Altlasten und unnötige Dateien entfernt</li>
 <li>Umstellung auf Namespaces</li>
-<li>Grundinstallation via Composer</li>
 </ul>
 <hr />
 <h2 id="page_3-2-0-1-2016-12-19">3.2.0.1 - 2016-12-19</h2>
