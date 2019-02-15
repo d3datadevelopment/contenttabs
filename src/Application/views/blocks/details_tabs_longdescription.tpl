@@ -5,9 +5,11 @@
     [{assign var='blFirstTab' value=true}]
 
     [{if $d3Tabs}]
+        [{assign var=iMaxTabIndex value=$oContentTabs->getTabCount()+1}]
+
         [{if $oModCfg_d3contenttabs->isThemeIdMappedTo('flow')}]
             [{* FLOW *}]
-            [{section name=tab start=1 loop=$oContentTabs->getTabCount()}]
+            [{section name=tab start=1 loop=$iMaxTabIndex}]
                 [{assign var="tabId" value=$smarty.section.tab.index}]
                 [{if $oContentTabs->canGetLongDescription($tabId)}]
                     [{capture append="tabs"}]
@@ -30,7 +32,7 @@
             [{/section}]
         [{else}]
             [{* AZURE *}]
-            [{section name=tab start=1 loop=$oContentTabs->getTabCount()}]
+            [{section name=tab start=1 loop=$iMaxTabIndex}]
                 [{assign var="tabId" value=$smarty.section.tab.index}]
                 [{if $oContentTabs->canGetLongDescription($tabId)}]
                     [{capture append="tabs"}]
