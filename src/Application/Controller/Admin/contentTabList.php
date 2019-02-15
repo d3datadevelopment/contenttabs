@@ -1,7 +1,6 @@
 <?php
+
 /**
- * @copyright     © D³ Data Development
- *
  * This Software is the property of Data Development and is protected
  * by copyright law - it is NOT Freeware.
  *
@@ -12,8 +11,8 @@
  * http://www.shopmodule.com
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @author        D3 Data Development <support@shopmodule.com>
- * @link          http://www.oxidmodule.com
+ * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
+ * @link      http://www.oxidmodule.com
  */
 
 namespace D3\Contenttabs\Application\Controller\Admin;

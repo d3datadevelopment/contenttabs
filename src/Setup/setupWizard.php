@@ -36,15 +36,15 @@ class setupWizard extends d3install_updatebase
 {
     public $sModKey = 'd3contenttabs';
     public $sModName = 'Content Tabs';
-    public $sModVersion = '4.1.0.1';
-    public $sModRevision = '4101';
+    public $sModVersion = '4.1.0.2';
+    public $sModRevision = '4102';
     public $sBaseConf = '--------------------------------------------------------------------------------
-7Ddv2==bk0wckFoM1lnSDkwSFBYRFdIb0krSGN6aVd6MHB5ajd0T0J5Q0FEODdteFJLdlJ4OFdueHJMU
-2FDdDFLZndkeXF3ZVZlV0VDN1VwUWVrVWlSbDMzSVc1eXNMbzlTYWNNWTF4UjQzaDBCMU5DRFRhNm9wa
-ndiNTMyR3paaGpxK0JUdTRJZGdicnFETVRrL3NsekxKb1hqR0k2RU9QZWNoTzJ1Q2JDVW84NU1MSkdBV
-lhSYURuSVpMVnpnLy94RkpwOVl4UXdMTy9RT1N1VzlLbmNSQjBKT1JDL2srcVRZQVFaMEpmTVFwS1pwW
-FNhdlZ2SHJjZU5ndGcvOFM5MkpuRVFMMy85RkxNcXVnbUFmUmFXcWdERk9aaFIvNFBJTG5QM2xnaElOS
-mNtWU1NVTVFVmVVSVNRdG9DUlhoNHkwNkMzcEhXdWk0SDZwYXhPbWNGdEpEVG53PT0=
+unNv2==Y29ZSmdsOE80VmhxYk9wNUYwSFRqSkNzNUpIWE5lVWFZWjVHVEtxbVRDTWRDd1Jzb2o0UVVUR
+EJGbkhacWdQYUhaY2VCSTNGcFNZTHloNWZQbkgweG40MFBpblMwakc5Sms1QVBKbi9uVGgya2ZNRTc2Z
+2dXMklMYlppczMwVnB2UzBLMDdNdmM4cXNTSzNSbkFpTmNVTENsQlRmSkVqZ00yaXRrV2dKSDZyUndCQ
+WhwRUdDSHRqMEl4b2lJMU5WT3hEZUxIRGVuZktFeGR0R3ozYjFSZUl1VjZwZ054dEpmcmRXbjVCeHI3Y
+3MwSWlacldjM0dVWmhJU2JtbGlqdldDbkFUQlB2WkNjY2c2cjhLSWM5Y3MyQnhpUVRweXRkeUMzNFdUa
+lJwcG9OUnczaUsxMEloelhpNUVvM2pjR0FVclJ2V2ZKTmJjV0M2bXZYUzVKQ0J3PT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
     public $sBaseValue = '';
@@ -675,7 +675,7 @@ mNtWU1NVTVFVmVVSVNRdG9DUlhoNHkwNkMzcEhXdWk0SDZwYXhPbWNGdEpEVG53PT0=
                         // besteht aus zwei schritten, 1. daten in die neue Tabelle rumnehmen
                         $sMigrate1 = " INSERT INTO d3contenttabs (`OXID`, `ARTICLEOXID`, `OXACTIVE`, `TABIDENT`, `" . $newFieldName . "`, `OXTIMESTAMP`) VALUES "
                             . " (" //
-                            . "'" . Registry::getUtilsObject()->generateUid() . "'," //
+                            . "'" . Registry::getUtilsObject()->generateUId() . "'," //
                             . "'" . $result[$i]['oxid'] . "'," //
                             . "'1'," //
                             . "'" . $this->getContentTabId($aOldContent['sOriginalFieldName']) . "'," //

@@ -5,7 +5,12 @@ title: Changelog
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 4.1.0.1 - 2019-01-18
+## 4.1.0.2 - 2019-02-15
+### fixed
+- letzter Tab wurde nicht im Frontend gezeigt
+- Artikel-Objekte wurden auch mit inaktivem Modul (ModCfg) erweitert
+
+## 4.1.0.1 - 2019-02-08
 ### fixed
 - Artikel konnten nicht gespeichert werden: verhindert, dass tabellenfremde Felder in den Save Query integriert werden
 - Speichern veränderte HTML Encoding parallel existierender Tabinhalte
@@ -17,7 +22,7 @@ All notable changes to this project will be documented in this file.
 ## 4.1.0.0 - 2019-01-18
 ### added
 - Variantenartikel erben Langtexte der Elternartikel
-- modulspzifisches Thememapping eingefügt
+- modulspezifisches Thememapping eingefügt
 - Löschfunktion für angelegten Tab eingefügt
 
 ### changed
