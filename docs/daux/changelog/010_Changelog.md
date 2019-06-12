@@ -5,6 +5,17 @@ title: Changelog
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.1.0.3 - 2019-06-11
+### changed
+- Dokumentation bereinigt
+- beliebig genutzte Aktiv-Felder des Moduls führen zum erfolgreichen Speichern der Langtexte
+
+### fixed
+- Multilangparameter wird für neue Artikelfelder verwendet
+- virtuelle Feldnamen werden aus Select Fields Liste entfernt, um ungültige Datenbankqueries zu vermeiden, die daraus erstellt werden
+
+---
+
 ## 4.1.0.2 - 2019-02-15
 ### fixed
 - letzter Tab wurde nicht im Frontend gezeigt

@@ -1,9 +1,9 @@
 {
     "title": "<i class='fab fa-d3 d3fa-color-blue'></i> Content Tabs",
-    "moduleversion": "4.1.0.2",
+    "moduleversion": "4.1.0.3",
     "titledesc": "für den Oxid eShop",
     "author": "D³ Data Development",
-    "moduledate": "07.02.2019",
+    "moduledate": "11.06.2019",
     "editors": "SK/DS",
     "tagline": "",
     "image": "",
@@ -26,12 +26,7 @@
         "auto_landing": true,
 
         "links": {
-            "Shop": "https://www.oxidmodule.com",
-            "Blog": "https://blog.oxidmodule.com",
-            "FAQ": "https://faq.oxidmodule.com",
-            "D³ Support-Center": "https://support.shopmodule.com/",
-            "Kontakt": "https://www.oxidmodule.com/kontakt",
-            "Impressum": "https://www.oxidmodule.com/impressum"
+            "Shop": "https://www.oxidmodule.com"
         },
 
         "powered_by": ""

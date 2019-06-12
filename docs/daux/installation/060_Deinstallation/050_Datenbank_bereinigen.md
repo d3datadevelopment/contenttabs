@@ -11,7 +11,7 @@ Für das Modul **{$modulename}** sind dies die folgende Tabellen und Felder:
 * die komplette Tabelle `d3contenttabs`
 * sofern vorhanden: `d3contenttabs_setX` *)
     
-sowie diese Einträge bestehenden Tabellen:
+sowie diese Einträge in bestehenden Tabellen:
 
 * in Tabelle `d3_cfg_mod`:  
   * den Eintrag `oxmodid = "{$modcfgident}"` **)
