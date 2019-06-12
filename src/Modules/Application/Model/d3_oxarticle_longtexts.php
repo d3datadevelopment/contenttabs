@@ -138,7 +138,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
             /** @var contentTabs $oContentTabs */
             $oContentTabs = oxNew( contentTabs::class, $this );
 
-            foreach ( $oContentTabs->getNewArticleFields() as $sFieldName ) {
+            foreach ( $oContentTabs->getNewArticleFields(false == $this->_blEmployMultilanguage) as $sFieldName ) {
                 $this->_addField( $sFieldName, (int) $oContentTabs->isMultilingualField( $oContentTabs->getTableFieldNameFromArticleField( $sFieldName ) ) );
 
                 if ( ! in_array( $sFieldName, $this->_aD3ContentTabsSkipSaveFields ) ) {
@@ -148,6 +148,30 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
         }
 
         return parent::getFieldNames();
+    }
+
+    public function getSelectFields($forceCoreTableUsage = null)
+    {
+        $sFieldList = parent::getSelectFields();
+
+        $viewName = $this->getViewName($forceCoreTableUsage);
+        $aFieldList = explode(', ', $sFieldList);
+
+        foreach ($this->_aD3ContentTabsSkipSaveFields as $sTabField) {
+            if ($viewName) {
+                $searchField = "`$viewName`.`$sTabField`";
+            } else {
+                $searchField = ".`$sTabField`";
+            }
+
+            $index = array_search($searchField, $aFieldList);
+
+            if (false !== $index) {
+                unset( $aFieldList[ $index ] );
+            }
+        }
+
+        return implode(', ', $aFieldList);
     }
 
     /**
