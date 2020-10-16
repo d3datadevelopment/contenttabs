@@ -5,6 +5,17 @@ title: Changelog
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 4.1.1.0 - 2019-10-16
+### added
+- Support für OXID 6.2
+- Wave-Theme Unterstützung
+
+### changed
+- Titellogo auf statischen Asset umgestellt
+
+### fixed
+- Sprachauswahl bei https
+
 ## 4.1.0.3 - 2019-06-11
 ### changed
 - Dokumentation bereinigt
