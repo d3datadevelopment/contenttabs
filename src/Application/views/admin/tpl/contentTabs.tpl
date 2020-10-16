@@ -50,7 +50,7 @@
                 <input type="hidden" name="fnc" value="save">
                 <input type="hidden" name="oxid" value="[{$oxid}]">
                 <input type="hidden" name="voxid" value="[{$oxid}]">
-                <input type="hidden" name="editlanguage" value="[{$editlanguage}]">
+                <input type="hidden" name="changelang" value="[{$editlanguage}]">
                 <input type="hidden" name="editval[oxarticles__oxid]" value="[{$oxid}]">
                 <input type="hidden" name="editval[[{$oView->getLongDescContentField()}]]" value="">
                 [{if $canSaveLongtext}]
@@ -193,3 +193,7 @@
 [{/if}]
 
 [{include file="d3_cfg_mod_inc.tpl"}]
+
+[{include file="bottomnaviitem.tpl" sHelpURL = ''}]
+
+[{include file="bottomitem.tpl"}]
