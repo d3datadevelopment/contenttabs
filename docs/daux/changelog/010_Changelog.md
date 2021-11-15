@@ -2,7 +2,13 @@
 title: Changelog
 ---
 
-## 4.1.1.0 - 2019-10-16
+## 4.1.1.1 - 2021-11-12
+### fixed
+- Zuordnungsfehler bei verwendeter Mehrsprachigkeit im Importmodul korrigiert
+
+---
+
+## 4.1.1.0 - 2020-10-16
 ### added
 - Support für OXID 6.2
 - Wave-Theme Unterstützung

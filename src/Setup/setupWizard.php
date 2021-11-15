@@ -36,19 +36,19 @@ class setupWizard extends d3install_updatebase
 {
     public $sModKey = 'd3contenttabs';
     public $sModName = 'Content Tabs';
-    public $sModVersion = '4.1.1.0';
-    public $sModRevision = '4110';
+    public $sModVersion = '4.1.1.1';
+    public $sModRevision = '4111';
     public $sBaseConf = '--------------------------------------------------------------------------------
-bKNv2==NEpOOUVSWWZMZkZndWdVcWN6eGM4cXBkUENMYU84NHJDNUZNVDVzM0NGMmZEQmVRc2lzcU9PK
-0FnUU91dUc1WTNDRFFxOEhVZVhDS1h1SDJYbktzYURNaTg5WkNvTFFhWXZ4aTV1ZXZRSXNiMVZraXlVN
-1Foc25qUkFCRXpleHVYV1lZUW8wdThWOWxTNzNNcVNqZnhrdzRIdW81dURSSDBlRXNLRE4vdGNKdi9oa
-UhURGRDMDFXTWZIV1NWS01vbExUZFVnT3VIVHVRUWtFSm5oWjl6bzFIb3cvanpXajZOWWlsNmlxZVllT
-UZkcHJZVndydmtVSVJoaDJGSUlVenNrNW1pM3BMeHpRdUVmOVVNZVdRNmFNQjU0M1Nnc3JSUG5Tamtqe
-mFjU25QVTExZGsvOE12MFVKUnhDcGlITWFTWHZLRDcrdmRHRk5nNzZjSloydXFRPT0=
+5bXv2==TUhiS0p0RVNkTjhiU1lZaS9OdS9wVjJHbHZ4anZOaXg1bFJSZzZlQUxSMHBYM2NuMUt4bjFJS
+DdMQlRRZWtvV3A1MmZuNU9Nc3RzV0xWY1ZFREZNQmZrenRRV2N3U3R5OVV3T05XTjlBcThwSEpmTHZBb
+EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
+0lVWWs2NllXTjV4NjFjcnVnVTRqRjU3M3JJL0twVm9qeEgrK3JEazNNcU9aZFZ4bkhqOWRXd0hZQ08wM
+25Cdm9aeWVZSVY3ZVoxSjZ5NXlQQnJ0cmlOcWVrZTBmVjhmdGtXYnFSZkl5SFlleHYzeWd6WG9oZ2Q3Y
+2lYbWo0Unoxc3FMSCt2YUNYWTdENlpWaWFoM0tjb21zMWlNNkc3UEUrcmI0b25BPT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
     public $sBaseValue = '';
-    public $sMinModCfgVersion = '5.1.0.0'; /* minimale Modul-Connector Version */
+    public $sMinModCfgVersion = '5.3.0.0'; /* minimale Modul-Connector Version */
 
     protected $_aUpdateMethods = array(
         array( // Moduleintrag anlegen, wenn noch nicht vorhanden
