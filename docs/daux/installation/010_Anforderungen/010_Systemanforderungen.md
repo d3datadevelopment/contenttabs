@@ -11,7 +11,7 @@ title: Systemanforderungen
         * 6.0.x
         * 6.1.x
         * 6.2.x
-* D3 Modul-Connector ([kostenfrei bei D3 erhältlich](https://www.oxidmodule.com/connector/)) ab Version 5.1.0.0 
+* D3 Modul-Connector ([kostenfrei bei D3 erhältlich](https://www.oxidmodule.com/connector/)) ab Version 5.3.0.0 
 * Installation via [Composer](https://getcomposer.org)
 * mindestens ein freier Cronjob zur automatischen Ausführung der angelegten Aufgaben
 

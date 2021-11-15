@@ -257,4 +257,12 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
 
         return $this->d3GetContentTabs()->getLongDescriptionFromArticleObject($iTab);
     }
+
+    /**
+     * @return bool
+     */
+    public function d3IsMultilang()
+    {
+        return $this->_blEmployMultilanguage;
+    }
 }
