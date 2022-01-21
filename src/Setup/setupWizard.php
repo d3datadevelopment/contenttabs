@@ -5,11 +5,11 @@
  * Any unauthorized use of this software without a valid license
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
  * @author        D3 Data Development <support@shopmodule.com>
- * @link          http://www.oxidmodule.com
+ * @link          https://www.oxidmodule.com
  */
 
 namespace D3\Contenttabs\Setup;
@@ -27,7 +27,7 @@ use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
 use OxidEsales\Eshop\Core\Exception\StandardException;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Exception\DatabaseException;
-
+use ReflectionException;
 
 /**
  * Class setupWizard
@@ -36,71 +36,71 @@ class setupWizard extends d3install_updatebase
 {
     public $sModKey = 'd3contenttabs';
     public $sModName = 'Content Tabs';
-    public $sModVersion = '4.1.1.1';
-    public $sModRevision = '4111';
+    public $sModVersion = '4.2.0.0';
+    public $sModRevision = '4200';
     public $sBaseConf = '--------------------------------------------------------------------------------
-5bXv2==TUhiS0p0RVNkTjhiU1lZaS9OdS9wVjJHbHZ4anZOaXg1bFJSZzZlQUxSMHBYM2NuMUt4bjFJS
-DdMQlRRZWtvV3A1MmZuNU9Nc3RzV0xWY1ZFREZNQmZrenRRV2N3U3R5OVV3T05XTjlBcThwSEpmTHZBb
-EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
-0lVWWs2NllXTjV4NjFjcnVnVTRqRjU3M3JJL0twVm9qeEgrK3JEazNNcU9aZFZ4bkhqOWRXd0hZQ08wM
-25Cdm9aeWVZSVY3ZVoxSjZ5NXlQQnJ0cmlOcWVrZTBmVjhmdGtXYnFSZkl5SFlleHYzeWd6WG9oZ2Q3Y
-2lYbWo0Unoxc3FMSCt2YUNYWTdENlpWaWFoM0tjb21zMWlNNkc3UEUrcmI0b25BPT0=
+bNcv2==WVppaUFzVHhnQ08rRjZzUXltd0dkL0I3aXhkVldOMERRS2Q0VFk2WUh0ZS9uN1lPUWM3a3I4S
+DluVUlGQWdobU8vdnNURWhtelUxb0hFVTkxbWVaaG1mMytTZzU5Q2k5Y3JBTnB4aVVJRXdqZ254QlpNU
+DUrRVhkWXBCZktmaGw1VzIyUHFsVUQ3ZlJrbktiMnVENGZkbzFhOU95a0k1ZXVnYk5wZmp4NnNiLzA1M
+HdTYmp6ZUVpcDZsYXo3UWdybGhEeXV3QlJrTXRPS2Z6Q25ZcnFIUUNJOTRMMjlmWE1RR0xQb0NESDV6Y
+2MzVUppRlFKK1lDbVEvSTFVZ1d0YTI0Ty84Sm5GZG9SbGhibzNrZ2c2blpQeFNycFJmb0JHMng5dmhQU
+WxOT01IWEpFNnVnaW9aMjdMa1BJdG1iLzEzSjlUNmxWcExmaVdXTVU3NkhOSG1nPT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
     public $sBaseValue = '';
     public $sMinModCfgVersion = '5.3.0.0'; /* minimale Modul-Connector Version */
 
-    protected $_aUpdateMethods = array(
-        array( // Moduleintrag anlegen, wenn noch nicht vorhanden
+    protected $_aUpdateMethods = [
+        [ // Moduleintrag anlegen, wenn noch nicht vorhanden
                'check' => 'checkModCfgItemExist',
                'do'    => 'updateModCfgItemExist'
-        ),
-        array( // alte Datenbankfelder, sofern vorhanden, korrekt (um)benennen
+        ],
+        [ // alte Datenbankfelder, sofern vorhanden, korrekt (um)benennen
                'check' => 'checkRenameFields',
                'do'    => 'fixRenameFields'
-        ),
-        array( // #5886 eigene Datenbanktabelle, legt diese an, wenn noch nicht vorhanden
+        ],
+        [ // #5886 eigene Datenbanktabelle, legt diese an, wenn noch nicht vorhanden
                'check' => 'existContentTabTable',
                'do'    => 'addContentTabTable'
-        ),
-        array( // #5886 Uebernahme der Daten von oxarticles/oxartextends in die eigene Tabelle
+        ],
+        [ // #5886 Uebernahme der Daten von oxarticles/oxartextends in die eigene Tabelle
                'check' => 'needToMigrateArticleDataToContenttabsTable',
                'do'    => 'migrateArticleDataToContenttabsTable'
-        ),
-        array( // #5886 alte DB-Felder nach erfolgreicher Uebernahme der Daten aus oxarticles/oxartextends entfernen
+        ],
+        [ // #5886 alte DB-Felder nach erfolgreicher Uebernahme der Daten aus oxarticles/oxartextends entfernen
                'check' => 'needToDeleteOldContentTabDatabaseFields',
                'do'    => 'deleteOldContentTabDatabaseFields'
-        ),
-        array( // Datenbankfelder korrigieren, sofern notwendig
+        ],
+        [ // Datenbankfelder korrigieren, sofern notwendig
                'check' => 'checkFields',
                'do'    => 'fixFields'
-        ),
-        array( // alte oxconfig-Einträge vorhanden?
+        ],
+        [ // alte oxconfig-Einträge vorhanden?
                'check' => 'hasOldModuleItems',
                'do'    => 'deleteOldModuleItems'
-        ),
-        array( // auf gueltige Modul-Dateien pruefen - see metadata.php d3FileRegister
+        ],
+        [ // auf gueltige Modul-Dateien pruefen - see metadata.php d3FileRegister
                'check' => 'hasUnregisteredFiles',
                'do'    => 'showUnregisteredFiles'
-        ),
-        array( // viewusage
+        ],
+        [ // viewusage
                'check' => 'hasContentTabViewTables',
                'do'    => 'registerContentTabViewTables'
-        ),
-        array( // viewusage
+        ],
+        [ // viewusage
                'check' => 'needToRegisterContentTabViewTable',
                'do'    => 'registerContentTabViewTable'
-        ),
-        array( // Moduleintrag aktualisieren
+        ],
+        [ // Moduleintrag aktualisieren
                'check' => 'checkModCfgSameRevision',
                'do'    => 'updateModCfgSameRevision'
-        ),
-    );
+        ],
+    ];
 
-    public $aMultiLangTables = array('d3contenttabs');
+    public $aMultiLangTables = ['d3contenttabs'];
 
-    public $aFields = array(
-        'OXID'        => array(
+    public $aFields = [
+        'OXID'        => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'OXID',
             'sType'       => 'char(32)',
@@ -110,8 +110,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => false,
             'blAddBreak'  => false,
-        ),
-        'ARTICLEOXID' => array(
+        ],
+        'ARTICLEOXID' => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'ARTICLEOXID',
             'sType'       => 'char(32)',
@@ -121,8 +121,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => false,
             'blAddBreak'  => false,
-        ),
-        'OXACTIVE'    => array(
+        ],
+        'OXACTIVE'    => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'OXACTIVE',
             'sType'       => 'TINYINT(1)',
@@ -132,8 +132,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => false,
             'blAddBreak'  => false,
-        ),
-        'TABIDENT'    => array(
+        ],
+        'TABIDENT'    => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'TABIDENT', // Tab 2 , Tab 3, Tab 4, etc.
             'sType'       => 'TINYINT(1) UNSIGNED', // 0 - 255
@@ -143,8 +143,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => false,
             'blAddBreak'  => false,
-        ),
-        'TABTITLE'    => array(
+        ],
+        'TABTITLE'    => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'TABTITLE',
             'sType'       => 'varchar(255)',
@@ -154,8 +154,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => false,
-        ),
-        'TABCONTENT'  => array(
+        ],
+        'TABCONTENT'  => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'TABCONTENT',
             'sType'       => 'TEXT',
@@ -165,8 +165,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => false,
-        ),
-        'TIMESTAMP'   => array(
+        ],
+        'TIMESTAMP'   => [
             'sTableName'  => 'd3contenttabs',
             'sFieldName'  => 'OXTIMESTAMP',
             'sType'       => 'TIMESTAMP',
@@ -175,42 +175,42 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sComment'    => 'last change',
             'sExtra'      => '',
             'blMultilang' => false,
-        ),
-    );
+        ],
+    ];
 
-    public $aIndizes = array(
-        'PRIMARY'      => array(
+    public $aIndizes = [
+        'PRIMARY'      => [
             'sTableName'  => 'd3contenttabs',
             'sType'       => d3database::INDEX_TYPE_PRIMARY,
-            'aFields'     => array(
+            'aFields'     => [
                 'OXID' => 'OXID',
-            ),
+            ],
             'blMultilang' => false,
-        ),
-        'D3ARTICLETAB' => array(
+        ],
+        'D3ARTICLETAB' => [
             'sTableName'  => 'd3contenttabs',
             'sType'       => d3database::INDEX_TYPE_UNIQUE,
             'sName'       => 'D3ARTICLETAB',
-            'aFields'     => array(
+            'aFields'     => [
                 'ARTICLEOXID' => 'ARTICLEOXID',
                 'TABIDENT'    => 'TABIDENT',
-            ),
+            ],
             'blMultilang' => false,
-        ),
-        'OXACTIVE'     => array(
+        ],
+        'OXACTIVE'     => [
             'sTableName'  => 'd3contenttabs',
             'sType'       => d3database::INDEX_TYPE_INDEX,
             'sName'       => 'OXACTIVE',
-            'aFields'     => array(
+            'aFields'     => [
                 'OXACTIVE' => 'OXACTIVE',
-            ),
+            ],
             'blMultilang' => false,
-        ),
-    );
+        ],
+    ];
 
     // before oxid 6 > removed in oxid 6
-    public $aOldTabDbFields = array(
-        'D3LONGDESC2'      => array(
+    public $aOldTabDbFields = [
+        'D3LONGDESC2'      => [
             'sTableName'  => 'oxartextends',
             'sFieldName'  => 'D3LONGDESC2', //oxlongdesc2 -> OXLONGDESC2 -> D3LONGDESC2 (Type: TEXT)
             'sType'       => 'TEXT',
@@ -220,8 +220,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC3'      => array(
+        ],
+        'D3LONGDESC3'      => [
             'sTableName'  => 'oxartextends',
             'sFieldName'  => 'D3LONGDESC3', // oxlongdesc3 -> OXLONGDESC3 -> D3LONGDESC3
             'sType'       => 'TEXT',
@@ -231,8 +231,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC4'      => array(
+        ],
+        'D3LONGDESC4'      => [
             'sTableName'  => 'oxartextends',
             'sFieldName'  => 'D3LONGDESC4', // oxlongdesc4 -> OXLONGDESC4 -> D3LONGDESC4
             'sType'       => 'TEXT',
@@ -242,8 +242,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC5'      => array(
+        ],
+        'D3LONGDESC5'      => [
             'sTableName'  => 'oxartextends',
             'sFieldName'  => 'D3LONGDESC5', // oxlongdesc5 -> OXLONGDESC5 -> D3LONGDESC5
             'sType'       => 'TEXT',
@@ -253,8 +253,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESCTITLE'  => array(
+        ],
+        'D3LONGDESCTITLE'  => [
             'sTableName'  => 'oxarticles',
             'sFieldName'  => 'D3LONGDESCTITLE', // OXLONGDESCTITLE -> D3LONGDESCTITLE
             'sType'       => 'varchar(255)',
@@ -264,8 +264,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC2TITLE' => array(
+        ],
+        'D3LONGDESC2TITLE' => [
             'sTableName'  => 'oxarticles',
             'sFieldName'  => 'D3LONGDESC2TITLE', // oxlongdesc2title -> OXLONGDESC2TITLE -> D3LONGDESC2TITLE
             'sType'       => 'varchar(255)',
@@ -275,8 +275,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC3TITLE' => array(
+        ],
+        'D3LONGDESC3TITLE' => [
             'sTableName'  => 'oxarticles',
             'sFieldName'  => 'D3LONGDESC3TITLE', // oxlongdesc3title -> OXLONGDESC3TITLE -> D3LONGDESC3TITLE
             'sType'       => 'varchar(255)',
@@ -286,8 +286,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC4TITLE' => array(
+        ],
+        'D3LONGDESC4TITLE' => [
             'sTableName'  => 'oxarticles',
             'sFieldName'  => 'D3LONGDESC4TITLE', // oxlongdesc4title -> OXLONGDESC4TITLE -> D3LONGDESC4TITLE
             'sType'       => 'varchar(255)',
@@ -297,8 +297,8 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-        'D3LONGDESC5TITLE' => array(
+        ],
+        'D3LONGDESC5TITLE' => [
             'sTableName'  => 'oxarticles',
             'sFieldName'  => 'D3LONGDESC5TITLE', // oxlongdesc5title -> OXLONGDESC5TITLE -> D3LONGDESC5TITLE
             'sType'       => 'varchar(255)',
@@ -308,83 +308,83 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
             'sExtra'      => '',
             'blMultilang' => true,
             'blAddBreak'  => true,
-        ),
-    );
+        ],
+    ];
 
     // before oxid 6, but we have to rename these fields afterward > f.e. shop/module-updates
-    public $aRenameFields = array(
-        'D3LONGDESC2'      => array(
+    public $aRenameFields = [
+        'D3LONGDESC2'      => [
             'sTableName'     => 'oxartextends',
-            'mOldFieldNames' => array('oxlongdesc2', 'OXLONGDESC2'),
+            'mOldFieldNames' => ['oxlongdesc2', 'OXLONGDESC2'],
             'sFieldName'     => 'D3LONGDESC2', //oxlongdesc2 -> OXLONGDESC2 -> D3LONGDESC2
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC3'      => array(
+        ],
+        'D3LONGDESC3'      => [
             'sTableName'     => 'oxartextends',
-            'mOldFieldNames' => array('oxlongdesc3', 'OXLONGDESC3'),
+            'mOldFieldNames' => ['oxlongdesc3', 'OXLONGDESC3'],
             'sFieldName'     => 'D3LONGDESC3', // oxlongdesc3 -> OXLONGDESC3 -> D3LONGDESC3
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC4'      => array(
+        ],
+        'D3LONGDESC4'      => [
             'sTableName'     => 'oxartextends',
-            'mOldFieldNames' => array('oxlongdesc4', 'OXLONGDESC4'),
+            'mOldFieldNames' => ['oxlongdesc4', 'OXLONGDESC4'],
             'sFieldName'     => 'D3LONGDESC4', // oxlongdesc4 -> OXLONGDESC4 -> D3LONGDESC4
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC5'      => array(
+        ],
+        'D3LONGDESC5'      => [
             'sTableName'     => 'oxartextends',
-            'mOldFieldNames' => array('oxlongdesc5', 'OXLONGDESC5'),
+            'mOldFieldNames' => ['oxlongdesc5', 'OXLONGDESC5'],
             'sFieldName'     => 'D3LONGDESC5', // oxlongdesc5 -> OXLONGDESC5 -> D3LONGDESC5
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESCTITLE'  => array(
+        ],
+        'D3LONGDESCTITLE'  => [
             'sTableName'     => 'oxarticles',
             'mOldFieldNames' => 'OXLONGDESCTITLE',
             'sFieldName'     => 'D3LONGDESCTITLE', // OXLONGDESCTITLE -> D3LONGDESCTITLE
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC2TITLE' => array(
+        ],
+        'D3LONGDESC2TITLE' => [
             'sTableName'     => 'oxarticles',
-            'mOldFieldNames' => array('oxlongdesc2title', 'OXLONGDESC2TITLE'),
+            'mOldFieldNames' => ['oxlongdesc2title', 'OXLONGDESC2TITLE'],
             'sFieldName'     => 'D3LONGDESC2TITLE', // oxlongdesc2title -> OXLONGDESC2TITLE -> D3LONGDESC2TITLE
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC3TITLE' => array(
+        ],
+        'D3LONGDESC3TITLE' => [
             'sTableName'     => 'oxarticles',
-            'mOldFieldNames' => array('oxlongdesc3title', 'OXLONGDESC3TITLE'),
+            'mOldFieldNames' => ['oxlongdesc3title', 'OXLONGDESC3TITLE'],
             'sFieldName'     => 'D3LONGDESC3TITLE', // oxlongdesc3title -> OXLONGDESC3TITLE -> D3LONGDESC3TITLE
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC4TITLE' => array(
+        ],
+        'D3LONGDESC4TITLE' => [
             'sTableName'     => 'oxarticles',
-            'mOldFieldNames' => array('oxlongdesc4title', 'OXLONGDESC4TITLE'),
+            'mOldFieldNames' => ['oxlongdesc4title', 'OXLONGDESC4TITLE'],
             'sFieldName'     => 'D3LONGDESC4TITLE', // oxlongdesc4title -> OXLONGDESC4TITLE -> D3LONGDESC4TITLE
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-        'D3LONGDESC5TITLE' => array(
+        ],
+        'D3LONGDESC5TITLE' => [
             'sTableName'     => 'oxarticles',
-            'mOldFieldNames' => array('oxlongdesc5title', 'OXLONGDESC5TITLE'),
+            'mOldFieldNames' => ['oxlongdesc5title', 'OXLONGDESC5TITLE'],
             'sFieldName'     => 'D3LONGDESC5TITLE', // oxlongdesc5title -> OXLONGDESC5TITLE -> D3LONGDESC5TITLE
             'blMultilang'    => true,
             'blAddBreak'     => true,
-        ),
-    );
+        ],
+    ];
 
-    protected $_aRefreshMetaModuleIds = array('d3contenttabs');
+    protected $_aRefreshMetaModuleIds = ['d3contenttabs'];
 
-    public $aOldModuleFiles = array();
+    public $aOldModuleFiles = [];
 
-    protected $aDeleteOldContenTabDbField = array();
+    protected $aDeleteOldContenTabDbField = [];
 
-    protected $aMigrateContents = array();
+    protected $aMigrateContents = [];
 
     /******************************************************************************************************************/
     /*** eigene Tabelle fuer Content-Tabs anlegen / Pruefen und Daten migrieren *****************************************/
@@ -396,7 +396,7 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
     public function needToDeleteOldContentTabDatabaseFields()
     {
         // we have to delete all old fields! : $this->aOldTabDbFields
-        foreach ($this->aOldTabDbFields as $key => $aOldDbfield) {
+        foreach ($this->aOldTabDbFields as $aOldDbfield) {
             // mehrsprachigkeit erforderlich?
             if ($aOldDbfield['blMultilang']) {
                 // je sprache ist ein subfeld zu pruefen
@@ -409,7 +409,7 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
 
                     // check if field exist an has no content
                     $sKey    = $aOldDbfield['sTableName'] . '__' . $aOldDbfield['sFieldName'] . $sAddfield;
-                    $mReturn = $this->existOldTabDatabaseFieldSql($sKey, false);
+                    $mReturn = $this->existOldTabDatabaseFieldSql($sKey);
 
                     if (false === $mReturn) {
                         // skip field, we dont need to check this twice it does not exist!
@@ -422,19 +422,18 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
 
                         if (false === $mReturn) {
                             // skip field, we dont need to check this twice its empty
-                            $this->aDeleteOldContenTabDbField[$sKey] = array(
+                            $this->aDeleteOldContenTabDbField[$sKey] = [
                                 'sTableName'         => $aOldDbfield['sTableName'],
                                 'sOriginalFieldName' => $aOldDbfield['sFieldName'],
                                 'sFieldName'         => $aOldDbfield['sFieldName'] . $sAddfield
-                            );
-                            continue;
+                            ];
                         }
                     }
                 }
             } else {
                 // check if field exist and has content
                 $sKey    = $aOldDbfield['sTableName'] . '__' . $aOldDbfield['sFieldName'];
-                $mReturn = $this->existOldTabDatabaseFieldSql($sKey, false);
+                $mReturn = $this->existOldTabDatabaseFieldSql($sKey);
 
                 if (false === $mReturn) {
                     // skip field, we dont need to check this twice it does not exist!
@@ -447,19 +446,17 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
 
                     if (false === $mReturn) {
                         // skip field, we dont need to check this twice its empty
-                        $this->aDeleteOldContenTabDbField[$sKey] = array(
+                        $this->aDeleteOldContenTabDbField[$sKey] = [
                             'sTableName'         => $aOldDbfield['sTableName'],
                             'sOriginalFieldName' => $aOldDbfield['sFieldName'],
                             'sFieldName'         => $aOldDbfield['sFieldName']
-                        );
-                        continue;
+                        ];
                     }
                 }
             }
         }
 
         if (count($this->aDeleteOldContenTabDbField) > 0) {
-
             return true;
         }
 
@@ -474,18 +471,16 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
     {
         // show message, migrate?!
         $sTranslation = Registry::getLang()->translateString('D3_CONTENT_TABS_DELETE_TABLE_FIELDS');
-        foreach ($this->aDeleteOldContenTabDbField as $sKey => $item) {
+        foreach ($this->aDeleteOldContenTabDbField as $item) {
             $sTranslation .= "ALTER TABLE " . $item['sTableName'] . " DROP COLUMN " . $item['sFieldName'] . ";" . PHP_EOL;
         }
 
         if ($this->hasExecute()) {
             $oDb = DatabaseProvider::getDb();
-            foreach ($this->aDeleteOldContenTabDbField as $sKey => $item) {
-
+            foreach ($this->aDeleteOldContenTabDbField as $item) {
                 try {
                     // field exist if no Exception occurs
                     $oDb->execute("ALTER TABLE " . $item['sTableName'] . " DROP COLUMN " . $item['sFieldName']);
-
                 } catch (DatabaseException $oEx) {
                     // $oEx->getCode() : 1054
                     // $oEx->getMessage() : 'Unknown column 'D3LONGDESCTEST_1' in 'field list''
@@ -529,11 +524,11 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
                         continue;
                     }
 
-                    $this->aMigrateContents[$sKey] = array(
+                    $this->aMigrateContents[$sKey] = [
                         'sTableName'         => $aOldDbfield['sTableName'],
                         'sOriginalFieldName' => $aOldDbfield['sFieldName'],
                         'sFieldName'         => $aOldDbfield['sFieldName'] . $sAddfield
-                    );
+                    ];
                     $blFieldsExist                 = true;
                 }
             } else {
@@ -553,11 +548,11 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
                     continue;
                 }
 
-                $this->aMigrateContents[$sKey] = array(
+                $this->aMigrateContents[$sKey] = [
                     'sTableName'         => $aOldDbfield['sTableName'],
                     'sOriginalFieldName' => $aOldDbfield['sFieldName'],
                     'sFieldName'         => $aOldDbfield['sFieldName'],
-                );
+                ];
                 $blFieldsExist                 = true;
             }
         }
@@ -589,7 +584,6 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
         try {
             // field exist if no Exception occurs, return content of the selected field
             return $oDb->getOne($sSelect);
-
         } catch (DatabaseException $oEx) {
             // $oEx->getCode() : 1054
             // $oEx->getMessage() : 'Unknown column 'D3LONGDESCTEST_1' in 'field list''
@@ -616,7 +610,7 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
         $sTableFielNames = substr(strtolower($sTableFielNames), 0, strlen($sTableFielNames) - 2);
 
         // show message, migrate?!
-        $aArgs        = array('dbfieldnames' => $sTableFielNames, 'count' => count($this->aMigrateContents));
+        $aArgs        = ['dbfieldnames' => $sTableFielNames, 'count' => count($this->aMigrateContents)];
         $sTranslation = Registry::getLang()->translateString('D3_CONTENT_TABS_MIGRATED_TABLE_FIELDS');
         $sTranslation = sprintf($sTranslation, $aArgs['dbfieldnames'], $aArgs['count']);
         $blRet        = $this->_confirmMessage($sTranslation);
@@ -629,7 +623,7 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
 
             // ----> transfer data to new table
             $oDb = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC);
-            foreach ($this->aMigrateContents as $sKey => $aOldContent) {
+            foreach ($this->aMigrateContents as $aOldContent) {
                 //    map:
                 //    d3contenttabs__OXID                 > wird vom Shop generiert
                 //    d3contenttabs__ARTICLEOXID          > oxarticles__OXID bzw. oxartextends__OXID
@@ -701,7 +695,6 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
                                 $this->setActionLog('SQL', $sMigrate2, __METHOD__);
                                 $this->setUpdateBreak(false);
                             }
-
                         } catch (DatabaseException $oEx) {
                             // $oEx->getCode() : 1054
                             // $oEx->getMessage() : 'Unknown column 'D3LONGDESCTEST_1' in 'field list''
@@ -759,15 +752,12 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
     public function addContentTabTable()
     {
         $this->setInitialExecMethod(__METHOD__);
-        $blRet = $this->_addTable2(
+        return $this->_addTable2(
             'd3contenttabs',
             $this->aFields,
             $this->aIndizes,
-            'tab configuration',
-            'InnoDB'
+            'tab configuration'
         );
-
-        return $blRet;
     }
 
     /**********************************************************************/
@@ -782,10 +772,11 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
      * @throws d3ShopCompatibilityAdapterException
      * @throws d3_cfg_mod_exception
      * @throws StandardException
+     * @throws ReflectionException
      */
     public function hasUnregisteredFiles()
     {
-        return $this->_hasUnregisteredFiles($this->sModKey, array('blocks', 'd3FileRegister'));
+        return $this->_hasUnregisteredFiles($this->sModKey, ['blocks', 'd3FileRegister']);
     }
 
     /**
@@ -796,10 +787,11 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
      * @throws StandardException
      * @throws d3ShopCompatibilityAdapterException
      * @throws d3_cfg_mod_exception
+     * @throws ReflectionException
      */
     public function showUnregisteredFiles()
     {
-        return $this->_showUnregisteredFiles($this->sModKey, array('blocks', 'd3FileRegister'));
+        return $this->_showUnregisteredFiles($this->sModKey, ['blocks', 'd3FileRegister']);
     }
 
 
@@ -822,7 +814,6 @@ EtTYUFTd05ueTNQSklRcE1jK0NHMkduYmZLdzlSNjByNHZENWtTcnhEaXRLc3RpU0xUYTgrR0hzRzFaU
     public function registerContentTabViewTables()
     {
         return $this->fixRegisterMultiLangTables('d3contenttabs');
-
     }
 
     /**

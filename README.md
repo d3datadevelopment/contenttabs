@@ -16,4 +16,4 @@ Sie bitte der Dokumentation im docs-Verzeichnis dieses Paketes.
 
 ## Installation:
 
-Eine detaillierte Installationsanleitung finden Sie im docs-Verzeichnis dieses Pakets.
+Eine detaillierte Installationsanleitung und die [Changelog Liste](./docs/daux/changelog/010_Changelog.md) finden Sie im docs-Verzeichnis dieses Pakets.

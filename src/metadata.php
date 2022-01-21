@@ -5,12 +5,13 @@
  * Any unauthorized use of this software without a valid license
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @link          http://www.oxidmodule.com
+ * @link          https://www.oxidmodule.com
  */
 
+use D3\Contenttabs\Application\Controller\Admin as AdminController;
 use OxidEsales\Eshop\Application as OxidApplication;
 
 /**
@@ -19,74 +20,73 @@ use OxidEsales\Eshop\Application as OxidApplication;
 $sMetadataVersion = '2.1';
 
 $sModuleId = 'd3contenttabs';
+$sLogo = '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em"> ';
 
 /**
  * Module information
  */
-$aModule = array(
+$aModule = [
     'id'             => $sModuleId,
-    'title'          => 
-        '<svg style="height:1em;width:1em"><image xlink:href="https://logos.oxidmodule.com/d3logo.svg" style="height:1em;width:1em" /></svg> '.
-        'Content Tabs',
-    'description'    => array(
+    'title'          => $sLogo . 'Content Tabs',
+    'description'    => [
         'de' => 'Dieses Modul bietet die M&ouml;glichkeit umfangreiche Artikelinformationen, auf der ' //
             . 'Detailseite, &uuml;bersichtlich aufzugliedern.<br>Sie sehen dieses Modul auch bei uns im Shop. ' //
             . 'Sie k&ouml;nnen z.B. bei diesem Modul zwischen den Tabs "Beschreibung", "Features" und ' //
             . '"Downloads" w&auml;hlen.',
         'en' => '',
-    ),
+    ],
     'thumbnail'      => 'picture.png',
-    'version'        => '4.1.1.1',
+    'version'        => '4.2.0.0',
     'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
-    'url'            => 'http://www.shopmodule.com',
+    'url'            => 'https://www.d3data.de',
     'email'          => 'support@shopmodule.com',
-    'extend'         => array(
+    'extend'         => [
         OxidApplication\Component\Widget\ArticleDetails::class  => \D3\Contenttabs\Modules\Application\Component\Widget\d3_oxwarticledetails_contenttabs::class,
         OxidApplication\Model\Article::class                    => \D3\Contenttabs\Modules\Application\Model\d3_oxarticle_longtexts::class,
-    ),
-    'controllers'   => array(
-        'd3contenttabs_settings'    => \D3\Contenttabs\Application\Controller\Admin\settings::class,
-        'd3contenttabs_support'     => \D3\Contenttabs\Application\Controller\Admin\support::class,
-        'd3contenttabs_tablist'     => \D3\Contenttabs\Application\Controller\Admin\contentTabList::class,
-        'd3contenttabs_tabs'        => \D3\Contenttabs\Application\Controller\Admin\contentTabs::class,
-    ),
-    'templates'      => array(
+    ],
+    'controllers'   => [
+        'd3contenttabs_settings'    => AdminController\settings::class,
+        'd3contenttabs_support'     => AdminController\support::class,
+        'd3contenttabs_tablist'     => AdminController\contentTabList::class,
+        'd3contenttabs_tabs'        => AdminController\contentTabs::class,
+    ],
+    'templates'      => [
         // Admin
         'contentTabsBase.tpl'    => 'd3/contenttabs/Application/views/admin/tpl/contentTabsBase.tpl',
         'contentTabs.tpl'        => 'd3/contenttabs/Application/views/admin/tpl/contentTabs.tpl',
         'contentTabList.tpl'     => 'd3/contenttabs/Application/views/admin/tpl/contentTabList.tpl',
         // Frontend
         'd3contenttabs_tab1.tpl' => 'd3/contenttabs/Application/views/tpl/d3contenttabs_tab1.tpl',
-    ),
-    'events'         => array(
+    ],
+    'events'         => [
         'onActivate' => \D3\ModCfg\Application\Model\Install\d3install::class . '::checkUpdateStart',
-    ),
-    'blocks'         => array(
+    ],
+    'blocks'         => [
         // azure / flow / wave blocks
-        array(
+        [
             'template' => 'page/details/inc/tabs.tpl',
             'block'    => 'details_tabs_longdescription',
             'file'     => 'Application/views/blocks/details_tabs_longdescription.tpl',
-        )
-    ),
-    'settings' => array(
-        array(
+        ]
+    ],
+    'settings' => [
+        [
             'group'     => 'd3thememapping_module',
             'name'      => 'd3custParentThemeMappedToFlow_'.$sModuleId,
             'type'      => 'str',
             'value'     => ''
-        ),
-        array(
+        ],
+        [
             'group'     => 'd3thememapping_module',
             'name'      => 'd3custParentThemeMappedToMobile_'.$sModuleId,
             'type'      => 'str',
             'value'     => ''
-        ),
-        array(
+        ],
+        [
             'group'     => 'd3thememapping_module',
             'name'      => 'd3custParentThemeMappedToAzure_'.$sModuleId,
             'type'      => 'str',
             'value'     => ''
-        ),
-    ),
-);
+        ],
+    ],
+];

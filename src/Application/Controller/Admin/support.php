@@ -8,11 +8,11 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
  * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
 namespace D3\Contenttabs\Application\Controller\Admin;
@@ -37,5 +37,4 @@ class support extends d3_cfg_mod_licence
     protected $_sDefaultHelpLinkAdd = 'Fragen-zu-speziellen-Modulen/';
 
     protected $_sHelpLinkMLAdd = 'Content-Tabs/';
-
 }
