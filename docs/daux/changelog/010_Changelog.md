@@ -2,6 +2,12 @@
 title: Changelog
 ---
 
+## 4.2.0.0 - 2022-01-18
+### Added
+- installierbar in OXID 6.3.x und 6.4.x
+
+---
+
 ## 4.1.1.1 - 2021-11-12
 ### fixed
 - Zuordnungsfehler bei verwendeter Mehrsprachigkeit im Importmodul korrigiert
@@ -18,6 +24,8 @@ title: Changelog
 
 ### fixed
 - Sprachauswahl bei https
+
+---
 
 ## 4.1.0.3 - 2019-06-11
 ### changed
