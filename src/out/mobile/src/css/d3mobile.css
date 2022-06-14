@@ -1,0 +1,20 @@
+[class^="glyphicon-"] {
+    color: #50a9be;
+}
+
+.content-tab-one,
+.content-tab-two,
+.content-tab-three,
+.content-tab-four,
+.content-tab-five{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.content-tab-one-content,
+.content-tab-two-content,
+.content-tab-three-content,
+.content-tab-four-content,
+.content-tab-five-content{
+    overflow: hidden;
+}

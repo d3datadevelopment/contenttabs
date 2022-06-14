@@ -1,0 +1,45 @@
+{
+  "name": "d3/contenttabs",
+  "description": "Extended description module for OXID eShop.",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3",
+    "tabs",
+    "details"
+  ],
+  "authors": [
+    {
+      "name": "D3 Data Development (Inh. Thomas Dartsch)",
+      "email": "info@shopmodule.com",
+      "homepage": "https://www.d3data.de",
+      "role": "Owner"
+    }
+  ],
+  "support": {
+    "email": "support@shopmodule.com"
+  },
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "proprietary"
+  ],
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "d3/contenttabs"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-sourceguardian": "*",
+    "oxid-esales/oxideshop-ce": "6.3 - 6.10",
+    "d3/modcfg": "^5.3.0.000|^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "D3\\Contenttabs\\": "../../../source/modules/d3/contenttabs"
+    }
+  }
+}
