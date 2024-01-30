@@ -2,14 +2,38 @@
 title: Changelog
 ---
 
-## 4.1.1.0 - 2019-10-16
+## [Unreleased](https://git.d3data.de/D3Private/Contenttabs/compare/4.3.1.0...rel_4.x)
+
+## [4.3.1.0](https://git.d3data.de/D3Private/Contenttabs/compare/4.3.0.0...4.3.1.0) - 2024-01-30
+### added
+- Support für PHP 8.1 und 8.2 hinzugefügt
+- installierbar bis OXID 6.5.3
+
+## [4.3.0.0](https://git.d3data.de/D3Private/Contenttabs/compare/4.2.0.0...4.3.0.0) - 2023-08-29
+### Added
+- einstellbare Tabanzahl ist im Modul konfigurierbar
+- Blockerweiterungen für Wave-Theme hinzugefügt
+- Styles hinzugefügt
+### Changed
+- Vererbung des Tab-Aktivstatus vom Elternartikel optimiert
+- Dokumentation aktualisiert
+- Systemanforderungen aktualisiert
+
+
+## 4.2.0.0 - 2022-01-18
+### Added
+- installierbar in OXID 6.3.x und 6.4.x
+
+## 4.1.1.1 - 2021-11-12
+### fixed
+- Zuordnungsfehler bei verwendeter Mehrsprachigkeit im Importmodul korrigiert
+
+## 4.1.1.0 - 2020-10-16
 ### added
 - Support für OXID 6.2
 - Wave-Theme Unterstützung
-
 ### changed
 - Titellogo auf statischen Asset umgestellt
-
 ### fixed
 - Sprachauswahl bei https
 
@@ -17,12 +41,9 @@ title: Changelog
 ### changed
 - Dokumentation bereinigt
 - beliebig genutzte Aktiv-Felder des Moduls führen zum erfolgreichen Speichern der Langtexte
-
 ### fixed
 - Multilangparameter wird für neue Artikelfelder verwendet
 - virtuelle Feldnamen werden aus Select Fields Liste entfernt, um ungültige Datenbankqueries zu vermeiden, die daraus erstellt werden
-
----
 
 ## 4.1.0.2 - 2019-02-15
 ### fixed

@@ -7,11 +7,11 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
  * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
 $sModId = 'd3contenttabs';
@@ -23,7 +23,7 @@ $sD3Help_mappedTo = '<p>Unsere Module sind für die Standardthemes des '.
     '<p>Weitere Informationen hierzu finden Sie in unserem <a '.
     'href="https://faq.d3data.de/allgemein/template-bloecke-dem-eigenen-theme-zuordnen/" target="FAQ">FAQ-Eintrag</a>.</p>';
 
-$aLang = array(
+$aLang = [
     'charset'                                 => 'UTF-8',
 
     'SHOP_MODULE_GROUP_d3thememapping_global'     => 'Template-Blöcke dem eigenen Theme zuordnen (globale Einstellungen für D3-Module)',
@@ -35,4 +35,8 @@ $aLang = array(
     'HELP_SHOP_MODULE_d3custParentThemeMappedToMobile_'.$sModId => $sD3Help_mappedTo,
     'HELP_SHOP_MODULE_d3custParentThemeMappedToAzure_'.$sModId => $sD3Help_mappedTo,
     'HELP_SHOP_MODULE_d3custParentThemeMappedToFlow_'.$sModId => $sD3Help_mappedTo,
-);
+
+    //tab count
+    'SHOP_MODULE_GROUP_d3ctextension_settings'      => 'Einstellungen',
+    'SHOP_MODULE_d3ctextension_amount_tabs'         => 'Menge der Tabs'
+];

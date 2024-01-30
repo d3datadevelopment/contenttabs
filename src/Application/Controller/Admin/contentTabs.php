@@ -7,11 +7,11 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
  * @author        D3 Data Development <support@shopmodule.com>
- * @link          http://www.oxidmodule.com
+ * @link          https://www.oxidmodule.com
  */
 
 namespace D3\Contenttabs\Application\Controller\Admin;
@@ -26,9 +26,9 @@ use Doctrine\DBAL\DBALException;
 use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
 use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
 use OxidEsales\Eshop\Core\Exception\StandardException;
-use \OxidEsales\Eshop\Core\Registry;
-use \OxidEsales\Eshop\Core\Request;
-use \OxidEsales\Eshop\Application\Model\Article;
+use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\Eshop\Core\Request;
+use OxidEsales\Eshop\Application\Model\Article;
 
 /**
  * Class contentTabs
@@ -87,7 +87,7 @@ class contentTabs extends AdminDetailsController
 
             /** @var TabsModel $oTabsModel */
             $oTabsModel = oxNew(TabsModel::class, $oArticle);
-            $sFullLongDescField = $oTabsModel->getArticleContentFieldName( $this->getSelectedTabId());
+            $sFullLongDescField = $oTabsModel->getArticleContentFieldName($this->getSelectedTabId());
             if (false == empty($sFullLongDescField)) {
                 $this->_aViewData["editor"] = $this->generateTextEditor(
                     '100%',
@@ -131,7 +131,7 @@ class contentTabs extends AdminDetailsController
     {
         /** @var TabsModel $oTabsModel */
         $oTabsModel = oxNew(TabsModel::class, oxNew(Article::class));
-        return $oTabsModel->getArticleActiveFieldName( $this->getSelectedTabId());
+        return $oTabsModel->getArticleActiveFieldName($this->getSelectedTabId());
     }
 
     /**
@@ -141,7 +141,7 @@ class contentTabs extends AdminDetailsController
     {
         /** @var TabsModel $oTabsModel */
         $oTabsModel = oxNew(TabsModel::class, oxNew(Article::class));
-        return $oTabsModel->getArticleTitleFieldName( $this->getSelectedTabId());
+        return $oTabsModel->getArticleTitleFieldName($this->getSelectedTabId());
     }
 
     /**
@@ -151,7 +151,7 @@ class contentTabs extends AdminDetailsController
     {
         /** @var TabsModel $oTabsModel */
         $oTabsModel = oxNew(TabsModel::class, oxNew(Article::class));
-        return $oTabsModel->getArticleContentFieldName( $this->getSelectedTabId());
+        return $oTabsModel->getArticleContentFieldName($this->getSelectedTabId());
     }
 
     /**
@@ -159,8 +159,8 @@ class contentTabs extends AdminDetailsController
      */
     public function getSelectedTabId()
     {
-        $request              = Registry::get(Request::class);
-        $this->_sCurrentTabId = $request->getRequestEscapedParameter( 'sTabId');
+        $request              = Registry::getRequest();
+        $this->_sCurrentTabId = $request->getRequestEscapedParameter('sTabId');
 
         if (empty($this->_sCurrentTabId)) {
             $this->_sCurrentTabId = 1;
@@ -186,19 +186,19 @@ class contentTabs extends AdminDetailsController
 
         $oArticle = oxNew(Article::class);
         if (isset($soxId) && $soxId != "-1") {
-            $oArticle->loadInLang( $this->_iEditLang, $soxId );
+            $oArticle->loadInLang($this->_iEditLang, $soxId);
         }
 
-        $sTabId = Registry::get(Request::class)->getRequestEscapedParameter('sTabId');
-        $sTabId = $sTabId === NULL ? 1 : $sTabId;
+        $sTabId = Registry::getRequest()->getRequestEscapedParameter('sTabId');
+        $sTabId = $sTabId === null ? 1 : $sTabId;
 
         if (isset($soxId)
             && $soxId != "-1"
-            && in_array($sTabId, array(1, NULL))
+            && in_array($sTabId, [1, null])
             && !strlen($this->getLongDescTitle($oArticle, $sTabId))
         ) {
             return false;
-        };
+        }
 
         return true;
     }
@@ -220,7 +220,7 @@ class contentTabs extends AdminDetailsController
     public function getLongDescTitle($oArticle, $sTabId)
     {
         $oTabsModel = oxNew(TabsModel::class, $oArticle);
-        return $this->_getEditValue( $oArticle, $oTabsModel->getArticleTitleFieldName( $sTabId));
+        return $this->_getEditValue($oArticle, $oTabsModel->getArticleTitleFieldName($sTabId));
     }
 
     /**
@@ -278,36 +278,36 @@ class contentTabs extends AdminDetailsController
      */
     public function save()
     {
-        $request         = Registry::get( Request::class );
-        $isAllowedToSave = $request->getRequestEscapedParameter( "isPermittedToSaveData" );
+        $request         = Registry::get(Request::class);
+        $isAllowedToSave = $request->getRequestEscapedParameter("isPermittedToSaveData");
 
-        if ( empty( $isAllowedToSave ) ) {
+        if (empty($isAllowedToSave)) {
             return;
         }
 
         parent::save();
 
         $soxId = $this->getEditObjectId();
-        $this->setEditObjectId( $soxId );
+        $this->setEditObjectId($soxId);
 
-        if ( $soxId == "-1" ) {
+        if ($soxId == "-1") {
             return;
         }
 
         /** @var d3_oxarticle_longtexts $oArticle */
-        $oArticle = oxNew( Article::class );
-        $oArticle->setLanguage( $this->_iEditLang );
+        $oArticle = oxNew(Article::class);
+        $oArticle->setLanguage($this->_iEditLang);
 
-        if ( false == $oArticle->load( $soxId ) ) {
+        if (false == $oArticle->load($soxId)) {
             return;
         }
 
-        $aParams = $request->getRequestEscapedParameter( "editval" );
-        $oArticle->assign( $aParams );
+        $aParams = $request->getRequestEscapedParameter("editval");
+        $oArticle->assign($aParams);
 
         // default longdesc can parsed only, if longtext #1 is selected, all other longtext selections don't contains its value
         if (is_array($aParams) && isset($aParams['oxarticles__oxlongdesc'])) {
-            $oArticle->setArticleLongDesc( $this->_processLongDesc( $aParams['oxarticles__oxlongdesc'] ) );
+            $oArticle->setArticleLongDesc($this->_processLongDesc($aParams['oxarticles__oxlongdesc']));
         }
 
         $oArticle->save();
@@ -319,14 +319,14 @@ class contentTabs extends AdminDetailsController
      */
     public function delete()
     {
-        $request         = Registry::get( Request::class );
-        $isAllowedToSave = $request->getRequestEscapedParameter( "isPermittedToSaveData" );
+        $request         = Registry::get(Request::class);
+        $isAllowedToSave = $request->getRequestEscapedParameter("isPermittedToSaveData");
 
-        if ( empty( $isAllowedToSave ) ) {
+        if (empty($isAllowedToSave)) {
             return;
         }
 
-        $aParams = $request->getRequestEscapedParameter( "editval" );
+        $aParams = $request->getRequestEscapedParameter("editval");
 
         $oArticle = oxNew(Article::class);
         $oArticle->load($aParams['oxarticles__oxid']);
@@ -347,8 +347,8 @@ class contentTabs extends AdminDetailsController
      */
     protected function _processLongDesc($sValue)
     {
-        $aSearch  = array('&amp;nbsp;', '&amp;', '&quot;', '&lang=', '<p>&nbsp;</p>', '<p>&nbsp; </p>');
-        $aReplace = array('&nbsp;', '&', '"', '&amp;lang=', '', '');
+        $aSearch  = ['&amp;nbsp;', '&amp;', '&quot;', '&lang=', '<p>&nbsp;</p>', '<p>&nbsp; </p>'];
+        $aReplace = ['&nbsp;', '&', '"', '&amp;lang=', '', ''];
 
         return str_replace($aSearch, $aReplace, $sValue);
     }
@@ -367,13 +367,8 @@ class contentTabs extends AdminDetailsController
             return parent::_getEditValue($oObject, $sField);
         }
 
-        $sEditObjectValue = '';
-        if ($oObject) {
-            $oDescField = $oObject->getLongDescription();
-            $sEditObjectValue = $this->_processEditValue($oDescField->getRawValue());
-        }
-
-        return $sEditObjectValue;
+        $oDescField = $oObject->getLongDescription();
+        return $this->_processEditValue($oDescField->getRawValue());
     }
 
     public function getUserMessages()

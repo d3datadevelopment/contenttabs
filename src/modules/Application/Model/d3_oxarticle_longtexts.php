@@ -8,11 +8,11 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
  * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
 namespace D3\Contenttabs\Modules\Application\Model;
@@ -23,6 +23,7 @@ use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
 use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
 use D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException;
 use Doctrine\DBAL\DBALException;
+use Exception;
 use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
 use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
 use OxidEsales\Eshop\Core\Exception\StandardException;
@@ -33,7 +34,7 @@ use OxidEsales\Eshop\Core\Field;
  */
 class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
 {
-    protected $_aD3ContentTabsSkipSaveFields = array();
+    protected $_aD3ContentTabsSkipSaveFields = [];
 
     private $_sModId = 'd3contenttabs';
 
@@ -54,7 +55,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
 
         if (d3_cfg_mod::get($this->_sModId)->isActive()) {
             /** @var contentTabs $oContentTabs */
-            $oContentTabs = oxNew( contentTabs::class, $this );
+            $oContentTabs = oxNew(contentTabs::class, $this);
             $oContentTabs->addTabFields();
         }
 
@@ -76,7 +77,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
 
         if (d3_cfg_mod::get($this->_sModId)->isActive()) {
             /** @var contentTabs $oContentTabs */
-            $oContentTabs = oxNew( contentTabs::class, $this );
+            $oContentTabs = oxNew(contentTabs::class, $this);
             $oContentTabs->saveTabFields();
         }
 
@@ -89,7 +90,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
      *
      * @param string $sOXID Article id
      *
-     * @throws \Exception
+     * @throws Exception
      *
      * @return bool
      */
@@ -100,7 +101,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
         }
 
         if (d3_cfg_mod::get($this->_sModId)->isActive() && $sOXID) {
-            oxNew( TabsModel::class, $this )->deleteAllLongtexts( $sOXID );
+            oxNew(TabsModel::class, $this)->deleteAllLongtexts($sOXID);
         }
 
         return parent::delete($sOXID);
@@ -119,7 +120,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
         parent::_skipSaveFields();
 
         if (d3_cfg_mod::get($this->_sModId)->isActive()) {
-            $this->_aSkipSaveFields = array_merge( $this->_aSkipSaveFields, $this->_aD3ContentTabsSkipSaveFields );
+            $this->_aSkipSaveFields = array_merge($this->_aSkipSaveFields, $this->_aD3ContentTabsSkipSaveFields);
         }
     }
 
@@ -136,12 +137,12 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
     {
         if (d3_cfg_mod::get($this->_sModId)->isActive()) {
             /** @var contentTabs $oContentTabs */
-            $oContentTabs = oxNew( contentTabs::class, $this );
+            $oContentTabs = oxNew(contentTabs::class, $this);
 
-            foreach ( $oContentTabs->getNewArticleFields(false == $this->_blEmployMultilanguage) as $sFieldName ) {
-                $this->_addField( $sFieldName, (int) $oContentTabs->isMultilingualField( $oContentTabs->getTableFieldNameFromArticleField( $sFieldName ) ) );
+            foreach ($oContentTabs->getNewArticleFields(false == $this->_blEmployMultilanguage) as $sFieldName) {
+                $this->_addField($sFieldName, (int) $oContentTabs->isMultilingualField($oContentTabs->getTableFieldNameFromArticleField($sFieldName)));
 
-                if ( ! in_array( $sFieldName, $this->_aD3ContentTabsSkipSaveFields ) ) {
+                if (! in_array($sFieldName, $this->_aD3ContentTabsSkipSaveFields)) {
                     $this->_aD3ContentTabsSkipSaveFields[] = $sFieldName;
                 }
             }
@@ -167,7 +168,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
             $index = array_search($searchField, $aFieldList);
 
             if (false !== $index) {
-                unset( $aFieldList[ $index ] );
+                unset($aFieldList[ $index ]);
             }
         }
 
@@ -216,7 +217,7 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
     public function d3CanShowTab($iTab)
     {
         if (d3_cfg_mod::get($this->_sModId)->isActive()) {
-            return $this->d3GetContentTabs()->canGetLongDescription( $iTab );
+            return $this->d3GetContentTabs()->canGetLongDescription($iTab);
         }
 
         return false;
@@ -256,5 +257,13 @@ class d3_oxarticle_longtexts extends d3_oxarticle_longtexts_parent
         }
 
         return $this->d3GetContentTabs()->getLongDescriptionFromArticleObject($iTab);
+    }
+
+    /**
+     * @return bool
+     */
+    public function d3IsMultilang()
+    {
+        return $this->_blEmployMultilanguage;
     }
 }

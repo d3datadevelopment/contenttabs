@@ -8,29 +8,30 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
  * @author    D3 Data Development - Daniel Seifert <support@shopmodule.com>
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
 namespace D3\Contenttabs\Application\Controller\Admin;
 
 // Controller
-use \OxidEsales\Eshop\Application\Controller\Admin\AdminListController;
+use OxidEsales\Eshop\Application\Controller\Admin\AdminListController;
 // Core
+use OxidEsales\Eshop\Application\Model\Object2Category;
 use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
-use \OxidEsales\Eshop\Core\Registry;
-use \OxidEsales\Eshop\Core\Request;
-use \OxidEsales\Eshop\Core\DatabaseProvider;
+use OxidEsales\Eshop\Core\Model\ListModel;
+use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\Eshop\Core\DatabaseProvider;
 // Models
-use \OxidEsales\Eshop\Application\Model\Article;
-use \OxidEsales\Eshop\Application\Model\ArticleList;
-use \OxidEsales\Eshop\Application\Model\CategoryList;
-use \OxidEsales\Eshop\Application\Model\ManufacturerList;
-use \OxidEsales\Eshop\Application\Model\VendorList;
-
+use OxidEsales\Eshop\Application\Model\Article;
+use OxidEsales\Eshop\Application\Model\ArticleList;
+use OxidEsales\Eshop\Application\Model\CategoryList;
+use OxidEsales\Eshop\Application\Model\ManufacturerList;
+use OxidEsales\Eshop\Application\Model\VendorList;
+use OxidEsales\Eshop\Core\Str;
 
 /**
  * Class contentTabList
@@ -61,11 +62,11 @@ class contentTabList extends AdminListController
      */
     public function render()
     {
-        $myConfig      = $this->getConfig();
-        $request       = Registry::get(Request::class);
+        $myConfig      = Registry::getConfig();
+        $request       = Registry::getRequest();
         $sPwrSearchFld = $request->getRequestEscapedParameter("pwrsearchfld");
         $sPwrSearchFld = $sPwrSearchFld ? strtolower($sPwrSearchFld) : "oxtitle";
-        $oArticle      = null;
+        /** @var ListModel $oList */
         $oList         = $this->getItemList();
 
         if ($oList) {
@@ -91,7 +92,7 @@ class contentTabList extends AdminListController
         $return = parent::render();
 
         // load fields
-        if (!$oArticle && $oList) {
+        if (false === isset($oArticle) && $oList) {
             $oArticle = $oList->getBaseObject();
         }
         $this->_aViewData["pwrsearchfields"] = $oArticle ? $this->getSearchFields() : null;
@@ -136,7 +137,7 @@ class contentTabList extends AdminListController
 
     public function getCategoryList($sType, $sValue)
     {
-        /** @var \OxidEsales\Eshop\Application\Model\CategoryList $oCatTree parent category tree */
+        /** @var CategoryList $oCatTree parent category tree */
         $oCatTree = oxNew(CategoryList::class);
         $oCatTree->loadList();
         if ($sType === 'cat') {
@@ -201,41 +202,40 @@ class contentTabList extends AdminListController
     }
 
     /**
-     * @param null $oListObject
+     * @param null $listObject
+     *
      * @return string
      * @throws DatabaseConnectionException
      */
-    protected function _buildSelectString($oListObject = null)
+    protected function _buildSelectString($listObject = null)
     {
-        $sQ = parent::_buildSelectString($oListObject);
+        $sQ = parent::_buildSelectString($listObject);
         if ($sQ) {
-            $sTable = getViewName("oxarticles");
+            $sTable = oxNew(Article::class)->getViewName();
             $sQ .= " and $sTable.oxparentid = '' ";
 
-            $sType = false;
-            $request       = Registry::get(Request::class);
+            $request       = Registry::getRequest();
             $sArtCat = $request->getRequestEscapedParameter("art_category");
             if ($sArtCat && strstr($sArtCat, "@@") !== false) {
                 list($sType, $sValue) = explode("@@", $sArtCat);
-            }
 
-            switch ($sType) {
-                // add category
-                case 'cat':
-                    $oStr = getStr();
-                    $sViewName = getViewName("oxobject2category");
-                    $sInsert = "from $sTable left join {$sViewName} on {$sTable}.oxid = {$sViewName}.oxobjectid " .
-                        "where {$sViewName}.oxcatnid = " . DatabaseProvider::getDb()->quote($sValue) . " and ";
-                    $sQ = $oStr->preg_replace("/from\s+$sTable\s+where/i", $sInsert, $sQ);
-                    break;
-                // add category
-                case 'mnf':
-                    $sQ .= " and $sTable.oxmanufacturerid = " . DatabaseProvider::getDb()->quote($sValue);
-                    break;
-                // add vendor
-                case 'vnd':
-                    $sQ .= " and $sTable.oxvendorid = " . DatabaseProvider::getDb()->quote($sValue);
-                    break;
+                switch ($sType) {
+                    // add category
+                    case 'cat':
+                        $oStr      = Str::getStr();
+                        $sViewName = oxNew(Object2Category::class)->getViewName();
+                        $sInsert   = "from $sTable left join $sViewName on $sTable.oxid = $sViewName.oxobjectid " . "where $sViewName.oxcatnid = " . DatabaseProvider::getDb()->quote($sValue) . " and ";
+                        $sQ        = $oStr->preg_replace("/from\s+$sTable\s+where/i", $sInsert, $sQ);
+                        break;
+                    // add category
+                    case 'mnf':
+                        $sQ .= " and $sTable.oxmanufacturerid = " . DatabaseProvider::getDb()->quote($sValue);
+                        break;
+                    // add vendor
+                    case 'vnd':
+                        $sQ .= " and $sTable.oxvendorid = " . DatabaseProvider::getDb()->quote($sValue);
+                        break;
+                }
             }
         }
 
@@ -248,10 +248,9 @@ class contentTabList extends AdminListController
         $this->_aWhere = parent::buildWhere();
 
         // adding folder check
-        $request       = Registry::get(Request::class);
-        $sFolder = $request->getRequestEscapedParameter('folder');
+        $sFolder = Registry::getRequest()->getRequestEscapedParameter('folder');
         if ($sFolder && $sFolder != '-1') {
-            $this->_aWhere[getViewName("oxarticles") . ".oxfolder"] = $sFolder;
+            $this->_aWhere[oxNew(Article::class)->getViewName() . ".oxfolder"] = $sFolder;
         }
 
         return $this->_aWhere;

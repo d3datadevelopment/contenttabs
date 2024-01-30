@@ -4,7 +4,7 @@ $sLangName = "Deutsch";
 // -------------------------------
 // RESOURCE IDENTITFIER = STRING
 // -------------------------------
-$aLang = array(
+$aLang = [
     'charset'                                          => 'UTF-8',
     // Navigation
     'd3mxContentTabs'                                  => '<i class=\'fa fa-folder\'></i> Content Tabs',
@@ -50,4 +50,7 @@ $aLang = array(
         . 'Shopdatenbank gefundenen alten Felder zu entfernen.<br><br>'
         . 'Die SQL-Querys die dabei ausgeführt werden lauten wie folgt:<br>',
     'D3_CONTENT_TABS_EXC_NOTFILLED_TITLE_CONTENT'      => "Der Langtext kann nicht gespeichert werden, da dieser keinen Titel oder Inhalt hat.",
-);
+
+    'INT_ARG_EXCEPTION_MESSAGE' => 'The required minimum quantity of 4 has not been reached or the maximum height 
+                                    of 10 has been exceeded. Check module the settings!',
+];
