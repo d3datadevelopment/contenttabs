@@ -1,0 +1,10 @@
+@media (max-width: 768px){
+    .nav-tabs > li{
+        width: 100% !important;
+        margin-bottom: 5px !important;
+    }
+    .nav-tabs > li > a{
+        border: 1px solid #ddd !important;
+        border-radius: 10px 10px !important;
+    }
+}

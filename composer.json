@@ -1,0 +1,55 @@
+{
+  "name": "d3/contenttabs",
+  "description": "Extended description module for OXID eShop.",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3",
+    "tabs",
+    "details"
+  ],
+  "authors": [
+    {
+      "name": "D3 Data Development (Inh. Thomas Dartsch)",
+      "email": "info@shopmodule.com",
+      "homepage": "https://www.d3data.de",
+      "role": "Owner"
+    }
+  ],
+  "support": {
+    "email": "support@shopmodule.com"
+  },
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "proprietary"
+  ],
+  "require": {
+    "php": "^8.0",
+    "ext-sourceguardian": "^14",
+    "oxid-esales/oxideshop-ce": "7.0 - 7.0",
+    "d3/modcfg": "^7.0",
+    "oxid-esales/smarty-component": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "~3.13.0",
+    "phpstan/phpstan": "^1.10",
+    "boxblinkracer/phpunuhi": "^1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "D3\\Contenttabs\\": "./"
+    }
+  },
+  "scripts": {
+    "php-cs-fixer": "vendor/bin/php-cs-fixer fix --config=vendor/d3/contenttabs/.php-cs-fixer.php",
+
+    "phpstan": "vendor/bin/phpstan --configuration=vendor/d3/contenttabs/phpstan.neon analyse",
+    "phpstan-report": "vendor/bin/phpstan --configuration=vendor/d3/importer/phpstan.neon analyse --error-format=json > vendor/d3/importer/sources/tests/phpstan.report.json",
+
+    "rector": "./vendor/bin/rector process --dry-run --config ./vendor/d3/contenttabs/rector.php",
+
+    "phpunuhi": "./vendor/bin/phpunuhi --configuration=vendor/d3/contenttabs/phpunuhi.xml validate"
+  }
+}
