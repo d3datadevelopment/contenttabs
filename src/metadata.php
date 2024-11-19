@@ -12,6 +12,9 @@
  */
 
 use D3\Contenttabs\Application\Controller\Admin as AdminController;
+use D3\Contenttabs\Modules\Application\Component\Widget\d3_oxwarticledetails_contenttabs;
+use D3\Contenttabs\Modules\Application\Model\d3_oxarticle_longtexts;
+use D3\ModCfg\Application\Model\Install\d3install;
 use OxidEsales\Eshop\Application as OxidApplication;
 
 /**
@@ -27,7 +30,7 @@ $sLogo = '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="h
  */
 $aModule = [
     'id'             => $sModuleId,
-    'title'          => $sLogo . 'Content Tabs',
+    'title'          => $sLogo . 'Content Tabs ',
     'description'    => [
         'de' => 'Dieses Modul bietet die M&ouml;glichkeit umfangreiche Artikelinformationen, auf der ' //
             . 'Detailseite, &uuml;bersichtlich aufzugliedern.<br>Sie sehen dieses Modul auch bei uns im Shop. ' //
@@ -36,13 +39,13 @@ $aModule = [
         'en' => '',
     ],
     'thumbnail'      => 'picture.png',
-    'version'        => '4.2.0.0',
+    'version'        => '4.3.1.0',
     'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'url'            => 'https://www.d3data.de',
     'email'          => 'support@shopmodule.com',
     'extend'         => [
-        OxidApplication\Component\Widget\ArticleDetails::class  => \D3\Contenttabs\Modules\Application\Component\Widget\d3_oxwarticledetails_contenttabs::class,
-        OxidApplication\Model\Article::class                    => \D3\Contenttabs\Modules\Application\Model\d3_oxarticle_longtexts::class,
+        OxidApplication\Component\Widget\ArticleDetails::class  => d3_oxwarticledetails_contenttabs::class,
+        OxidApplication\Model\Article::class                    => d3_oxarticle_longtexts::class,
     ],
     'controllers'   => [
         'd3contenttabs_settings'    => AdminController\settings::class,
@@ -59,7 +62,7 @@ $aModule = [
         'd3contenttabs_tab1.tpl' => 'd3/contenttabs/Application/views/tpl/d3contenttabs_tab1.tpl',
     ],
     'events'         => [
-        'onActivate' => \D3\ModCfg\Application\Model\Install\d3install::class . '::checkUpdateStart',
+        'onActivate' => d3install::class . '::checkUpdateStart',
     ],
     'blocks'         => [
         // azure / flow / wave blocks
@@ -67,6 +70,11 @@ $aModule = [
             'template' => 'page/details/inc/tabs.tpl',
             'block'    => 'details_tabs_longdescription',
             'file'     => 'Application/views/blocks/details_tabs_longdescription.tpl',
+        ],
+        [
+            'template' => 'page/details/inc/tabs.tpl',
+            'block'    => 'details_tabs_main',
+            'file'     => 'Application/views/blocks/details_tabs_main.tpl',
         ]
     ],
     'settings' => [
@@ -88,5 +96,11 @@ $aModule = [
             'type'      => 'str',
             'value'     => ''
         ],
+        [
+            'group'     => 'd3ctextension_settings',
+            'name'      => 'd3ctextension_amount_tabs',
+            'type'      => 'str',
+            'value'     => '5'
+        ]
     ],
 ];

@@ -35,4 +35,8 @@ $aLang = [
     'HELP_SHOP_MODULE_d3custParentThemeMappedToMobile_'.$sModId => $sD3Help_mappedTo,
     'HELP_SHOP_MODULE_d3custParentThemeMappedToAzure_'.$sModId => $sD3Help_mappedTo,
     'HELP_SHOP_MODULE_d3custParentThemeMappedToFlow_'.$sModId => $sD3Help_mappedTo,
+
+    //tab count
+    'SHOP_MODULE_GROUP_d3ctextension_settings'      => 'Einstellungen',
+    'SHOP_MODULE_d3ctextension_amount_tabs'         => 'Menge der Tabs'
 ];

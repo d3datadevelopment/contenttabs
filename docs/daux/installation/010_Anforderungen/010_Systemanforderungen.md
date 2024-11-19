@@ -3,9 +3,10 @@ title: Systemanforderungen
 ---
 
 * PHP Version
-    * 7.0.x bis 8.0.x
+    * 7.0.x bis 8.2.x
 * PHP Decoder
-    * installierter ionCube Loader
+    * installierter ionCube Loader (PHP bis 7.4) *oder*
+    * installierter SourceGuardian Loader (PHP ab 8.0)
 * Shopeditionen
     * OXID eShop Community Edition (CE)
     * OXID eShop Professional Edition (PE)
@@ -17,7 +18,8 @@ title: Systemanforderungen
         * 6.2.x
         * 6.3.x
         * 6.4.x
-* D3 Modul-Connector ([kostenfrei bei D3 erhältlich](https://www.oxidmodule.com/connector/)) ab Version 5.3.0.0 
+        * 6.5.x
+* D3 Modul-Connector ([kostenfrei bei D3 erhältlich](https://www.oxidmodule.com/connector/)) ab Version 5.3.0.0
 * Installation via [Composer](https://getcomposer.org)
 * mindestens ein freier Cronjob zur automatischen Ausführung der angelegten Aufgaben
 

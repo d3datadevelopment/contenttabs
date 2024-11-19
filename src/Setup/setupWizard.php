@@ -36,15 +36,15 @@ class setupWizard extends d3install_updatebase
 {
     public $sModKey = 'd3contenttabs';
     public $sModName = 'Content Tabs';
-    public $sModVersion = '4.2.0.0';
-    public $sModRevision = '4200';
+    public $sModVersion = '4.3.1.0';
+    public $sModRevision = '4310';
     public $sBaseConf = '--------------------------------------------------------------------------------
-bNcv2==WVppaUFzVHhnQ08rRjZzUXltd0dkL0I3aXhkVldOMERRS2Q0VFk2WUh0ZS9uN1lPUWM3a3I4S
-DluVUlGQWdobU8vdnNURWhtelUxb0hFVTkxbWVaaG1mMytTZzU5Q2k5Y3JBTnB4aVVJRXdqZ254QlpNU
-DUrRVhkWXBCZktmaGw1VzIyUHFsVUQ3ZlJrbktiMnVENGZkbzFhOU95a0k1ZXVnYk5wZmp4NnNiLzA1M
-HdTYmp6ZUVpcDZsYXo3UWdybGhEeXV3QlJrTXRPS2Z6Q25ZcnFIUUNJOTRMMjlmWE1RR0xQb0NESDV6Y
-2MzVUppRlFKK1lDbVEvSTFVZ1d0YTI0Ty84Sm5GZG9SbGhibzNrZ2c2blpQeFNycFJmb0JHMng5dmhQU
-WxOT01IWEpFNnVnaW9aMjdMa1BJdG1iLzEzSjlUNmxWcExmaVdXTVU3NkhOSG1nPT0=
+Udiv2==bXBHRGR2NmNtSjFNMlhDME05TUU1MTVtWkt5YVlHQmY4QUxnSGdnaGU5ODd3Rm10Y29zT2VWe
+jFHaExwaWVQaGhDcW9SV2duekQxaFprbStaQzVHNEZLaUVPak9PRUxtMS95d1pyR2c2UUk3NysyOURNc
+TB1bE1FT1FGU2ZWM1kyZmo3b3BaWEM1Y3U5Y1lmOEREMisvbVZWT3NUM1hQa25XSFJkQnluOEJSQW5wU
+DJZWUQweGpIcmJFeGt0Z1FSQ1FtN09xZnlBWC94Q016cjlKaStxcU52QTZ0R0VZYnhpR0lhdk9aWE4rS
+W5MdGMrNlBEWWszamhTYkhOOU45QlpZMXcvTzAyb3cxL0pXclJaMkxMeitRVFpTZStMeGEycTB4dG1oU
+TR4NkpodDdQMDZTRy9RSDNNU2N4UVZnVTlBZzh1V3VjbWFncms5RVd5a0hXRnl3PT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
     public $sBaseValue = '';
