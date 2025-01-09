@@ -4,6 +4,10 @@ title: Changelog
 
 ## [Unreleased](https://git.d3data.de/D3Private/Contenttabs/compare/4.3.1.0...rel_4.x)
 
+## [4.3.1.1](https://git.d3data.de/D3Private/Contenttabs/compare/4.3.1.0...4.3.1.1) - 2025-01-08
+### fixed
+- login problems in checkout step 2 - 3
+
 ## [4.3.1.0](https://git.d3data.de/D3Private/Contenttabs/compare/4.3.0.0...4.3.1.0) - 2024-01-30
 ### added
 - Support für PHP 8.1 und 8.2 hinzugefügt

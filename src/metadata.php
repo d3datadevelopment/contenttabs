@@ -38,12 +38,12 @@ $aModule = [
             . '"Downloads" w&auml;hlen.',
         'en' => '',
     ],
-    'thumbnail'      => 'picture.png',
-    'version'        => '4.3.1.0',
-    'author'         => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
-    'url'            => 'https://www.d3data.de',
-    'email'          => 'support@shopmodule.com',
-    'extend'         => [
+    'thumbnail'     => 'picture.png',
+    'version'       => '4.3.1.1',
+    'author'        => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
+    'url'           => 'https://www.d3data.de',
+    'email'         => 'support@shopmodule.com',
+    'extend'        => [
         OxidApplication\Component\Widget\ArticleDetails::class  => d3_oxwarticledetails_contenttabs::class,
         OxidApplication\Model\Article::class                    => d3_oxarticle_longtexts::class,
     ],
@@ -53,31 +53,31 @@ $aModule = [
         'd3contenttabs_tablist'     => AdminController\contentTabList::class,
         'd3contenttabs_tabs'        => AdminController\contentTabs::class,
     ],
-    'templates'      => [
+    'templates'     => [
         // Admin
-        'contentTabsBase.tpl'    => 'd3/contenttabs/Application/views/admin/tpl/contentTabsBase.tpl',
-        'contentTabs.tpl'        => 'd3/contenttabs/Application/views/admin/tpl/contentTabs.tpl',
-        'contentTabList.tpl'     => 'd3/contenttabs/Application/views/admin/tpl/contentTabList.tpl',
+        'contentTabsBase.tpl'       => 'd3/contenttabs/Application/views/admin/tpl/contentTabsBase.tpl',
+        'contentTabs.tpl'           => 'd3/contenttabs/Application/views/admin/tpl/contentTabs.tpl',
+        'contentTabList.tpl'        => 'd3/contenttabs/Application/views/admin/tpl/contentTabList.tpl',
         // Frontend
-        'd3contenttabs_tab1.tpl' => 'd3/contenttabs/Application/views/tpl/d3contenttabs_tab1.tpl',
+        'd3contenttabs_tab1.tpl'    => 'd3/contenttabs/Application/views/tpl/d3contenttabs_tab1.tpl',
     ],
-    'events'         => [
-        'onActivate' => d3install::class . '::checkUpdateStart',
+    'events'        => [
+        'onActivate'                => d3install::class . '::checkUpdateStart',
     ],
-    'blocks'         => [
+    'blocks'        => [
         // azure / flow / wave blocks
         [
-            'template' => 'page/details/inc/tabs.tpl',
-            'block'    => 'details_tabs_longdescription',
-            'file'     => 'Application/views/blocks/details_tabs_longdescription.tpl',
+            'template'  => 'page/details/inc/tabs.tpl',
+            'block'     => 'details_tabs_longdescription',
+            'file'      => 'Application/views/blocks/details_tabs_longdescription.tpl',
         ],
         [
-            'template' => 'page/details/inc/tabs.tpl',
-            'block'    => 'details_tabs_main',
-            'file'     => 'Application/views/blocks/details_tabs_main.tpl',
+            'template'  => 'page/details/inc/tabs.tpl',
+            'block'     => 'details_tabs_main',
+            'file'      => 'Application/views/blocks/details_tabs_main.tpl',
         ]
     ],
-    'settings' => [
+    'settings'      => [
         [
             'group'     => 'd3thememapping_module',
             'name'      => 'd3custParentThemeMappedToFlow_'.$sModuleId,
