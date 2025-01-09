@@ -33,7 +33,7 @@
   },
   "require": {
     "php": "^8.0",
-    "ext-sourceguardian": "^14",
+    "ext-sourceguardian": ">=14",
     "oxid-esales/oxideshop-ce": "6.3 - 6.14",
     "d3/modcfg": "^5.3.0.000|^6.0"
   },
